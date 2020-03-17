@@ -1,0 +1,532 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>가비아, 비즈니스를 위한 IT</title>
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/master.css" />
+<link rel="stylesheet" href="css/flexslider.css" />
+
+<script src="js/jquery-3.4.1.min.js"></script>
+
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/modernizr.js"></script>
+<script defer src="js/jquery.flexslider-min.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
+</head>
+<body>
+	<input id="toggle_menu" type="checkbox" />
+	<div id="wrap">
+		<div class="skip">
+			<a href="#business">본문 바로가기</a>
+			<a href="#toggle_nav">메인메뉴 바로가기</a>
+			<a href="#main_footer">푸터 바로가기</a>
+		</div><!--//바로가기 메뉴-->
+		<header id="header">
+			<label class="btn_menu" for="toggle_menu">메인메뉴</label>
+
+			<h1 id="logo">
+				<a href="index.html">GABIA</a>
+			</h1><!--//로고-->
+			
+			<div id="top_menu">
+				<form>
+					<fieldset>
+						<div class="search">
+							<label class="search" for="search">검색 버튼</label>
+						</div>
+
+						<input id="search" type="checkbox" />
+						<div class="search_wrap">
+							<form>
+								<label class="search_btn_close" for="search">검색닫기</label>
+								<fieldset>
+									<input class="text" type="text" placeholder="원하는 도메인을 입력하세요" />
+									<input class="btn_search" type="image" src="images/btn/search.png" alt="검색하기" />
+								</fieldset>
+							</form>
+							<span id="vline"></span>
+						</div>
+					</fieldset>
+				</form><!--//토글 검색-->
+
+				<script>
+					$(function(){
+						var bCheck=false;
+						$("#lang > h2").click(function(){
+							bCheck=!bCheck;
+							if(bCheck){
+								$("#lang > ul").addClass("active");
+							}else{
+								$("#lang > ul").removeClass("active");
+							}
+						});
+
+						$("#lang > ul > li").click(function(){
+							$("#lang > ul > li").removeClass("select");
+							$(this).addClass("select");
+							var href=$(this).attr("data-link");
+							$("a#go_site").attr("href",href);
+						});
+					
+						$("a#go_site").click(function(){
+							$("#lang > ul").removeClass("active")
+							bCheck=false;
+							$("#lang > ul > li").removeClass("select");
+						});
+					});
+				</script><!--//언어 선택 열고 닫기-->
+				<div id="lang">
+					<h2><a href="#">KOR</a></h2>
+					<ul>
+						<li data-link="#">ENG</li>
+						<li data-link="#">CHN</li>
+						<li data-link="#">JPN</li>
+					</ul>
+				</div><!--//언어 선택-->
+			</div><!--//상단 메뉴-->
+		</header><!-- //헤더 -->
+		
+		<nav id="main_nav">
+			<script>
+			$(function(){
+				$("#menu > li > h3").click(function(){
+					if($(this).parent("li").attr("class") != "active"){
+						$("#menu > li").removeClass("active");
+						$(this).parent("li").addClass("active");
+
+						$(".toggle_menu > li").removeClass("active");
+					}else{
+						$(this).parent("li").removeClass("active");
+
+						$(".toggle_menu > li").removeClass("active");
+					}
+				});/**** //메뉴 열고 닫기 ****/
+
+				var menuCheck=false;
+				var searchCheck=false;
+
+				$("label.btn_menu").click(function(){
+					menuCheck = !menuCheck;
+					if(searchCheck){
+						$("#toggle_search").click();
+						searchCheck=false;
+					}
+				});
+
+				$("label.btn_close").click(function(){
+					$("#menu > li").removeClass("active");
+					$(".toggle_menu > li").removeClass("active");
+					menuCheck=false;
+				});
+			});/**** //하위 메뉴 열고 닫기 ****/
+			</script>
+				<select id="m_lang" name="select" onchange="window.open(value,'_blank');">
+					<option value="#">KOR</option>
+					<option value="#">ENG</option>
+					<option value="#">CHN</option>
+					<option value="#">JPN</option>
+				</select><!-- //lang -->
+				<ul id="menu">
+					<li class="introudce">
+						<h3>회사소개</h3>
+						<ul class="toggle_menu"></ul>
+					</li>
+					<li class="service">
+						<h3 class="menu_more1">서비스</h3>
+							<ul class="toggle_menu">
+								<li><a href="#">도메인</a></li>
+								<li><a href="#">클라우드</a></li>
+								<li><a href="#">호스팅/IDC</a></li>
+								<li><a href="#">그룹웨어</a></li>
+								<li><a href="#">보안</a></li>
+							</ul>
+					</li>
+					<li class="culture">
+						<h3 class="menu_more2">문화</h3>
+							<ul class="toggle_menu">
+								<li><a href="#">서비스운영실</a></li>
+								<li><a href="#">클라우드IDC사업부</a></li>
+								<li><a href="#">프론트엔드 개발팀</a></li>
+								<li><a href="#">하이웍스 개발실</a></li>
+								<li><a href="#">도메인 사업부</a></li>
+								<li><a href="#">시스템 개발실</a></li>
+								<li><a href="#">인프라 플랫폼 개발실</a></li>
+								<li><a href="#">디자인실</a></li>
+							</ul>
+					</li>
+					<li class="promote">
+						<h3 class="menu_more3">홍보/IR</h3>
+							<ul class="toggle_menu">
+								<li><a href="#">홍보 영상</a></li>
+								<li><a href="#">장소 협찬</a></li>
+								<li><a href="#">글꼴 캠페인</a></li>
+							</ul>
+					</li>
+					<li class="recruit">
+						<h3 class="menu_more4">채용</h3>
+							<ul class="toggle_menu">
+								<li><a href="#">가비아</a></li>
+								<li><a href="#">직무소개</a></li>
+								<li><a href="#">입사지원</a></li>
+								<li><a href="#">나의 지원서</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul>
+					</li>
+					<li class="gabia">
+						<h3>가비아</h3>
+							<ul class="toggle_menu"></ul>
+					</li>
+					<li>
+						<div class="header_site_wrap">
+						<ul class="header_site">
+							<li>
+								<a  class="library" href="#" target="_blank">가비아 라이브러리</a>
+							</li>
+							<li>
+								<a  class="blog" href="#" target="_blank">가비아 공식 블로그</a>
+							</li>
+							<li>
+								<a class="facebook" href="#" target="_blank">가비아 공식 페이스북</a>
+							</li>
+						</ul>
+						</div>
+					</li>
+				</ul><!--//메인 메뉴-->
+				<label class="m_btn_close" for="toggle_menu"></label><!--//모바일 메뉴 닫기-->
+			</nav>
+		
+		<!--배너슬라이더 시작 -->
+		<script type="text/javascript">
+		$(function(){
+			SyntaxHighlighter.all();
+		});
+		$(window).load(function(){
+			$('.flexslider').flexslider({
+				animation: "slide",
+				start: function(slider){
+					$('body').removeClass('loading');
+				}
+			});
+		});
+		</script>
+		<section class="slider">
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<img class="pc" src="images/banner/img01.png" usemap="#banner1" />
+						<img class="tablet" src="images/banner/img01_t.png" usemap="#banner1_t" />
+						<img class="smart" src="images/banner/img01_m.png" usemap="#banner1_m" />
+					</li>
+					<li>
+						<img class="pc" src="images/banner/img02.png" usemap="#banner2" />
+						<img class="tablet" src="images/banner/img02_t.png" usemap="#banner2_t" />
+						<img class="smart" src="images/banner/img02_m.png" usemap="#banner2_m" />
+					</li>
+					<li>
+						<img class="pc" src="images/banner/img03.png" usemap="#banner3" />
+						<img class="tablet" src="images/banner/img03_t.png" usemap="#banner3_t" />
+						<img class="smart" src="images/banner/img03_m.png" usemap="#banner3_m" />
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- 이미지맵: 자세히 보기-->
+		<script>
+			$(document).ready(function(e) {
+				$('img[usemap]').rwdImageMaps();
+				
+				$('area').on('click', function(event) {
+					event.preventDefault();
+					alert($(this).attr('alt') + ' clicked');
+					
+				});
+			});
+		</script>
+
+		<map name="banner1" class="map1">
+			<area shape="rect" coords="373,396,573,430" href="#" alt="자세히보기" />
+		</map>
+		<map name="banner2" class="map1">
+			<area shape="rect" coords="373,396,573,430" href="#" alt="자세히보기" />
+		</map>
+		<map name="banner3" class="map1">
+			<area shape="rect" coords="373,396,573,430" href="#" alt="자세히보기" />
+		</map>
+		<map name="banner1_t" class="map2">
+			<area shape="rect" coords="337,396,537,430" href="#" alt="자세히보기" />
+		</map>
+		<map name="banner2_t" class="map2">
+			<area shape="rect" coords="337,396,537,430" href="#" alt="자세히보기" />
+		</map>
+		<map name="banner3_t" class="map2">
+			<area shape="rect" coords="374,396,574,430" href="#" alt="자세히보기" />
+		</map>
+		<map name="banner1_m">
+			<area shape="rect" coords="420,321,645,373" href="#" alt="자세히보기" />
+		</map>
+		<map name="banner2_m">
+			<area shape="rect" coords="420,321,645,373" href="#" alt="자세히보기" />
+		</map>
+		<map name="banner3_m">
+			<area shape="rect" coords="420,634,645,687" href="#" alt="자세히보기" />
+		</map>
+		<!-- Syntax Highlighter -->
+		<script src="js/shCore.js"></script>
+		<script src="js/shBrushXml.js"></script>
+		<script src="js/shBrushJScript.js"></script>
+		<!--//배너슬라이더 끝-->
+		<section id="business">
+			<div class="box">
+				<ul class="box_wrap">
+					<li class="box_title">
+						<h2>
+							IT<br />
+							비즈니스
+						</h2>
+					</li><!--//타이틀-->
+					<li class="box_gradation" id="box_domain">
+						<a href="#" id="domain" target="_blank" title="새창 열림">
+							<h3>도메인</h3>
+							<span>
+								KISA 클라우드 서비스<br />
+								보안인증을 획득!<br />
+								높은 안정성을 추구합니다. 
+							</span>
+						</a>
+					</li><!--//도메인-->
+					<li class="box_border">
+						<a href="#" id="cloud" target="_blank" title="새창 열림">
+							<h3>클라우드</h3>
+							<span>
+								KISA 클라우드 서비스<br />
+								보안인증을 획득!<br />
+								높은 안정성을 추구합니다. 
+							</span>
+						</a>
+					</li><!--//클라우드-->
+					<li class="box_gradation">
+						<a href="#" id="hosting" target="_blank" title="새창 열림">
+							<h3>호스팅/IDC</h3>
+							<span>
+								고객의 서비스 형태에 맞는 <br />
+								최적의 서버 환경을 <br />
+								제공합니다. 
+							</span>
+						</a>
+					</li><!--//호스팅/IDC-->
+					<li class="box_service">
+						<div id="service">
+							<h3>서비스 더 알아보기</h3>
+							<p>
+								<a href="#" target="_blank" title="새창 열림" >더보기</a>
+							</p>
+							<span>
+								가비아는 IT 비즈니스의 기반이 되는 인프라를 구축하고 다양한 솔루션을 개발하여 <br />
+								사람들이 편하고, 쉽고, 빠르게 IT 세상을 향유해 나가도록 돕고 있습니다. 
+						</span>
+						</div>
+					</li><!--//서비스 더 알아보기-->
+					<li class="box_gradation">
+						<a href="#" id="groupware" target="_blank" title="새창 열림">
+							<h3>그룹웨어</h3>
+							<span>
+								하이웍스는 국내 점유율<br />
+								1위의 클라우드 그룹웨어로 <br />
+								생산성을 향상시킵니다. 
+							</span>
+						</a>
+					</li><!--//그룹웨어-->
+					<li class="box_border">
+						<a href="#" id="security" target="_blank" title="새창 열림">
+							<h3>보안</h3>
+							<span>
+								국가가 공인한 보안관제 <br />
+								전문기업으로서 고객의 정보를 <br />
+								안전하게 보호합니다. 
+							</span>
+						</a>
+					</li><!--//보안-->
+				</ul><!--//박스 정렬-->
+			</div>
+		</section><!--//IT 비즈니스-->
+
+		<section id="gabia_culture">
+			<div class="culture_wrap">
+				<div class="culture_text">
+					<h2>기업 문화를 자유롭게 만들어갑니다.</h2>
+					<p>사내 도서관부터 프로젝트 팀(Teams)까지, 다양한 문화가 가비아인들로부터 시작됩니다.</p>
+					<a href="#"><strong class="btn_culture">가비아 문화</strong></a>
+				</div>
+			</div>
+		</section><!--//가비아 문화-->
+
+		<section id="team">
+			<div class="team_wrap">
+				<ul>
+					<li class="team_list">
+						<a href="#">
+							<div class="team_images" style="background-image: url(images/people1.png);">
+								<span class="blind">더보기</span>
+							</div>
+							<h3>서비스 운영실</h3>
+							<span>Grace</span>
+						</a>
+					</li>
+					<li class="team_list">
+						<a href="#">
+							<div class="team_images"  style="background-image: url(images/people2.png);">
+								<span class="blind">더보기</span>
+							</div>
+							<h3>클라우드 IDC사업부</h3>
+							<span>Ara</span>
+						</a>
+					</li>
+					<li class="team_list">
+						<a href="#">
+							<div class="team_images"  style="background-image: url(images/people3.png);">
+								<span class="blind">더보기</span>
+							</div>
+							<h3>프론트엔드 개발팀</h3>
+							<span>Clair</span>
+						</a>
+					</li>
+					<li class="team_list">
+						<a href="#">
+							<div class="team_images"  style="background-image: url(images/people4.png);">
+								<span class="blind">더보기</span>
+							</div>
+							<h3>하이웍스 개발실</h3>
+							<span>Will</span>
+						</a>
+					</li>
+				</ul>
+				<input id="team_more" type="checkbox"><!--개발팀 더보기-->
+				<ul id="team_hidden">
+					<li class="team_list">
+						<a href="#">
+							<div class="team_images"  style="background-image: url(images/people5.png);">
+								<span class="blind">더보기</span>
+							</div>
+							<h3>도메인 사업부</h3>
+							<span>Jason</span>
+						</a>
+					</li>
+					<li class="team_list">
+						<a href="#">
+							<div class="team_images"  style="background-image: url(images/people6.png);">
+								<span class="blind">더보기</span>
+							</div>
+							<h3>시스템 개발실</h3>
+							<span>Kwazii</span>
+						</a>
+					</li>
+					<li class="team_list">
+						<a href="#">
+							<div class="team_images"  style="background-image: url(images/people7.png);">
+								<span class="blind">더보기</span>
+							</div>
+							<h3>인프라 플랫폼 개발실</h3>
+							<span>Claude</span>
+						</a>
+					</li>
+					<li class="team_list">
+						<a href="#">
+							<div class="team_images"  style="background-image: url(images/people8.png);">
+								<span class="blind">더보기</span>
+							</div>
+							<h3>디자인실</h3>
+							<span>Janet</span>
+						</a>
+					</li>
+				</ul>
+				<label class="team_more" for="team_more">개발팀 더보기</label>
+			</div>
+		</section><!--//개발실-->
+
+		<section id="information">
+			<div class="infor">
+				<ul>
+					<li class="infor_list" id="infor_image1">
+						<h3>홍보/IR</h3>
+						<div class="infor_text">
+							<p>
+								가비아 최신 소식과 <br />
+								IR 자료를 확인할 수 있습니다.
+							</p>
+							<span class="btn_view">
+								<a href="#">자세히 보기</a>
+							</span>
+						</div>
+					</li>
+					<li class="infor_list" id="infor_image2">
+						<h3>채용</h3>
+						<div class="infor_text">
+							<p>
+								가비아의 미래를 이끌어갈 <br />
+								열정적인 인재를 모집합니다.
+							</p>
+							<span class="btn_view">
+								<a href="#">자세히 보기</a>
+							</span>
+						</div>
+					</li>
+					<li class="infor_list" id="infor_image3">
+						<h3>IT 콘텐츠 허브</h3>
+						<div class="infor_text">
+							<p id="infor_text">
+								가비아 라이브러리
+							</p>
+							<span class="btn_view">
+									<a href="#">자세히 보기</a>
+							</span>
+						</div>
+					</li>
+				</ul>
+			</div><!-- //회사 정보-->
+
+			<div class="introduce" id="introduce_image">
+				<h3>회사 소개</h3>
+				<p>가비아의 더 많은 이야기를 확인하세요.</p>
+				<span class="btn_more">
+					<a href="#" target="_blank" title="새창 열림">자세히 보기</a>
+				</span>
+			</div><!--//회사 소개-->
+		</section><!--//회사 소식-->
+
+		<footer id="footer">
+			<div class="footer_wrap">
+				<ul class="footer_infor">
+					<li class="address">
+						<ul>
+							<li>대표이사: 김홍국</li>
+							<li>경기도 성남시 분당구 대왕판교로 660, B동 4층(삼평동), 13494</li>
+							<li>사업자등록번호: 214<span>-</span>86<span>-</span>39239</li>
+							<li>통신판매업 신고번호: 제2012-경기성남-1188호</li>
+						</ul>
+					</li>
+					<li class="policy">
+						<a href="#">개인정보처리방침&nbsp;</a>
+					</li>
+					<li class="copyright">&copy;Gabia Inc. All Rights Reserved.</li>
+				</ul>
+				<ul class="footer_site">
+					<li>
+						<a  class="library" href="#" target="_blank">가비아 라이브러리</a>
+					</li>
+					<li>
+						<a  class="blog" href="#" target="_blank">가비아 공식 블로그</a>
+					</li>
+					<li>
+						<a class="facebook" href="#" target="_blank">가비아 공식 페이스북</a>
+					</li>
+				</ul>
+			</div>
+		</footer><!--//푸터-->
+	</div><!--//wrap-->
+</body>
+</html>

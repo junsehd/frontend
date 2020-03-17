@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* 헤더영역 PC 부분 */
+#header {
+    position: relative;
+    height: 140px;
+    margin: 0 auto; 
+    background: -webkit-linear-gradient(#042e6f, #042e6f 67%, #f2f2f2 30%, #f2f2f2);
+    background: -o-linear-gradient(#042e6f, #042e6f 67%, #f2f2f2 30%, #f2f2f2);
+    background: linear-gradient(#042e6f, #042e6f 67%, #f2f2f2 30%, #f2f2f2);
+}
+/* 로고 부분 */
+#logo {
+    width: 170px; 
+    height: 70px; 
+    background: url(../images/top_logo.png) no-repeat; 
+    text-indent: -6000px; 
+    margin: 0 auto; 
+    position: relative; 
+    top: 15px;
+}
+#logo a {width: 170px; height: 70px;}
+
+/* 메인 내비메뉴 */
+#main_nav {position: relative; margin: 0 auto; z-index: 1;}
+/* 검색, 언어부문 */
+#top_menu { position: absolute; top: 35px; right: 0;}
+/* 검색 버튼 */
+#top_menu > form > fieldset { position: absolute; right: 110px;}
+/* 검색 메뉴 */
+.search {
+    width: 23px;
+    height: 22px;
+    background: url(../images/btn/search.png);
+    text-indent: -6000px;
+    overflow: hidden;
+}
+
+.search:hover { background: url(../images/btn/search_on.png);}
+
+/* 검색버튼 뒤 막대  */
+label.search:after {
+    content: '';
+    width: 1px;
+    height: 25px;
+    background-color: #e2e2e2;
+    position: absolute;
+    right: -22px;
+}
+
+/* 검색 메뉴 */
+#search + .search_wrap{
+    position: absolute;
+    top: -13px; 
+    right: -10px;
+    width: 346px;
+    height: 50px;
+    background: #fff;
+    box-sizing: border-box;
+    display: none;
+}
+
+#search:checked + .search_wrap{ 
+    display: block;
+}
+	
+.search_wrap .search_btn_close{
+    z-index: 1;
+    position: absolute;
+    top: 14px; right: 9px;
+    width: 23px; height: 23px;
+    background: url(../images/btn/close.png);
+    text-indent: -6000px; 
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.search_wrap fieldset > input.text {
+    width: 346px; 
+    height: 50px;
+    color: #000;
+    line-height: 50px;
+    box-sizing: border-box;
+    padding-right: 95px; 
+    padding-left: 10px;
+}
+.search_wrap fieldset > input.btn_search{
+    position: absolute;
+    top: 13px;
+    right: 63px;
+}
+.search_wrap #vline { 
+    width: 1px; 
+    height: 23px; 
+    background-color: #e2e2e2; 
+    position: absolute; 
+    top: 14px; 
+    right: 45px; 
+}
+
+/* 언어 메뉴 */
+#lang {
+    width: 50px;
+    height: 30px;
+    box-sizing: border-box;
+    position: relative;
+    right: 23px;
+}
+
+#lang > h2 {z-index: 2; position: absolute; padding: 2px 10px; box-sizing: border-box; cursor: pointer;}
+#lang > h2 > a {font-size: 15px; letter-spacing: -0.4px; color: #fff;}
+#lang > h2 > a:after {
+    content: '';
+    width: 7px;
+    height: 4px;
+    background: url(../images/btn/lang_arrow2.png) no-repeat;
+    position: absolute;
+    top: 13px;
+    right: -8px;
+    cursor: pointer;
+}
+#lang > h2 > a:hover::after {background: url(../images/btn/lang_arrow_on.png) no-repeat;}
+#lang > h2 > a:hover { color: #000;}
+
+#lang > ul {
+    z-index: 1;
+    position: absolute;
+    top: -15px;
+    right: -25px;
+    width: 95px;
+    height: 0;
+    background: #3c9ce7;
+    padding: 0 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition-duration: 0.4s;
+}
+#lang > ul.active {height: 130px;border: 1px solid #e2e2e2;}
+#lang > ul > li {font-size: 15px; letter-spacing: -0.4px; line-height: 22px; cursor: pointer; color: #fff;}
+#lang > ul > li:first-child {margin-top: 50px;}
+#lang > ul > li.select {color: #000;}
+
+/* 헤더 메뉴 */
+#main_nav > #menu {position: absolute; bottom: 0; height: 47px; width: 100%;}
+#main_nav > #menu > li {float: left; width: 16.666%;}
+#main_nav > #menu > li > h3 {font-size: 17px; letter-spacing: -0.2px; line-height: 47px; text-align: center;}
+#main_nav > #menu > li:hover > h3 {color: #3c9ce7; background: url(../images/toggle_bar.png) bottom no-repeat;}
+
+/* 헤더 서브 메뉴 */
+.toggle_menu {height: 0; background: #fff; overflow: hidden; transition-duration: 0.4s;}
+#main_nav:hover > #menu > li > .toggle_menu {height: 220px; border-top: 1px solid #e2e2e2;}
+.toggle_menu > li {margin-bottom: 16px;}
+.toggle_menu > li:first-child {padding-top: 42px;}
+.toggle_menu > li > a {font-size: 15px; letter-spacing: -0.4px; line-height: 14px; text-align: center;}
+.toggle_menu > li > a:hover {color: #3c9ce7;}

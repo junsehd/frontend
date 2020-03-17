@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>신대구부산고속도로</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sub.css">
+
+    <!-- 구글 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="banner">
+        <div>
+            <a href="../index.html"><img src="../images/ad_top.jpg" alt="민자고속도로 무정차통행료 시스템 이용방법 중간정차없이 한번에 OK!
+        민자고속도로 무정차통행료 시스템을 소개합니다."></a>
+            <a href="#a" class="prev"><img src="../images/btn_arrow_left.png" alt="이전광고"></a>
+            <a href="#a" class="next"><img src="../images/btn_arrow_right.png" alt="다음광고"></a>
+            <div class="control">
+                <a href="#a"><img src="../images/btn_pause.gif" alt="일시정지"></a>
+                <a href="#a"><img src="../images/bu_paging.png" alt="첫번째 광고"></a>
+                <a href="#a"><img src="../images/bu_paging_on.png" alt="두번째 광고 현재위치"></a>
+            </div>
+            <div class="close">
+                <input type="checkbox" id="chk1"><label for="chk1">오늘 하루 열지 않기</label>
+                <a href="#a"><img src="../images/btn_close.png" alt="광고닫기"></a>
+            </div>
+        </div>
+    </div>
+    <!-- //banner-->
+    <div class="header">
+        <div>
+            <h1><a href="../index.html"><img src="../images/h1_logo.gif" alt="신대구부산고속도로 주식회사"></a></h1>
+            <h2 class="hide">대메뉴</h2>
+            <ul id="lnb">
+                <li><a href="../sub/traffic.html">실시간교통안내</a></li>
+                <li><a href="../sub/travel.html">여행정보</a></li>
+                <li><a href="../sub/restarea.html">휴게소안내</a></li>
+                <li><a href="../sub/board.html">알림마당</a></li>
+                <li><a href="../sub/qna.html">참여마당</a></li>
+                <li><a href="../sub/safety.html">교통안전</a></li>
+                <li><a href="../sub/greetings.html">회사소개</a></li>
+            </ul>
+            <div>
+                <h2 class="hide">고객센터 전화번호</h2>
+                <p>1688-<span>7033</span></p>
+                <div>
+                    <a href="#a" class="btn_pop">popup</a>
+                    <a href="#a"><img src="../images/btn_search.gif" alt="검색"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //header-->
+    <div class="sub_visual">
+        <div>
+            <p>
+                <span>MORE FAST</span>
+                대구 <ins>왕복</ins> 부산 주행시간 <em>30</em>분 단축
+            </p>
+            <div class="left">
+                <a href="../index.html">첫 페이지 바로가기</a>
+                <ul>
+                    <li class="ico1"><a href="../sub/board.html">알림마당</a></li>
+                    <li class="ico2"><a href="../sub/board.html">새소식</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul class="clear">
+                    <li class="ico1"><a href="#a">즐겨찾기</a></li>
+                    <li class="ico2"><a href="#a">공유하기</a>
+                        <ul>
+                            <li><a href="#a" class="ico2_1">페이스북</a></li>
+                            <li><a href="#a" class="ico2_2">트위터</a></li>
+                            <li><a href="#a" class="ico2_3">블로그</a></li>
+                        </ul>
+                    </li>
+                    <li class="ico3"><a href="#a">프린트</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- //sub_visual-->
+
+    <div class="container clear">
+        <div class="snb">
+            <h2>알림마당 <span>More Fast</span></h2>
+            <ul>
+                <li><a href="./board.html">새소식</a></li>
+                <li><a href="#a">언론보도</a></li>
+                <li><a href="#a">입찰공고</a></li>
+                <li><a href="#a">직원채용</a></li>
+                <li><a href="#a">관련사이트</a></li>
+                <li><a href="#a">자료실</a></li>
+            </ul>
+        </div>
+        <!-- //snb -->
+        <div class="contents">
+            <h2 class="h2">새소식</h2>
+
+            <!-- 종합페이지 & 검색버튼 -->
+            <div class="qna_wrap">
+                <div class="qna_search_wrap clear">
+                    <div class="qna_total">
+                        <span>전체 : 51</span>
+                        <span>(1 / 5 page)</span>
+                    </div>
+                    <div class="qna_search">
+                        <form name="search" method="post">
+                            <select title="검색항목을 선택하세요">
+                                <option value="title">제목</option>
+                                <option value="contents">내용</option>
+                                <option value="member_name">작성자</option>
+                            </select>
+                            <label class="hide" for="search">검색어를 입력하세요</label>
+                            <input id="search" name="searchKeyword" placeholder="검색어를 입력하세요" size="30" type="text" />
+                            <button>
+                                <a href="#a"><img src="../images/btn_search.gif" alt="검색"></a>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- 게시판 테이블 -->
+            <div class="qna_list_wrap">
+                <table class="qna_list_table">
+                    <caption>
+                        <span>새소식게시판 목록으로 번호,제목,작성자,작성일자,조회수를 제공</span>
+                    </caption>
+                    <colgroup>
+                        <col class="num"/>
+                        <col class="subject"/>
+                        <col class="writer"/>
+                        <col class="date"/>
+                        <col class="count"/>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">작성자</th>
+                            <th scope="col">작성일자</th>
+                            <th scope="col">조회수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="num">공지</td>
+                            <td class="subject">
+                                <a href="#a">공지사항
+                                    <img src="../images/ico_new.png" alt="첨부파일" />
+                                </a>
+                            </td>
+                            <td class="writer">관리자</td>
+                            <td class="date">2019-07-29</td>
+                            <td class="count">225</td>
+                        </tr>
+                        <tr>
+                            <td class="num">50</td>
+                            <td class="subject">
+                                <a href="#a">테스트페이지 입니다.</a>
+                            </td>
+                            <td class="writer">관리자</td>
+                            <td class="date">2019-00-00</td>
+                            <td class="count">505</td>
+                        </tr>
+                        <tr>
+                            <td class="num">49</td>
+                            <td class="subject">
+                                <a href="#a">테스트페이지 입니다.</a>
+                            </td>
+                            <td class="writer">관리자</td>
+                            <td class="date">2019-00-00</td>
+                            <td class="count">214</td>
+                        </tr>
+                        <tr>
+                            <td class="num">48</td>
+                            <td class="subject">
+                                <a href="#a">테스트페이지 입니다.</a>
+                            </td>
+                            <td class="writer">관리자</td>
+                            <td class="date">2019-00-00</td>
+                            <td class="count">19</td>
+                        </tr>
+                        <tr>
+                            <td class="num">47</td>
+                            <td class="subject">
+                                <a href="#a">테스트페이지 입니다.</a>
+                            </td>
+                            <td class="writer">관리자</td>
+                            <td class="date">2019-00-00</td>
+                            <td class="count">444</td>
+                        </tr>
+                        <tr>
+                            <td class="num">46</td>
+                            <td class="subject">
+                                <a href="#a">테스트페이지 입니다.</a>
+                            </td>
+                            <td class="writer">관리자</td>
+                            <td class="date">2019-00-00</td>
+                            <td class="count">115</td>
+                        </tr>
+                        <tr>
+                            <td class="num">45</td>
+                            <td class="subject">
+                                <a href="#a">테스트페이지 입니다.</a>
+                            </td>
+                            <td class="writer">관리자</td>
+                            <td class="date">2019-00-00</td>
+                            <td class="count">505</td>
+                        </tr>
+                        <tr>
+                            <td class="num">44</td>
+                            <td class="subject">
+                                <a href="#a">테스트페이지 입니다.</a>
+                            </td>
+                            <td class="writer">관리자</td>
+                            <td class="date">2019-00-00</td>
+                            <td class="count">20</td>
+                        </tr>
+                        <tr>
+                            <td class="num">43</td>
+                            <td class="subject">
+                                <a href="#a">테스트페이지 입니다.</a>
+                            </td>
+                            <td class="writer">관리자</td>
+                            <td class="date">2019-00-00</td>
+                            <td class="count">211</td>
+                        </tr>
+                        <tr>
+                            <td class="num">42</td>
+                            <td class="subject">
+                                <a href="#a">테스트페이지 입니다.</a>
+                            </td>
+                            <td class="writer">관리자</td>
+                            <td class="date">2019-00-00</td>
+                            <td class="count">57</td>
+                        </tr>
+                        <tr>
+                            <td class="num">41</td>
+                            <td class="subject">
+                                <a href="#a">테스트페이지 입니다.</a>
+                            </td>
+                            <td class="writer">관리자</td>
+                            <td class="date">2019-00-00</td>
+                            <td class="count">300</td>
+                        </tr>
+                        <tr>
+                            <td class="num">40</td>
+                            <td class="subject">
+                                <a href="#a">테스트페이지 입니다.</a>
+                            </td>
+                            <td class="writer">관리자</td>
+                            <td class="date">2019-00-00</td>
+                            <td class="count">20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--//qna_list_wrap -->
+            
+            <!-- 버튼 페이지-->
+            <div class="button">
+                <span><a href="#a"><img src="../images/btn_arrow_left2.png" alt="이전페이지"></a></span>
+                <span><a href="#a">1</a></span>
+                <span><a href="#a">2</a></span>
+                <span><a href="#a">3</a></span>
+                <span><a href="#a">4</a></span>
+                <span><a href="#a">5</a></span>
+                <span><a href="#a"><img src="../images/btn_arrow_right2.png" alt="다음페이지"></a></span>
+            </div>
+            <!-- //button -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //container-->
+
+
+    <div class="footer">
+        <div>
+            <a href="#"><img src="../images/btn_top.gif" alt="대메뉴 바로가기"></a>
+            <img src="../images/img_footer.gif" alt="신대구부산고속도로주식회사">
+            <ul class="nav">
+                <li><a href="./greetings.html">회사소개</a></li>
+                <li><a href="#a">개인정보방침</a></li>
+                <li><a href="#a">이메일무단수집거부</a></li>
+                <li><a href="#a">사이트맵</a></li>
+                <li><a href="#a">Contact us</a></li>
+            </ul>
+            <address>
+                (50411) 경상남도 밀양시 산외면 산외로 42-57 신대구 부산고속도로 <span>TEL : 1688-7003</span>
+                <em>COPYRIGHT&copy; 2016 신대구부산고속도로(주). All right Reserved.</em>
+            </address>
+
+            <ul class="sns_nav">
+                <li class="ico1"><a href="#a">페이스북</a></li>
+                <li class="ico2"><a href="#a">블로그</a></li>
+                <li class="ico3"><a href="#a">트위터</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- //footer-->
+</body></html>

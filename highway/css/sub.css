@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+/* 공통 서브페이지 푸터영역 */
+/* 포지션값과 가로사이즈 여백을 초기화 시켜주고 div 태그를 추가한다. */
+.footer {position: static; width: auto; margin: 0; border-top: 1px solid #e0e0e0;}
+/* 추가한곳을 포지션으로 기준으로 잡고 가로사이즈와 가운데로 정렬한다. */
+.footer > div {position: relative; width: 1200px; margin: 0 auto;}
+/* 버튼영역이 오른쪽 상단에 배치되도록 한다. */
+.footer > div > a {position: absolute; right: 0; top: 0;}
+.footer > div > img {padding: 42px 0 26px;}
+.footer .nav li {position: relative; display: inline-block; padding: 0 15px;}
+.footer .nav li a {font-size: 13.5px; color: #333;}
+.footer .nav li:after {
+    content: "";
+    width: 1px; height: 14px;
+    position: absolute;
+    left: 0; top: 0;
+    background: #b2b2b2;
+}
+.footer .nav li:first-child:after {display: none;}
+.footer address {padding: 20px 0 38px; font-size: 13.5px; color: #666;}
+.footer address em {display: block; font-size: 12.5px; color: #999; padding: 25px 0 0;}
+.footer .sns_nav li {display: inline-block;}
+.footer .sns_nav li a {display: block; width: 35px; height: 35px; background: url(../images/ico_footer_sns.gif) no-repeat;
+overflow: hidden; color: transparent;}
+.footer .sns_nav li.ico1 a {background-position: 0 0;}
+.footer .sns_nav li.ico2 a {background-position: -43px 0;}
+.footer .sns_nav li.ico3 a {background-position: -86px 0;}
+.footer .sns_nav li.ico1 a:hover {background-position: 0 bottom;}
+.footer .sns_nav li.ico2 a:hover {background-position: -43px bottom;}
+.footer .sns_nav li.ico3 a:hover {background-position: -86px bottom;}
+
+/* 공통 서브 비주얼 영역 */
+.sub_visual {background: url(../images/common/bg_visual1.png) no-repeat center top; height: 340px; position: relative;}
+/* 가상의요소로 검은색의 배경을 만들어준다. */
+.sub_visual:after {
+    content: ''; 
+    display: block;
+    position: absolute; left: 0; bottom: 0;
+    width: 100%; height: 59px;
+    border-top: 1px solid #070f08;
+    background: rgba(0,0,0,0.3);
+}
+.sub_visual > div {position: relative; width: 1200px; height: 340px; margin: 0 auto;}
+.sub_visual > div > p {padding: 112px; text-align: center; color: #fff; font-size: 35px;}
+.sub_visual > div > p > span {display: block; font-size: 25px; padding-bottom: 20px; font-family: 'Orbitron', sans-serif;}
+.sub_visual > div > p em {position: relative; font-family: 'Orbitron', sans-serif;}
+/* ins태그는 시각적으로는 문자에 밑줄을 나타내고 강조를 나타낼때 사용한다. */
+.sub_visual > div > p ins {background: url(../images/common/ico_arrow.png) no-repeat center;
+width: 37px; height: 11px; display: inline-block; font-size: 0; color: transparent; vertical-align: middle;}
+
+/* .sub_visual:after 부분에 배경이 들어가서 z-index값이 올라갔기 때문에 포지션값을 지정하고 z-index값을 더 높여준다.  */
+.sub_visual > div .left {position: absolute; left: 0; bottom: 0; z-index: 2;}
+/* 수평으로 배치하기위해서 float로 a,ul,li에 적용한다. */
+.sub_visual > div .left > a {width: 60px; height: 60px; background: url(../images/common/ico_home.png) no-repeat center #dc300a; display: block; font-size: 0; color: transparent; float: left;}
+.sub_visual > div .left ul {float: left;}
+.sub_visual > div .left li {float: left;}
+.sub_visual > div .left li a {display: block; width: 171px; height: 60px; color: #fff; font-size: 14px;
+line-height: 60px; text-indent: 20px; border-right: 1px solid #0f1013;}
+.sub_visual > div .left li.ico1 a {background: url(../images/common/ico_bar.png) no-repeat 142px center;}
+.sub_visual > div .left li.ico2 a {background: url(../images/common/ico_arrow2.png) no-repeat 142px center;}
+
+/* .sub_visual:after 부분에 배경이 들어가서 z-index값이 올라갔기 때문에 포지션값을 지정하고 z-index값을 더 높여준다.  */
+.sub_visual > div .right {position: absolute; right: 0; bottom: 0; z-index: 2;}
+.sub_visual > div .right > ul {border-right: 1px solid #1d1c1d;}
+.sub_visual > div .right > ul > li {float: left;}
+.sub_visual > div .right > ul > li > a {display: block; width: 59px; height: 59px; border-left: 1px solid #1d1c1d; 
+color:transparent;}
+.sub_visual > div .right > ul > li.ico1 > a {background: url(../images/common/ico_fav.png) no-repeat center;}
+.sub_visual > div .right > ul > li.ico2 > a {background: url(../images/common/ico_share.png) no-repeat center;}
+.sub_visual > div .right > ul > li.ico3 > a {background: url(../images/common/ico_print.png) no-repeat center;}
+/* li에 마우스를 올리면 sns 공유하기가 나오도록 표시  */
+.sub_visual > div .right > ul > li.ico2:hover ul {display: block;}
+/* 평상시에는 안보이도록 표시 */
+.sub_visual > div .right li ul {display: none; position: absolute;}
+.sub_visual > div .right li ul li a {display: block; color: transparent; height: 50px; border-bottom: 1px solid #000;}
+/* 서브 메뉴 아이콘 배경이미지 */
+.sub_visual > div .right li ul a.ico2_1 {background: url(../images/common/ico_sns1.png) no-repeat center #4d4d4d;}
+.sub_visual > div .right li ul a.ico2_2 {background: url(../images/common/ico_sns2.png) no-repeat center #4d4d4d;}
+.sub_visual > div .right li ul a.ico2_3 {background: url(../images/common/ico_sns3.png) no-repeat center #4d4d4d;}
+
+.sub_visual > div .right li ul a.ico2_1:hover {background: url(../images/common/ico_sns1.png) no-repeat center #4b65b9;}
+.sub_visual > div .right li ul a.ico2_2:hover {background: url(../images/common/ico_sns2.png) no-repeat center #55acef;}
+.sub_visual > div .right li ul a.ico2_3:hover {background: url(../images/common/ico_sns3.png) no-repeat center #5fb314;}
+
+/* 공통 서브 컨테이너 */
+/* 가로사이즈를 지정하고 가운데정렬을 지정한다. */
+.container {width: 1200px; margin: 0 auto;}
+/* 수평으로 정렬하고 가로사이즈와 여백을 지정한다. */
+.container .snb {float: left; width: 230px; padding: 30px 29px 0 0;}
+.container .snb h2 {padding: 49px 0 0; height: 91px; background: #333f52; font-size: 21px; color: #fff; font-weight: normal; text-align: center;}
+.container .snb h2 span {display: block; font-size: 12px; color: #8f939b; padding: 13px 0 0;}
+/* 클릭범위를 넓혀주기위해 블록속성으로 바꾸고 높이값을 부여한다. */
+.container .snb li a {border-bottom: 1px solid #8f9c9b; display: block; height: 53px; line-height: 53px;
+text-indent: 25px; color: #303030; position: relative; font-weight: bold;}
+.container .snb li a:hover {color: #1354bb; text-indent: 61px;}
+/* 포지션 값을 이용해서 이미지가 배치되도록한다. */
+.container .snb li a:hover:after {
+    content: "";
+    display: block;
+    width: 45px; height: 54px;
+    background: url(../images/common/bg_snb.png) no-repeat center #1354bb;
+    position: absolute; left: 0; top: 0;
+}
+
+/* 실시간교통안내, 휴게소안내 */
+.cont_nav {padding-top: 50px;}
+.cont_nav li {float: left; width: 33.33%;}
+.cont_nav li a {display: block; font-size: 14px; padding: 17px 20px 18px 20px; border: 1px solid #e1e1e1;}
+.cont_nav li span {display: block; background: url(../images/common/bg_snb.png) no-repeat 230px center;}
+.cont_nav li a:hover {background: #1660d4; border-color: #1358c6; color: #fff; font-weight: bold;}
+.traffic_map img {border: 1px solid #a1a6b0;}
+
+/* 여행정보 */
+.travel_info{padding: 50px 0 90px;}
+.h4 {display: inline-block; font-size: 30px; color: #333; margin-right: 30px;}
+
+.travel_btn {display: inline-block; position: relative;}
+.travel_btn > a {display: inline-block; padding: 15px 20px; font-size: 16px; color: #909090; font-weight: bold;
+border: 1px solid #909090; border-radius: 30px;}
+.travel_btn .btn_over:hover {padding: 14px 19px; border: 2px solid #0e50b8; color: #0e50b8;}
+.travel_btn .btn:hover {padding: 14px 19px; border: 2px solid #0e50b8; color: #0e50b8;}
+
+.travel_wrap {padding: 50px 0;}
+.travel_wrap li {float: right;}
+.travel_wrap li a {display: block; color: #333; font-size: 14px; height: 55px; padding: 15px 20px 10px 10px;}
+.travel_wrap li:hover a {background: url(../images/sub/mtravel_arr.gif) no-repeat left top; color: #fff;}
+
+.travel_list_wrap {text-align: left;}
+.travel_list_wrap li {float: left; width: 260px; margin-bottom: 50px; margin-left: 50px;}
+.travel_list_wrap li:first-child {margin-left: 0;}
+.travel_list_wrap .travel_img { display: block; width: 100%; height: 175px;}
+.travel_list_wrap .txt_box {position: relative; display: block; padding: 25px 20px 55px 20px; border: 1px solid #d2d2d2;}
+.travel_list_wrap .txt_box strong {display: block; padding-bottom: 20px;}
+.travel_list_wrap .txt_box strong:hover {color: #169d4f;}
+.travel_list_wrap .txt_box span {display: block; font-size: 13px; color: #333; height: 60px; line-height: 20px;}
+.travel_list_wrap .btn_more {position: absolute; right: 0; bottom: 0; width: 40px; height: 40px; background: url(../images/sub/smain_more.png) no-repeat 50% 50% #169d4f ;}
+
+/* 참여마당, 알림마당 검색영역 & 개시글수 */
+.qna_search_wrap {margin-bottom: 20px;}
+.qna_search {float: right;}
+.qna_total {float: left; font-size: 16px; line-height: 40px;}
+.qna_total span {font-weight: bold;}
+
+/* 참여마당, 알림마당 공통표 */
+.qna_wrap {margin-top: 80px;}
+.qna_list_wrap {width: 100%; border-top: 2px solid #696c75;}
+.qna_list_table th {padding: 15px 0; font-size: 13px;  border: 1px solid #e6e6e6;}
+.qna_list_table td {border: 1px solid #ddd; padding: 15px 0; font-size: 13px;}
+.qna_list_table .num {text-align: center; width: 8%;}
+.qna_list_table .subject {width: auto; text-align: left; padding: 0 2%; font-size: 14px;}
+.qna_list_table .writer {width: 15%; text-align: center;}
+.qna_list_table .date {width: 14%; text-align: center;}
+.qna_list_table .count {width: 8%; text-align: center;}
+
+/* 참여마당 */
+.qna_list_table .qna {text-align: center;}
+.qna_list_table .qna_list {font-size: 12px; text-indent: 20px;}
+.qna_list_table .qna_list:hover a {text-decoration: underline;}
+.qna_list_table .btn {text-align: center;}
+
+/* 알림마당, 참여마당 버튼 */
+.button {text-align: center; padding-top: 40px;}
+.button span {display: inline-block; width: 30px; height: 25px; border: 1px solid #e2e2e2; line-height: 22px;
+text-align: center; cursor: pointer;}
+.button span a {font-size: 13px;}
+.button span:hover {background: #1660d4;}
+.button span:hover a {color: #fff;}
+
+
+/* 교통안전 */
+.bold {font-weight: bold; padding-bottom: 20px; font-size: 17px;}
+.safety {margin-bottom: 50px;}
+.safety .txt {font-size: 15px; width: 420px; line-height: 20px;}
+.safety_tit {font-size: 17px; color: #0e3c84; background: url(../images/sub/blt02.png) no-repeat left 35px; 
+padding: 30px 0 30px; text-indent: 20px;}
+.safety_tit_right {position: absolute; right: 20px; top: 66px; width: 400px;}
+
+.img_wrap {position: relative; width: 420px;}
+.img_wrap .tit {position: absolute; right: 0; bottom: 0; color: #fff; background-color: #2762be; padding: 12px 20px;}
+
+.safety_left {position: relative; height: 300px;}
+.safety_left .img_wrap {position: absolute; right: 0; top: 35px;}
+
+.safety_right {position: relative; height: 300px;}
+.safety_right .txt {position: absolute; right: 0; top: 150px;}
+.safety_right .img_wrap {position: absolute; left: 0; top: 100px;}
+
+/* CEO 인사말 */
+.contents {float: left; width: 880px; border-left: 1px solid #e0e0e0; padding: 65px 0 79px 60px;}
+.contents .h2 {font-size: 34px; color: #000;}
+.contents .h3 {background: url(../images/sub/bu_h3.gif) no-repeat 0 53px; font-size: 20px; color: #010101;
+text-indent: 32px; padding: 50px 0 31px;}
+.contents .greetings {padding: 76px 0 0; color: #5e5e5e; font-size: 15px; line-height: 24px;}
+.contents .greetings > img {padding: 0 0 42px;}
+.contents .greetings > p {text-align: right; padding: 43px 0 0;}
+
+/* 회사개요 */
+/* 위로 패딩을 줘서 아래에 글씨가 보이도록 여백을 만들어준다. */
+.info {background: url(../images/sub/bg_visual.jpg) no-repeat center top; margin: 74px 0 0;
+padding: 406px 0 0; font-size: 15px; color: #434343; line-height: 24px; letter-spacing: 1px;}
+
+/* 고속도로추진과정 */
+.step {border-top: 2px solid #d4d4d4; border-bottom: 1px solid #ddd;}
+.step li {position: relative; float: left; width: 20%; text-align: center; padding: 37px 0 29px; font-size: 14px; color: #3c3c3c; line-height: 22px;}
+/* 가상요소로 배경 화살표 이미지를 넣어주고 포지션으로 위치를 배치시킨다. 위로 파고들기위해서는 
+자신의 크기의 반만큼 빼기(-) 해줘서 위치시키고 배경을 하얀색으로 줘서 선이 짤려보이게 만들어준다.*/
+.step li:after{
+    content: '';
+    display: block;
+    background: url(../images/sub/bg_arrow.png) no-repeat center #fff;
+    width: 50px; height: 10px;
+    margin: 0 auto;
+    position: absolute;
+    left: -14px; top: -5px;
+}
+/* 첫번째 이미지는 지워준다. */
+.step li:first-child:after {display: none;}
+.step li strong {display: block; padding: 0 0 11px; font-size: 16px; color: #5b677a;}
+
+/* 고속도로 현황 */
+.highway_ing {padding-bottom: 22px; border-top: 1px solid #a1a6b0; border-bottom: 1px solid #ddd;}
+/* 첫번째 요소는 float를 해제 해서 가로로 꽉차게 나오게한다. */
+.highway_ing li:first-child {float: none; width: 100%; border-bottom: 1px solid #ddd; margin-bottom: 22px;
+text-align: center;}
+.highway_ing li:first-child:after {content: ""; display: block; clear: both;}
+/* li > div 충돌을 해제하기위해서 div 태그를 추가하고 패딩,높이,보더값을 초기화한다. */
+.highway_ing li:first-child div {position: relative; padding: 0 0 0 95px; height: auto; border: none;}
+.highway_ing li:first-child h4 {width: 95px; height: 75px; line-height: 75px; position: absolute; left: 0; top: 0;}
+.highway_ing li:first-child span {height: 75px; line-height: 75px; display: block; font-size: 18px;}
+.highway_ing li {float: left; width: 25%;}
+/* div 태그를 추가해서 감싸고 패딩으로 여백을 지정한다. 패딩을뺀 높이를 지정해서 왼쪽테두리가 높이만큼 나오게 한다. */
+.highway_ing li > div {padding: 10px 40px 0 30px; height: 80px; border-left: 1px solid #ddd; 
+color: #525a69; line-height: 100%;}
+.highway_ing li > div div {padding-top: 11px; font-size: 14px; letter-spacing: -1px;}
+.highway_ing li > div h4 {padding: 0 0 7px;}
+.highway_ing li:first-child + li > div {border-left: none;}
+.highway_ing li h4 {font-size: 15px; color: #000;}
+.highway_ing li > div span {font-size: 29px; font-weight: bold;}
+.highway_ing li em {padding: 0 0 0 7px; font-size: 15px;}
+
+/* 주요시설물 */
+table.type1 tr:first-child th,
+table.type1 tr:first-child td { border-top: 1px solid #a1a6b0;}
+table.type1 th,
+table.type1 td {border-bottom: 1px solid #ddd;}
+table.type1 th {font-size: 16px; color: #3b3a3a; text-align: left; font-weight: normal; padding: 28px 0 23px 44px;}
+table.type1 td {font-size: 14px; color: #565757; padding: 28px 0 23px;}

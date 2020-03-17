@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+/* 서브 페이지 공통요소 */
+.contents { width: 1180px; margin: 0 auto;}
+.h2 { position: relative; padding: 55px 0 53px; font-size: 36px; color:#222; line-height: 100%; text-align: center; font-weight: normal;}
+.h2:after { content: ""; position: absolute; left: 50%; bottom: 0; width: 50px; height: 1px; background: #aaa; transform: translateX(-50%);}
+.h2 + p { padding:46px 0 54px; font-size: 18px; color:#666; text-align: center; line-height: 30px;}
+.h3 { margin: 50px 0 20px; font-size:18px; color:#222; font-weight: normal;}
+.h3:before { content: ""; display: inline-block; margin: 0 8px 0 0; width: 4px; height: 4px; background: #00a5e1; vertical-align:5px;}
+.noti { font-size: 14px; color:#888; padding-bottom: 50px;}
+.noti:before { content: ""; display: inline-block; margin: 0 3px 0 0; width: 15px; height: 15px; background: url("../images/icon.png") no-repeat -336px -5px; vertical-align: -3px;}
+.visual img {width: 100%;}
+
+/* 체크박스 공통부분 */
+input.type1 { position: absolute; left: -4000%;}
+input.type1 + label { font-size: 14px; color:#222; line-height: 27px;}
+input.type1 + label:before { content: ""; display: inline-block; margin: 0 8px 0 0; width: 27px; height: 27px; background: url("../images/icon.png") no-repeat -97px -60px; vertical-align:-8px;}
+input.type1:checked + label:before { background-position:-129px -60px;}
+
+input.type2 { position: absolute; left: -4000%;}
+input.type2 + label { font-size: 14px; color:#222; line-height: 27px; padding-right: 35px; display: inline-block;}
+input.type2 + label:before { content: ""; display: inline-block; margin: 0 8px 0 0; width: 12px; height: 12px; background: url("../images/icon.png") no-repeat -49px -60px;}
+input.type2:checked + label:before { background-position:-66px -60px;}
+
+input[type="radio"] { position: absolute; left: -4000%;}
+input[type="radio"] + label { font-size: 14px; color:#222; line-height: 27px; padding-right: 35px;}
+input[type="radio"] + label:before { content: ""; display: inline-block; margin: 0 8px 0 0; width: 14px; height: 13px; background: url("../images/icon.png") no-repeat -2px -60px;}
+input[type="radio"]:checked + label:before { background-position:-20px -60px;}
+input[type=tel] {vertical-align: 1px;}
+
+
+/* 버튼 공통부분*/
+.btn_center { text-align: center;}
+label + .btn_center { padding: 65px 0 50px;}
+.btn_type1 { display: inline-block; width: 120px; height:45px; background: #042e6f; text-align: center; line-height: 45px; color:#fff; font-size: 13px; border: 1px solid #042e6f; box-sizing: border-box;}
+.btn_type2 { display: inline-block; width: 120px; height:45px; background: #fff; text-align: center; line-height: 45px; color:#042e6f; font-size: 13px; border: 1px solid #042e6f; box-sizing: border-box;}
+/* 가로사이즈가 자동적으로 늘어지게 때문에 min-width 사용 */
+.btn_type3 {display: inline-block; min-width: 102px; height: 38px; line-height: 38px; text-align: center; border: 2px solid #aaa;
+box-sizing: border-box; vertical-align: middle; padding: 0 10px;}
+
+/* 테이블 공통 부분 */
+table.type1 {border-top: 2px solid #042e6f; border-bottom: 1px solid #999; width: 100%;}
+table.type1 th,
+table.type1 td {border-top: 1px solid #ccc; border-left: 1px solid #ccc; height: 40px; font-size: 13px;}
+table.type1 th:first-child {border-left: none;}
+table.type1 tr:first-child th,
+table.type1 tr:first-child td {border-top: none;}
+table.type1 th {padding: 10px 10px 10px 45px; text-align: left; font-weight: normal; color: #222;}
+table.type1 th span {background: url(../images/icon.png) no-repeat -534px -5px; display: inline-block; width: 8px; height: 8px;
+overflow: hidden; color: transparent; vertical-align: 2px; margin: 0 6px 0 -14px;}
+table.type1 td {padding: 10px 55px; color: #777;}
+table.type1 .info:before {content: ""; background: url(../images/icon.png) no-repeat -336px -5px; width: 15px; height: 14px;
+display: inline-block; vertical-align: -2px; margin: 0 5px 0 13px;}
+table.type1 td > div {padding: 10px 0 0;}
+table.type1 td > div:first-child {padding: 0;}
+table.type1 td .btn_type3 {margin-left: 5px;}
+table.type1 td input {margin: 0 5px;}
+table.type1 td input:first-child {margin: 0;}
+
+table + .btn_center {padding: 50px 0 50px;;}
+
+/* 탭메뉴 */
+.bread_crumbs > div:after {content: ""; display: block; clear: both;}
+/* 메뉴 배경과 밑줄선을 지정한다. */
+.bread_crumbs > div {background: #042e6f;}
+/* 모든 자식들을 가로로 정렬시킨다. */
+.bread_crumbs > div > * { float: left;}
+/* color를 transparent 할경우 정렬이 안되기 때문에 폰트사이즈 0 으로 지정해야한다. */
+.bread_crumbs > div > a { display: block; width: 73px; height: 54px; text-align: center; line-height: 54px; font-size: 0;}
+/* 이미지 스프라이트 기법을 이용해서 해당하는 영역에 이미지만 보여줄려면 가상요소를 사용해야한다.
+포지션값을 이용해서 배경이미지의 높이를 맞춰준다.*/
+.bread_crumbs > div > a:before { content:""; display: inline-block; position: relative; top:10px; width: 22px; height: 22px; background: url(../images/btn/menu.png) no-repeat;}
+/* 마우스를 올리면 나오는 메뉴의 기준점으로 설정 */
+.bread_crumbs div > div {position: relative; border-left: 1px solid #dfdfdf;}
+.bread_crumbs div > div:hover ul { display: block;}
+.bread_crumbs div > div:last-child { border-right: 1px solid #dfdfdf;}
+.bread_crumbs div > div > a { display: block; width: 239px; height: 54px; font-size: 15px; color:#fff; text-indent: 30px; background: url(../images/bu_arrow2.png) no-repeat right 20px center; line-height: 54px;}
+/* 아래메뉴들을 감춰주고 포지션으로 지정하고 가로사이즈 패딩 배경색등을 지정한다. 뚝뚝 끊기는것을 해결하기위해서 z-index를 지정한다.*/
+.bread_crumbs ul { display: none; position: absolute; z-index: 10; left: -1px; width:241px; box-sizing: border-box; border:1px solid #dfdfdf; padding: 10px 0; background: #fff;}
+.bread_crumbs ul a { display: block; height:35px; text-indent: 26px; line-height: 35px;  font-size: 15px; color:#333; }
+.bread_crumbs ul a:hover { color:#042e9d}
+ 
+/* 회원가입 영역 */
+/* 플렉스를 이용해서 가로로 배치하고 여백과 사이즈등을 조정한다. */
+.step { display: flex; border-top: 1px solid #aaa; border-bottom: 1px solid #aaa;}
+/* 줄간격을 초기화 시켜주고 패딩으로 여백을 설정한다. */
+.step li { flex: 1; position: relative; padding: 22px 0; font-size: 11px; color:#a5a5a5; text-align: center; line-height: 100%;}
+/* 이미지 스프라이프 기법을 이용해서 화살표를 배치한다. */
+.step li:after { content: ""; position: absolute; right: 0; top: 50%; width: 12px; height: 19px; transform: translate(-50%, -50%); background: url("../images/icon.png") no-repeat -304px -58px;}
+/* 마지막 부분의 화살표는 없애준다. */
+.step li:last-child:after { display: none;}
+.step li div { padding: 8px 0 0; font-size: 18px; color:#a5a5a5;}
+.step li.on { color:#222;}
+.step li.on div { color:#00ade8;}
+/* 높이 값을 지정하고 가로사이즈는 지정하면 안된다 기본적으로 100% 적용하기 때문에 그대로 둔다. 배경색과 배경 이미지와 여백등을 지정한다. 배경색 밖에 부분은 마진을 이용해서 여백을 지정한다. */
+.join_box1 { margin: 50px 0 32px; padding: 40px 0 0; height: 402px; background:url("../images/bg_msgbox01.png") no-repeat, url("../images/bg_msgbox02.png") no-repeat right bottom; background-color: #e4e8f1; text-align: center; box-sizing: border-box;}
+.join_box1 h3 { position: relative; padding: 86px 0 37px; font-size: 24px; color:#222; background: url("../images/ico_member_join05.png") no-repeat center top; line-height: 100%;}
+.join_box1 h3:after { content: ""; position: absolute; left: 50%; bottom: 0; width: 50px; height: 2px; background: #222; transform: translateX(-50%);}
+.join_box1 p { padding: 37px 0 57px; font-size: 14px; color:#888;}
+
+/* 약관동의 영역 */
+/* 스크롤을 만들기 위해서 오버플로우 오토 높이값을 지정한다. */
+.agree_box { overflow: auto; margin: 0 0 28px; padding: 35px 30px; height: 152px; border-top: 2px solid #042e6f; border-bottom: 1px solid #999;}
+.agree_box h4 { padding: 0 0 12px; font-size: 17px; color:#222; line-height: 100%; font-weight: normal;}
+.agree_box h5 { padding: 15px 0 8px; font-size: 14px; color:#222; font-weight: normal; line-height: 100%;}
+.agree_box p { line-height: 26px; font-size: 14px; color:#777;}
+.agree_box p + h4,
+.agree_box ul + h4 { padding-top: 30px; }
+.agree_box ol + h4 { padding-top: 35px; }
+.agree_box li { font-size: 14px; color:#777; line-height: 26px;}
+.agree_box > ul > li:before { content: ""; display: inline-block; margin: 0 7px 0 0; width: 2px; height: 2px; background: #888; vertical-align:middle;}
+.agree_box > ul > li ul { padding: 0 0 0 9px;}
+.agree_box > ol > li ol { padding: 0 0 0 12px;}
+/* 마지막박스는 스크롤이 적용이안되도록 설정 */
+.agree_box.ovn { overflow: visible; height: auto;}
+
+
+/* 서브 메뉴 반응형 */
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+    .bread_crumbs > div {width: 100%;}
+    .bread_crumbs div > div {width: 25%;}
+    .bread_crumbs div > div > a {background: none; font-size: 14px;}
+    .bread_crumbs ul {width: 100%;}
+    .contents {width: 100%;}
+    .contents .type1 {width: 100%;}
+  
+
+    .h3 {margin-left: 10px;}
+    .h2 + p {padding: 30px 0 40px; font-size: 15px;}
+    .step {width: 100%;}
+    .step li {padding: 18px 0;}
+    .step li div {padding: 6px 0 0; font-size: 15px;}
+    .join_box1 {margin: 40px 0 25px; padding: 30px 0 0;}
+    .join_box1 h3 {font-size: 20px;}
+    .noti {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+    input.type1 + label {margin-left: 20px;}
+    
+    table.type1 colgroup {display: none;}
+    table.type1 th {padding-left: 20px;}
+    table.type1 td {padding-left: 20px;}
+    table.type1 .info {display: block; padding-top: 15px;}
+    table.type1 input.top {margin: 10px 0;}
+}
+
+@media screen and (max-width: 767px) {
+    .bread_crumbs > div {width: 100%;}
+    .bread_crumbs div > div {width: 25%;}
+    .bread_crumbs div > div > a {background: none; font-size: 11px;}
+    .bread_crumbs ul {width: 100%;}
+    .contents {width: 100%;}
+    
+    .h3 {margin-left: 10px;}
+    .h2 {font-size: 28px;}
+    .h2 + p {padding: 30px 0 40px; font-size: 13px;}
+    .step {width: 100%;}
+    .step li {padding: 15px 0;}
+    .step li div {padding: 6px 0 0; font-size: 11px;}
+    .join_box1 {margin: 30px 0 20px; padding: 20px 0 0;}
+    .join_box1 h3 {font-size: 16px;}
+    .noti {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+    input.type1 + label {margin-left: 20px;}
+    
+    table.type1 colgroup {display: none;}
+    table.type1 tr {width: 100%;}
+    table.type1 th {padding-left: 5px; font-size: 12px;}
+    table.type1 th span {margin-left: 5px;}
+    table.type1 td {padding: 10px 10px;}
+    table.type1 span {font-size: 10px;}
+    table.type1 .info {display: block; padding-top: 15px; text-indent: -10px;}
+    table.type1 .info:before {margin: 0; background: none;}
+    table.type1 input.top {margin: 10px 0;}
+    table.type1 td .btn_type3 {font-size: 11px;}
+    .ova {width: 100%; overflow: auto;}
+    .ova table {width: 800px;}
+}

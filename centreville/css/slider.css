@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* 배너 슬라이더 */
+.slider {text-align: center;}
+.bx-wrapper {position: relative;}
+
+.bx-controls-direction {font-size: 100px;}
+.bx-controls-direction a {display: block; width: 100px; height: 110px; overflow: hidden; color: #3c9ce7;
+position: absolute; top: 50%; transform: translateY(-50%);}
+.bx-controls-direction .bx-prev {left: 0;}
+.bx-controls-direction .bx-next {right: 0;}
+.bx-controls-direction .bx-prev:before {content: "\e93d"; font-family: 'xeicon';}
+.bx-controls-direction .bx-next:before {content: "\e940"; font-family: 'xeicon';}
+
+.bx-pager {position: absolute; left: 0; bottom: 20px; width: 100%; text-align: center;}
+/* 가운데 정렬일때는 반드시 양쪽으로 정렬을 주어야한다. */
+.bx-pager div {display: inline-block; padding: 0 5px;}
+.bx-pager div a {display: block; font-size: 0; color: transparent; width: 24px; height: 3px; background: #fff;}
+.bx-pager div a.active {background: #3c9ce7;}
+
+
+
+
+
+
+
+
+
+
+
+

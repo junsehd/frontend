@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* 푸터영역 메인 & 반응형 */
+#footer {margin: 0 auto; background: #272f3c;}
+.footer_infor {
+    width: 550px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer_infor > li {color: #fff;}
+.address > ul > li {
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    line-height: 32px;
+}
+.address > ul > li > span:nth-of-type(3)::after {top: 40px;}
+.address > ul > li > span:nth-of-type(2)::after,
+.address > ul > li > span:nth-of-type(4)::after {display: none;}
+.policy > a {color: #fff; font-size: 13px; text-align: center; line-height: 32px;}
+.copyright {line-height: 32px; text-align: center;}
+
+/* 푸터영역 소셜 영역*/
+.footer_site {margin: 30px 0 0 220px;}
+.footer_site > li {display: inline-block; margin-right: 10px;}
+.footer_site > li > a {width: 34px; height: 34px; text-indent: -6000px; overflow: hidden;}
+.footer_site > li > .library {background: url(../images/icon/library1.png) no-repeat;}
+.footer_site > li > .blog {background: url(../images/icon/blog1.png) no-repeat;}
+.footer_site > li > .facebook {background: url(../images/icon/facebook1.png) no-repeat;}
+
+/* 푸터 영역 반응형 */
+@media screen and (max-width: 1366px) {
+    #footer {width: 100%;}
+    #footer > .footer_wrap { width: 100%;}
+}
+
+@media screen and (max-width: 767px) {
+    .footer_infor { width: 100%; position: relative; padding: 50px 0;}
+    .address {margin-bottom: 70px;}
+    .address > ul > li { letter-spacing: -1px; line-height: 21px;}
+    .policy { width: 97px; position: absolute; right: 50%; bottom: 84px; margin-right: -48.5px;}
+    .policy > a { font-size: 13px; letter-spacing: -2px;}
+    .copyright {position: absolute; right: 50%; bottom: 20px; width: 210px; margin-right: -110px;}
+}

@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+/* 배너 영역 */
+.banner {height: 160px; background: #0e3c84; }
+.banner > div {position: relative; width: 1200px; margin: 0 auto; text-align: center;}
+.banner .prev,
+.banner .next,
+.banner .control,
+.banner .close {position: absolute;}
+/* 각각 포지션 값을 이용해서 배치시켜 준다. */
+.banner .prev {left: 0; top: 42px;}
+.banner .next {right: 0; top: 42px;}
+.banner .control {left: 0; bottom: 11px; font-size: 0;}
+.banner .control a {margin-right: 15px;}
+.banner .close {right: 0; bottom: 4px;}
+.banner .close label {font-size: 11px; color: #fff; padding-right: 22px;}
+
+/* 헤더 영역 */
+.header {height: 99px; border-bottom: 1px solid #c5c5c5; }
+.header > div {width: 1200px; margin: 0 auto; }
+/* 하위 요소들을 가로로 배치되게 정렬해준다. */
+.header > div > * {float: left;}
+.header h1 {padding: 0 20px 0 0;}
+/* li요소는 정렬이 안되었기 때문에 따로 다시 정렬을 해준다. */
+.header #lnb li {float: left; padding: 0 16px;}
+/* 클릭영역을 넓히기 위해서 높이값을 지정 */
+.header #lnb li a {display: block; height: 99px; line-height: 99px; font-size: 16px; font-weight: bold; 
+color: #333; }
+/* 메뉴영역에 마우스를올리면 배경이미지가 나오게 표시 */
+.header #lnb li a:hover {
+    border-bottom: 4px solid #1764dc;
+    height: 95px;
+    color: #3c91f3;
+    background: url(../images/bg_lnb.gif) no-repeat center 87px; 
+}
+
+.header p {float: left; height: 99px; line-height: 99px; font-size: 22px; font-weight: bold; color: #0e3c84;}
+.header p span { color: #1764dc; }
+.header > div > div {float: right;}
+.header > div > div > div {float: left; padding: 30px 0 0 11px; font-size: 0;}
+.header .btn_pop {   
+display: inline-block; width: 75px; height: 40px; color: #fff; 
+background: url(../images/bu_arrow_down.gif) no-repeat 55px center; 
+background-color: #2cc06b; font-size: 13px; line-height: 40px; text-indent: 9px;}
+
+
+/* 비주얼 영역 */
+.visual {background: url("../images/bg_visual.jpg") no-repeat center top;}
+.visual > div {width: 1200px; margin: 0 auto;}
+
+/* 문자들을 배치시키기 위해서 각각 클래스를 지정하고 float를 이용해서 수평으로 정렬한다. */
+.visual .copy {padding: 60px 0 0;}
+.visual .copy > div {float: left; width: 33.33%;}
+.visual .copy .txt1 {padding-top: 127px; font-size: 50px; font-weight: bold; color: #fff; letter-spacing: 12px;}
+.visual .copy .txt1 div {font-size: 33px; color: #fff; font-weight: bold; letter-spacing: 0;}
+.visual .copy .txt1 img {margin: 0 22px 0 8px;}
+.visual .copy .txt2 {padding: 80px 0 0 0; width: 399px; height: 264px; background: url(../images/bg_circle.png) no-repeat center; font-family: 'Orbitron', sans-serif; font-size: 20px; color: #fff; text-align: center;}
+.visual .copy .txt2 div {font-size: 130px; color: #fff; font-family: 'Orbitron', sans-serif;}
+/* 따로 오른쪽으로 배치를시켜서 화면을 전체적으로 맞춰준다. */
+.visual .copy .txt3 {float: right; padding: 109px 37px 0 0; color: #fff; font-family: 'Orbitron', sans-serif; text-align: center; font-size: 40px; letter-spacing: 15px; width: 322px;}
+.visual .copy .txt3 div {font-size: 20px; color: #fff; text-align: center; letter-spacing: 7px; line-height: 45px;}
+
+/* 버튼부분을 수평으로 배치하고 위치를 지정한다. */
+.visual .paging {text-align: center; font-size: 0; padding: 27px 0 16px;}
+.visual .paging div {padding: 17px 0 0 0;}
+.visual .paging ul {display: inline-block; font-size: 0;}
+.visual .paging li {display: inline-block; margin: 0 7px;}
+.visual .paging p {display: inline-block; margin: 0 7px; font-size: 0;}
+
+/* 아래쪽 부분에 float으로 왼쪽 행사부분과 오른쪽 날씨부분을 배치시키고 가운데영역에 검은색 배경에 축제정보가 나오게한다. */
+.visual .bottom h2 {float: left; padding: 33px 0 0 0; width: 100px; height: 67px; background: #f13009;
+color: #fff; text-align: center; font-size: 18px;}
+
+/* 검은색 배경안에 좌우로 여백을 지정하고 포지션값을 지정해서 배경이미지들을 삽입한다. */
+.visual .bottom .event {position: relative; float: left; padding: 0 80px; width: 730px; height: 100px;
+background: rgba(0,0,0,0.3);}
+.visual .bottom .event div {position: absolute; left: 38px; top: 12px;
+background: url(../images/bg_line.gif) no-repeat center 35px;}
+.visual .bottom .event div a {display: block; margin: 0 0 32px;}
+.visual .bottom .event ul {padding: 26px 0 0;}
+.visual .bottom .event li {float: left; width: 50%;}
+.visual .bottom .event li a {display: block; font-size: 14px; color: #fff; padding: 0 0 0 18px; 
+background: url(../images/bu_circle.png) no-repeat left; line-height: 22px;}
+
+.visual .bottom .weather {float: right; position: relative; padding: 0 43px; width: 124px; height: 100px;
+background: #23b963;}
+.visual .bottom .weather h3 {padding: 17px 0 9px; text-align: center; font-size: 15px; color: #fff;}
+.visual .bottom .weather > a {position: absolute; top: 50%; margin-top: -6.5px;}
+.visual .bottom .weather > a.left {left: 19px;}
+.visual .bottom .weather > a.right {right: 19px;}
+.visual .bottom .weather > div {position: relative; padding: 0 0 0 65px; font-size: 12px; color: #fff;}
+.visual .bottom .weather > div img {position: absolute; left: 9px; top: 0;}
+.visual .bottom .weather > div div {font-size: 30px; color: #fff; font-weight: bold;}
+
+/* 실시간 교통상황 영역 */
+.traffic_box {background: url(../images/bg_traffic.jpg) no-repeat center top;}
+.traffic_box > div {position: relative; width: 1200px; margin: 0 auto;}
+.traffic_box h2 {padding: 70px 0 0 0; font-size: 38px; color: #fefefe; text-align: center;}
+
+/* 평균 속도 구간을 가운데로 정렬시키고 그안에 문자들에 클래스를 지정하고 값을 지정한다. */
+.traffic_box .speed {width: 250px; height: 230px; margin: 35px auto 145px; 
+background: url(../images/bg_circle2.png) no-repeat center top; text-align: center;}
+.traffic_box .speed div {color: #fff;}
+.traffic_box .speed div.t1 {padding: 72px 0 20px; font-size: 14px; font-weight: bold;
+letter-spacing: 10px; text-indent: 6px; }
+.traffic_box .speed div.t2 {font-size: 60px; line-height: 73%; font-family: 'Orbitron', sans-serif;}
+.traffic_box .speed div.t3 {font-size: 11px; padding: 17px 0 0;}
+
+/* 왼쪽영역과 오른쪽영역으로 나누기위해 클래스를 추가하고 포지션값으로 위치를 지정한다. */
+.traffic_box > div .right {position: absolute; right: 50px; top: 250px;} 
+.traffic_box > div .left {position: absolute; left: 50px; top: 250px;} 
+.traffic_box > div .left li {display: inline-block; padding-right: 5px;}
+.traffic_box > div .left a {display: block; width: 105px; height: 47px; line-height: 47px; 
+text-align: center; color: #fff; background: url(../images/bg_btn_tab.png) no-repeat left top;}
+.traffic_box > div .left a:hover,
+.traffic_box > div .left li.on a {background-position: right top;}
+
+/* 그래프의 사각형이 가운데로 위치시키위해서 지정한다. */
+.traffic_box > div .graph {width: 1052px; margin: 0 auto;}
+.traffic_box > div .graph ul {padding: 98px 0 0;}
+.traffic_box > div .graph li {float: left; position: relative; padding: 0 0 0 80px; width: 45px; background: url(../images/bg_arrow.png) no-repeat 23px center; color: #fff; font-size: 15px; font-weight: bold; text-align: center;}
+/* 그래픽의 배경의 첫번째 자식은 보여지지 않게 지정하고 위치값을 오른쪽으로 지정한다.  */
+.traffic_box > div .graph li:first-child {background: none; padding-left: 0;}
+.traffic_box > div .graph li:first-child div {right: -33px;}
+.traffic_box > div .graph li:last-child div {left: 83px;}
+/* 속도부분과 km/h 부분을 포지션 탑값을 이용해서 위로 배치시켜준다. */
+.traffic_box > div .graph li > div {position: absolute; right: -40px; top: -197px; color: #fff; font-size: 12px; text-align: center;}
+.traffic_box > div .graph li > div strong {display: block; position: relative; font-size: 25px; font-family: 'Orbitron', sans-serif;}
+/* 공사중 이미지를 블록성질로 만들고 가운데로 배치한다. 각각 속도의 위치는 html코드에서 인라인스타일로 지정한다. */
+.traffic_box > div .graph li > div strong img {display: block; margin: 0 auto;}
+/* 공사중 이미지에 마우스를 올리면 정보가 보이도록 지정한다. 인접형제 선택자를 이용해서 인접해있는 다음요소 형제요소 하나만 선택한다. */
+.traffic_box > div .graph li > div strong img + span {display: none; position: absolute; font-size: 11px; color: #fff; background: #0e3c84; width: 215px; padding: 8px; left: 29px; top: -22px;}
+.traffic_box > div .graph li > div strong img:hover + span {display: block;}
+.traffic_box > div .next {text-align: center; padding: 37px 0 28px;}
+
+/* 교통안전가이드 */
+.safe {background: url(../images/bg_visual2.gif) no-repeat center top;}
+.safe > div {position: relative; width: 1120px; margin: 0 auto;}
+.safe > div h2 {font-size: 38px; color: #123977; text-align: center; padding: 72px 0 36px;}
+/* 전체 테두리선을 지정하고 li요소에는 왼쪽으로만 선을 지정하고 왼쪽선을 마진으로 -1px 해서 한줄로 보이게 해준다. */
+.safe .list {border: 1px solid #ddd;}
+.safe .list li {float: left; position: relative; width: 25%; border-left: 1px solid #ddd; 
+margin-left: -1px; text-align: center; background-position: center 50px; background-repeat: no-repeat;}
+/* 배경으로 파란색 라인을 추가하고 위치를 지정한다. */
+.safe .list li h3 {padding: 140px 0 16px; background: url(../images/bg_line2.gif) no-repeat center bottom;
+font-size: 19px; color: #333;}
+.safe .list li div {padding: 19px 0 0; height: 85px; font-size: 13px; color: #777; line-height: 18px;}
+/* 배경이미지가 따로 들어가도록 클래스를 지정하고 각각 이미지를 부여한다. 위치와 반복은 동일하기 때문에 공통요소는 li태그에 지정한다. */
+.safe .list li.bg1 {background-image: url(../images/bg_ico_off1.png);}
+.safe .list li.bg2 {background-image: url(../images/bg_ico_off2.png);}
+.safe .list li.bg3 {background-image: url(../images/bg_ico_off3.png);}
+.safe .list li.bg4 {background-image: url(../images/bg_ico_off4.png);}
+/* a링크 글씨를 숨겨주고 영역을 키워주기위해서 포지션 값을 지정하고 가로와 세로를 꽉차게 지정한다. */
+.safe .list li a {position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 2; color: transparent;}
+.safe .list li:hover {background-color: #1660d4;}
+.safe .list li:hover h3,
+.safe .list li:hover div {color: #fff;}
+.safe .list li.bg1:hover {background-image: url(../images/bg_ico_on1.png);}
+.safe .list li.bg2:hover {background-image: url(../images/bg_ico_on2.png);}
+.safe .list li.bg3:hover {background-image: url(../images/bg_ico_on3.png);}
+.safe .list li.bg4:hover {background-image: url(../images/bg_ico_on4.png);}
+
+.safe .news {padding: 40px 0 0;}
+.safe .news > div {float: right; width: 530px; position: relative;}
+.safe .news > div:first-child {float: left;}
+.safe .news h3 {font-size: 22px; color: #333; padding-bottom: 21px;}
+/* 높이값을 지정하고 좌측으로 공간을 만들기위해 패딩을 지정한다. */
+.safe .news li {position: relative; height: 74px; padding-left: 100px;}
+.safe .news li a {display: block; height: 74px; line-height: 74px; border-bottom: 1px solid #ececec;}
+.safe .news li a img {position: relative; top: -2px;}
+/* 포지션 값을 이용해서 배치시키고 블록성질로 변환후 가로와 세로값 그리고 아래로 테두리 선을 부여한다. */
+.safe .news li span {display: block; position: absolute; left: 0; top: 0; width: 70px; height: 74px; 
+border-bottom: 1px solid #ececec; text-align: center; font-size: 13px; color: #888;}
+/* 패딩을줘서 위로 거리를 두고 블록성질로 변경하고 색깔을 변경한다. */
+.safe .news li span strong {display: block; padding: 20px 0 0; font-size: 21px; color: #1e62cc;}
+/* 포지션값으로 이미지를 배치시킨다. */
+.safe .news > div p {position: absolute; right: 0; top: 5px;}
+.safe .next {text-align: center; padding: 35px 0 20px;}
+
+/* 여행지 영역 */
+.trip {background: url(../images/bg_visual2.jpg) no-repeat center top;}
+.trip > div {position: relative; width: 1200px; margin: 0 auto;}
+.trip > div h2 {font-size: 38px; color: #ab2246; text-align: center; padding: 72px 0 37px;}
+.trip > div > a {position: absolute; right: 0; top: 50px; }
+.trip .white_box {background: rgba(255,255,255,0.9); padding: 5px 60px 30px;}
+.trip .white_box > div {float: left;}
+.trip .white_box > div h3 {font-size: 20px; color: #333; padding: 25px 0 15px;}
+.trip .white_box > div > a {position: relative; display: block;}
+.trip .white_box > div > a em,
+.trip .white_box > div > a span {position: absolute;}
+/* 파란배경에 글자를 가운데로 위치시키기 위해서 포지션값을 이용해서 왼쪽,위로 50% 배치하고
+가로사이즈와 세로사이즈의 반 만큼 마진값을 줘서 가운데로 배치시킨다.  */
+.trip .white_box > div > a span {display: none; left: 50%; top: 50%; margin:-39px 0 0 -85px; width: 170px; height: 57px; background: url(../images/bg_over.png) no-repeat; font-size: 14px; color: #fff; padding: 21px 0 0 0; text-align: center; line-height: 20px;}
+.trip .white_box > div > a:hover span {display: block;}
+.trip .white_box > div > a em {left: 20px; bottom: 18px; font-size: 14px; color: #fff;}
+.trip .white_box > div > a:hover em {display: none;}
+
+.trip .white_box > div.mid {padding: 0 60px;}
+/* 자세히 보기 버튼배경을 넣어주고 가로와 세로 값을 넣어준다. 마진과 패딩을 초기화시켜주고 왼쪽 위로 버튼위치를 지정한다. */
+.trip .white_box > div.mid a span {left: 249px; top: 289px; margin: 0; padding: 0; width: 91px; height: 31px;
+line-height: 31px; background: url(../images/btn_more2.png); text-align: left; text-indent: 17px;}
+.trip .white_box > div.mid p {padding: 20px 0 13px; font-size: 17px; color: #333; font-weight: bold;}
+.trip .white_box > div.mid div {font-size: 13px; color: #333;}
+.trip > div > p {padding: 25px 0 24px; text-align: center;}
+
+/* SNS 영역 */
+.sns {background: url(../images/bg_visual3.jpg) no-repeat center top;}
+.sns > div {width: 1200px; margin: 0 auto;}
+.sns > div > h2 {padding: 74px 0 20px; text-align: center; color: #fff; font-size: 58px; letter-spacing: 20px;
+font-weight: normal;}
+.sns > div > p {font-size: 18px; color: #fff; text-align: center;}
+.sns .sns_box {padding: 47px 0 30px;}
+/* 수평으로 배치하고 배경과 각각의 가로와 세로사이즈를 부여하고 여백을 지정한다. */
+.sns .sns_box > div {float: left; background: #fff; width: 270px; height: 460px;  margin-left: 45px; padding: 40px 50px 0;}
+/* 첫번째 박스의 마진은 초기화 시켜서 수평으로 배치시킨다. */
+.sns .sns_box > div:first-child {margin: 0;}
+.sns .sns_box > div > h3 {font-size: 21px; padding: 0 0 20px; text-align: center;}
+.sns .sns_box > div.sns1 h3 {color: #3658a5;}
+.sns .sns_box > div.sns2 h3 {padding: 0; color: #32900b;}
+.sns .sns_box > div.sns2 p {font-size: 14px; color: #828281; text-align: center; padding: 9px 0 19px;}
+.sns .sns_box > div.sns2 img {border-bottom: 1px solid #aaa;}
+.sns .sns_box > div.sns3 h3 {color: #3b9dea;}
+.sns .sns_box > div.sns2 h4 img {border: none; padding-bottom: 15px;}
+.sns .sns_box > div a {display: block; text-align: center; color: #fff; font-size: 13px; height: 43px;
+line-height: 43px; margin: 10px 0 0; background: url(../images/bg_arrow2.png) no-repeat 236px center;}
+.sns .sns_box > div.sns1 a {background-color: #3b56ad;}
+.sns .sns_box > div.sns2 a {background-color: #35b22c;}
+
+/* 푸터 영역 */
+.footer {position: relative; width: 1200px; margin: 0 auto; text-align: center;}
+.footer > a {position: absolute; right: 0; top: 0;}
+.footer > img {padding: 42px 0 26px;}
+.footer .nav li {position: relative; display: inline-block; padding: 0 15px;}
+.footer .nav li a {font-size: 13.5px; color: #333;}
+.footer .nav li:after {
+    content: "";
+    width: 1px; height: 14px;
+    position: absolute;
+    left: 0; top: 0;
+    background: #b2b2b2;
+}
+.footer .nav li:first-child:after {display: none;}
+.footer address {padding: 20px 0 38px; font-size: 13.5px; color: #666;}
+.footer address em {display: block; font-size: 12.5px; color: #999; padding: 25px 0 0;}
+.footer .sns_nav li {display: inline-block;}
+.footer .sns_nav li a {display: block; width: 35px; height: 35px; background: url(../images/ico_footer_sns.gif) no-repeat; overflow: hidden; color: transparent;}
+.footer .sns_nav li.ico1 a {background-position: 0 0;}
+.footer .sns_nav li.ico2 a {background-position: -43px 0;}
+.footer .sns_nav li.ico3 a {background-position: -86px 0;}
+.footer .sns_nav li.ico1 a:hover {background-position: 0 bottom;}
+.footer .sns_nav li.ico2 a:hover {background-position: -43px bottom;}
+.footer .sns_nav li.ico3 a:hover {background-position: -86px bottom;}

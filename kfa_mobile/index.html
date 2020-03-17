@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>KFA STORE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="KFA STORE">
+    <!-- CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    
+    <!-- JS -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/retina.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <aside class="menu">
+        <header>
+            <h1 class="logo">로고 이미지</h1>
+            <h2>KFA STORE</h2>
+        </header>
+        <section class="content">
+            <h2 class="hide">메뉴</h2>
+            <ul>
+                <li>
+                    <h3><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i> 홈 화면</a></h3>
+                </li>
+                <li>
+                    <h3><a href="./list.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i> 악세사리</a></h3>
+                </li>
+                <li>
+                    <h3><a href="./list.html"><i class="fa fa-futbol-o" aria-hidden="true"></i> 라이프스타일</a></h3>
+                </li>
+                <li>
+                    <h3><a href="./notice.html"><i class="fa fa-comments" aria-hidden="true"></i> 게시판</a></h3>
+                </li>
+            </ul>
+            <a href="#" class="setting"><i class="fa fa-cog" aria-hidden="true"></i></a>
+            <a href="./basket.html" class="mypage" data-cart="5"><i class="fa fa-archive" aria-hidden="true"></i></a>
+        </section>
+    </aside>
+    <header class="main_header">
+        <div class="inner">
+            <i class="fa fa-bars toggle" aria-hidden="true"></i>
+            <i class="fa fa-times close" aria-hidden="true"></i>
+            <h1><a href="./index.html"><img src="images/logo.jpg" data-rjs="2" alt="로고이미지"></a></h1>
+            <i class="fa fa-search search" aria-hidden="true"></i>
+        </div>
+        <form action="#a" method="get">
+            <label for="search">검색</label>
+            <input type="text" id="search" placeholder="내용을 입력하세요">
+            <button type="submit">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+        </form>
+    </header>
+    <main>
+        <ul class="products sub_products">
+            <li id="pid_0001">
+                <header class="products_head">
+                    <img src="images/kfa_small.png" data-rjs="2" alt="로고이미지">
+                    <div class="titles">
+                        <h2>KFA 선수쿠션</h2>
+                        <h3>KFA PLAYER CUSHION</h3>
+                    </div>
+                </header>
+                <div class="products_con">
+                    <p>대한민국 남자 축구 국가대표 손흥민 선수의 이니셜과 등번호가 있는 귀여운 유니폼 선수쿠션을 판매합니다.</p>
+                    <div class="products_img">
+                        <img src="images/item_small_01.png" data-rjs="2" alt="상품이미지">
+                    </div>
+                </div>
+                <footer class="products_fot">
+                    <div class="categories">
+                        <a href="./list_more.html">구매하기</a>
+                        <a href="./basket.html">장바구니</a>
+                    </div>
+                    <form action="#">
+                        <input type="checkbox" id="wishlist-pid-0001">
+                        <label for="wishlist-pid-0001">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </label>
+                        <!-- 전송버튼 생략 -->
+                    </form>
+                </footer>
+            </li>
+            <li id="pid_0002">
+                <header class="products_head">
+                    <img src="images/kfa_small.png" data-rjs="2" alt="로고이미지">
+                    <div class="titles">
+                        <h2>KFA 폰케이스</h2>
+                        <h3>KFA OFFICIAL SMARTPHONE CASE (HOME)</h3>
+                    </div>
+                </header>
+                <div class="products_con">
+                    <p>KFA 스마트폰 케이스(필드 홈) 입니다.응원하는 선수의 백넘버(2019 아시안컵 배번 기준)로 커스터마이징이 가능합니다.</p>
+                    <div class="products_img">
+                        <img src="images/item_small_02.png" data-rjs="2" alt="상품이미지">
+                    </div>
+                </div>
+                <footer class="products_fot">
+                    <div class="categories">
+                        <a href="./list_more.html">구매하기</a>
+                        <a href="./basket.html">장바구니</a>
+                    </div>
+                    <form action="#">
+                        <input type="checkbox" id="wishlist-pid-0002">
+                        <label for="wishlist-pid-0002">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </label>
+                        <!-- 전송버튼 생략 -->
+                    </form>
+                </footer>
+            </li>
+            <li id="pid_0003">
+                <header class="products_head">
+                    <img src="images/kfa_small.png" data-rjs="2" alt="로고이미지">
+                    <div class="titles">
+                        <h2>KFA 미니 머플러</h2>
+                        <h3>KFA MINI SCARF</h3>
+                    </div>
+                </header>
+                <div class="products_con">
+                    <p> KFA 미니 머플러 (KFA MINI SCARF) 제품은 니트재질로 제작된 제품입니다.</p>
+                    <div class="products_img">
+                        <img src="images/item_small_03.png" data-rjs="2" alt="상품이미지">
+                    </div>
+                </div>
+                <footer class="products_fot">
+                    <div class="categories">
+                        <a href="./list_more.html">구매하기</a>
+                        <a href="./basket.html">장바구니</a>
+                    </div>
+                    <form action="#">
+                        <input type="checkbox" id="wishlist-pid-0003">
+                        <label for="wishlist-pid-0003">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </label>
+                        <!-- 전송버튼 생략 -->
+                    </form>
+                </footer>
+            </li>
+            <li id="pid_0004">
+                <header class="products_head">
+                    <img src="images/kfa_small.png" data-rjs="2" alt="로고이미지">
+                    <div class="titles">
+                        <h2>KFA 핸디선풍기</h2>
+                        <h3>KFA HANDY FAN</h3>
+                    </div>
+                </header>
+                <div class="products_con">
+                    <p>KFA 핸디 선풍기를 판매합니다. 작고 가벼워서 휴대가 편리하고 저렴한 가격에 판매중입니다.</p>
+                    <div class="products_img">
+                        <img src="images/item_small_04.png" data-rjs="2" alt="상품이미지">
+                    </div>
+                </div>
+                <footer class="products_fot">
+                    <div class="categories">
+                        <a href="./list_more.html">구매하기</a>
+                        <a href="./basket.html">장바구니</a>
+                    </div>
+                    <form action="#">
+                        <input type="checkbox" id="wishlist-pid-0004">
+                        <label for="wishlist-pid-0004">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </label>
+                        <!-- 전송버튼 생략 -->
+                    </form>
+                </footer>
+            </li>
+            <li id="pid_0005">
+                <header class="products_head">
+                    <img src="images/kfa_small.png" data-rjs="2" alt="로고이미지">
+                    <div class="titles">
+                        <h2>KFA 백호 미니인형</h2>
+                        <h3>KFA ‘BAEK-HO’ CHARACTER MINI DOLL</h3>
+                    </div>
+                </header>
+                <div class="products_con">
+                    <p>귀여운 KFA 백호 미니 인형을 판매합니다.</p>
+                    <div class="products_img ">
+                        <img src="images/item_small_05.png" data-rjs="2" alt="상품이미지">
+                    </div>
+                </div>
+                <footer class="products_fot">
+                    <div class="categories">
+                        <a href="./list_more.html">구매하기</a>
+                        <a href="./basket.html">장바구니</a>
+                    </div>
+                    <form action="#">
+                        <input type="checkbox" id="wishlist-pid-0005">
+                        <label for="wishlist-pid-0005">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </label>
+                        <!-- 전송버튼 생략 -->
+                    </form>
+                </footer>
+            </li>
+            <li id="pid_0006">
+                <header class="products_head">
+                    <img src="images/kfa_small.png" data-rjs="2" alt="로고이미지">
+                    <div class="titles">
+                        <h2>No-Data</h2>
+                        <h3>No-Data</h3>
+                    </div>
+                </header>
+                <div class="products_con">
+                    <p>등록된 상품의 이미지가 없습니다.</p>
+                    <div class="products_img noimage">
+                        <img src="images/no-pic.png" data-rjs="2" alt="상품이미지">
+                    </div>
+                </div>
+                <footer class="products_fot">
+                    <div class="categories">
+                        <a href="#a">구매하기</a>
+                        <a href="#a">장바구니</a>
+                    </div>
+                    <form action="#">
+                        <input type="checkbox" id="wishlist-pid-0006">
+                        <label for="wishlist-pid-0006">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </label>
+                        <!-- 전송버튼 생략 -->
+                    </form>
+                </footer>
+            </li>
+        </ul>
+    </main>
+    <footer class="list_more_fot">
+        <div class="footer_top clearfix">
+            <div class="call">
+                <h2>고객 서비스</h2>
+                <span>전화번호 : 02-322-6167</span>
+            </div>
+            <div class="work">
+                <h2>근무시간</h2>
+                <span>근무시간: 10-19 점심시간: 12-13:30</span>
+            </div>
+        </div>
+        <div class="footer_center clearfix">
+            <div class="sns">
+                <h2>팔로워</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/thekfa/">인스타그램</a></li>
+                    <li><a href="https://www.facebook.com/KoreaFootballTeam/">페이스북</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <h2>정보</h2>
+                <ul>
+                    <li><a href="#a">홈</a></li>
+                    <li><a href="#a">이용안내</a></li>
+                    <li><a href="#a">이용약관</a></li>
+                    <li><a href="#a">약관동의</a></li>
+                </ul>
+            </div>
+        </div>
+        <address>
+            <h2>회사정보</h2>
+            <p>대표자:최호근</p>
+            <p>홍동호의 포트폴리오 연습용 사이트</p>
+            <div class="copyright">
+                Copyright 2019 . All RIGHTS RESERVED.
+            </div>
+        </address>
+    </footer>
+</body></html>

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>상품정보</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="KFA STORE">
+    <!-- CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- JS -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <aside class="menu">
+        <header>
+            <h1 class="logo">로고 이미지</h1>
+            <h2>KFA STORE</h2>
+        </header>
+        <section class="content">
+            <h2 class="hide">메뉴</h2>
+            <ul>
+                <li>
+                    <h3><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i> 홈 화면</a></h3>
+                </li>
+                <li>
+                    <h3><a href="./list.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i> 악세사리</a></h3>
+                </li>
+                <li>
+                    <h3><a href="./list.html"><i class="fa fa-futbol-o" aria-hidden="true"></i> 라이프스타일</a></h3>
+                </li>
+                <li>
+                    <h3><a href="./notice.html"><i class="fa fa-comments" aria-hidden="true"></i> 게시판</a></h3>
+                </li>
+            </ul>
+            <a href="#" class="setting"><i class="fa fa-cog" aria-hidden="true"></i></a>
+            <a href="./basket.html" class="mypage" data-cart="5"><i class="fa fa-archive" aria-hidden="true"></i></a>
+        </section>
+    </aside>
+    <header class="main_header">
+        <div class="inner">
+            <i class="fa fa-bars toggle" aria-hidden="true"></i>
+            <i class="fa fa-times close" aria-hidden="true"></i>
+            <h1><a href="./index.html"><img src="images/logo.jpg" data-rjs="2" alt="로고이미지"></a></h1>
+            <i class="fa fa-search search" aria-hidden="true"></i>
+        </div>
+        <form action="#a" method="get">
+            <label for="search">검색</label>
+            <input type="text" id="search" placeholder="내용을 입력하세요">
+            <button type="submit">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+        </form>
+    </header>
+    <main>
+        <div id="list_more_01">
+            <div class="list_more_con">
+                <h2>KFA 선수 쿠션 (KFA PLAYER CUSHION)</h2>
+                <div class="list_more_img">
+                    <img src="images/item_small_01@2x.png" alt="상품이미지">
+                </div>
+                <div class="list_more_info">
+                    <table>
+                        <caption class="hide">상품정보</caption>
+                        <colgroup>
+                            <col style="width: 100px;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>판매가</th>
+                                <td>20,000원</td>
+                            </tr>
+                            <tr>
+                                <th>옵션</th>
+                                <td>
+                                    <select name="option" id="list_more_01">
+                                        <option>[필수] 옵션을 선택해주세요</option>
+                                        <option>7. H M SON (손흥민)</option>
+                                        <option>10. S W LEE (이승우)</option>
+                                        <option>16. U J HWANG (황의조)</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">
+                                    <strong>총상품금액(수량)</strong>
+                                    <span class="total"><strong class="price">0</strong></span>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="list_more_btn">
+                        <button><a href="#a">구매하기</a></button>
+                        <button><a href="#a">찜하기</a></button>
+                        <button><a href="./basket.html">장바구니</a></button>
+                    </div>
+                    <p>
+                        <img src="images/list_more_01_01.jpg" alt="상품이미지1">
+                    </p>
+                    <p>
+                        <img src="images/list_more_01_02.jpg" alt="상품이미지2">
+                    </p>
+                    <p>
+                        <img src="images/list_more_01_03.jpg" alt="상품이미지3">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="list_more_fot">
+        <div class="footer_top clearfix">
+            <div class="call">
+                <h2>고객 서비스</h2>
+                <span>전화번호 : 02-322-6167</span>
+            </div>
+            <div class="work">
+                <h2>근무시간</h2>
+                <span>근무시간: 10-19 점심시간: 12-13:30</span>
+            </div>
+        </div>
+        <div class="footer_center clearfix">
+            <div class="sns">
+                <h2>팔로워</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/thekfa/">인스타그램</a></li>
+                    <li><a href="https://www.facebook.com/KoreaFootballTeam/">페이스북</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <h2>정보</h2>
+                <ul>
+                    <li><a href="#a">홈</a></li>
+                    <li><a href="#a">이용안내</a></li>
+                    <li><a href="#a">이용약관</a></li>
+                    <li><a href="#a">약관동의</a></li>
+                </ul>
+            </div>
+        </div>
+        <address>
+            <h2>회사정보</h2>
+            <p>대표자:최호근</p>
+            <p>홍동호의 포트폴리오 연습용 사이트</p>
+            <div class="copyright">
+                Copyright 2019 . All RIGHTS RESERVED.
+            </div>
+        </address>
+    </footer>
+</body></html>

@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>상품정보</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="KFA STORE">
+    <!-- CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- JS -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <aside class="menu">
+        <header>
+            <h1 class="logo">로고 이미지</h1>
+            <h2>KFA STORE</h2>
+        </header>
+        <section class="content">
+            <h2 class="hide">메뉴</h2>
+            <ul>
+                <li>
+                    <h3><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i> 홈 화면</a></h3>
+                </li>
+                <li>
+                    <h3><a href="./list.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i> 악세사리</a></h3>
+                </li>
+                <li>
+                    <h3><a href="./list.html"><i class="fa fa-futbol-o" aria-hidden="true"></i> 라이프스타일</a></h3>
+                </li>
+                <li>
+                    <h3><a href="./notice.html"><i class="fa fa-comments" aria-hidden="true"></i> 게시판</a></h3>
+                </li>
+            </ul>
+            <a href="#" class="setting"><i class="fa fa-cog" aria-hidden="true"></i></a>
+            <a href="./basket.html" class="mypage" data-cart="5"><i class="fa fa-archive" aria-hidden="true"></i></a>
+        </section>
+    </aside>
+    <header class="main_header">
+        <div class="inner">
+            <i class="fa fa-bars toggle" aria-hidden="true"></i>
+            <i class="fa fa-times close" aria-hidden="true"></i>
+            <h1><a href="./index.html"><img src="images/logo.jpg" data-rjs="2" alt="로고이미지"></a></h1>
+            <i class="fa fa-search search" aria-hidden="true"></i>
+        </div>
+        <form action="#a" method="get">
+            <label for="search">검색</label>
+            <input type="text" id="search" placeholder="내용을 입력하세요">
+            <button type="submit">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+        </form>
+    </header>
+    <main>
+        <div id="notice">
+            <div class="notice">
+                <h2>공지사항</h2>
+                <div class="notice_info">
+                    <ul>
+                        <li>
+                            <a href="#a">
+                                <strong>공지 KFA 담요 재입고 관련 안내</strong>
+                                <p>
+                                    <span class="name">KFA STORE</span>
+                                    <span class="date">2019.12.19</span>
+                                    <span>조회 300</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#a">
+                                <strong>공지 KFA 머그컵 재입고 관련 안내</strong>
+                                <p>
+                                    <span class="name">KFA STORE</span>
+                                    <span class="date">2019.12.16</span>
+                                    <span>조회 200</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#a">
+                                <strong>[당첨자 발표] 백승호 &amp; 이승우 사인</strong>
+                                <p>
+                                    <span class="name">KFA STORE</span>
+                                    <span class="date">2019.12.15</span>
+                                    <span>조회 1600</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#a">
+                                <strong>[EVENT] 백승호 &amp; 이승우 사인 제품</strong>
+                                <p>
+                                    <span class="name">KFA STORE</span>
+                                    <span class="date">2019.12.13</span>
+                                    <span>조회 900</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#a">
+                                <strong>KFA 비치타을 입고관련 안내</strong>
+                                <p>
+                                    <span class="name">KFA STORE</span>
+                                    <span class="date">2019.12.10</span>
+                                    <span>조회 200</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#a">
+                                <strong>KFA 핀뱃지 관련 안내문</strong>
+                                <p>
+                                    <span class="name">KFA STORE</span>
+                                    <span class="date">2019.12.7</span>
+                                    <span>조회 100</span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="notice_btn">
+                    <ul>
+                        <li class="prev"><a href="#a"></a></li>
+                        <li><a href="#a">1</a></li>
+                        <li><a href="#a">2</a></li>
+                        <li><a href="#a">3</a></li>
+                        <li><a href="#a">4</a></li>
+                        <li><a href="#a">5</a></li>
+                        <li class="next"><a href="#a"></a></li>
+                    </ul>
+                </div>
+                <div class="notice_search clearfix">
+                    <div class="category">
+                        <select name="search_date" id="search_date">
+                            <option>일주일</option>
+                            <option>한달</option>
+                            <option>세달</option>
+                            <option>전체</option>
+                        </select>
+                        <select name="search_text" id="search_text">
+                            <option>제목</option>
+                            <option>내용</option>
+                            <option>글쓴이</option>
+                            <option>아이디</option>
+                        </select>
+                    </div>
+                    <div class="keyword">
+                        <input type="text" id="keyword_search" name="keyword_search">
+                        <button>검색</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="list_more_fot">
+        <div class="footer_top clearfix">
+            <div class="call">
+                <h2>고객 서비스</h2>
+                <span>전화번호 : 02-322-6167</span>
+            </div>
+            <div class="work">
+                <h2>근무시간</h2>
+                <span>근무시간: 10-19 점심시간: 12-13:30</span>
+            </div>
+        </div>
+        <div class="footer_center clearfix">
+            <div class="sns">
+                <h2>팔로워</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/thekfa/">인스타그램</a></li>
+                    <li><a href="https://www.facebook.com/KoreaFootballTeam/">페이스북</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <h2>정보</h2>
+                <ul>
+                    <li><a href="#a">홈</a></li>
+                    <li><a href="#a">이용안내</a></li>
+                    <li><a href="#a">이용약관</a></li>
+                    <li><a href="#a">약관동의</a></li>
+                </ul>
+            </div>
+        </div>
+        <address>
+            <h2>회사정보</h2>
+            <p>대표자:최호근</p>
+            <p>홍동호의 포트폴리오 연습용 사이트</p>
+            <div class="copyright">
+                Copyright 2019 . All RIGHTS RESERVED.
+            </div>
+        </address>
+    </footer>
+</body></html>
