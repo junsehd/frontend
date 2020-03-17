@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready( function() {
     //검색버튼 부분
     $(".main_header .search").click(function () {
         $(".main_header form").toggleClass("active");
