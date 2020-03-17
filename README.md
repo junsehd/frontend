@@ -8,7 +8,7 @@
 
 -기업사이트 가비아 홈페이지 예제 : https://junsehd.github.io/publisher/gabia/index.html
 
--KFA 축구협회 리뉴얼 : https://junsehd.github.io/publisher/KFA/index.html
+-KFA 축구협회 리뉴얼 : https://junsehd.github.io/publisher/kfa/index.html
 
 <h2>반응형 홈페이지</h2>
 
