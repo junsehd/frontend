@@ -1,4 +1,4 @@
-#홈페이지 만들기 연습#
+<h1>홈페이지 만들기 연습</h1>
 
 -기본 표준 사이트 예제 : https://junsehd.github.io/publisher/web/index.html
 
@@ -10,7 +10,7 @@
 
 -KFA 축구협회 리뉴얼 : https://junsehd.github.io/publisher/KFA/index.html
 
-#반응형 홈페이지# 
+<h2>반응형 홈페이지</h2>
 
 -반응형 홈페이지 사이트 예제 : https://junsehd.github.io/publisher/responsive/index.html
 
@@ -19,11 +19,11 @@
 -동부센트레빌 리뉴얼 예제 : https://junsehd.github.io/publisher/centreville/index.html
 
 
-#모바일 홈페이지#
+<h2>모바일 홈페이지</h2>
 
 -KFA STORE 리뉴얼 : https://junsehd.github.io/publisher/kfa_mobile/index.html
 
-#포트폴리오 기본 연습 홈페이지#
+<h2>포트폴리오 연습 홈페이지</h2>
 
 -미니멀 포트폴리오 :  https://junsehd.github.io/publisher/Minimal_HTML/index.html
 
