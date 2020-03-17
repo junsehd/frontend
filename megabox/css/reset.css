@@ -29,7 +29,7 @@ button {border: 0;}
 video,img {width: 100%;}
 
 /* clearfix */
-.clearfix{*zoom:1;}
+.clearfix{*zoom:1;} /* ie7 호환성때문에 사용 */
 .clearfix:before, .clearfix:after {display: block; content: '';line-height: 0;}
 .clearfix:after {clear: both;}
 
@@ -65,18 +65,15 @@ input[type=search]::-webkit-search-cancel-button,
 input[type=search]::-webkit-search-decoration{
     -webkit-appearance: none;
 }
-input::checked[type=checkbox]{
-    background-color: #666;
-    -webkit-appearance: checkbox
-}
+
 
 
 /* select 메뉴 메인 스타일 */
 .ui_select2 {
     width: 100%; box-sizing: border-box;
-    color: #fff; background: #666;
+    color: #000; 
     display: inline-block; height: 36px;
-    border: 0 none; padding: 0 10px; margin: 0;
+    border: none; padding: 0 10px; margin: 0;
     font-family: inherit; font-size: inherit;
     vertical-align: middle; text-align: left;
     white-space: nowrap;
@@ -88,12 +85,12 @@ input::checked[type=checkbox]{
 }
 
 input::placeholder {
-  color: #fff;
+  color: #000; 
   
 }
 
 /* 메인 텍스트 박스 스타일1 */
 .ui_input3 {
-    background: #2c2f34; color: #fff; border: 0; width: 100%; height: 36px; padding: 0 10px;
+   background: #fff; color: #000; border: 0; width: 100%; height: 36px; padding: 0 10px;
 }
 

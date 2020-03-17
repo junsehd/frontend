@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="hongdongho">
+    <meta name="description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다.">
+    <meta name="keywords" content="메가박스, 유투브, 영화, 최신영화, 영화관, CGV, 롯데시네마, 동호의 연습사이트 , 사이트 만들기, 따라하기">
+    <title>영화</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="../icons/favicon_72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="../icons/favicon_96.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../icons/favicon_144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="../icons/favicon_192.png" />
+
+    <!-- 웹 폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+    <!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script type="text/javascript">
+         alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
+      </script>
+   <![endif]-->
+</head>
+
+<body>
+    <!-- 스킵 메뉴 -->
+    <div id="skip">
+        <a rel="bookmark" href="#movie">최신 영화 소식</a>
+        <a rel="bookmark" href="#event">새로운 이벤트</a>
+        <a rel="bookmark" href="#new">새로운 영화</a>
+    </div>
+    <!-- //스킵 메뉴 -->
+
+    <header id="header" class="sub">
+        <div class="container">
+            <div class="row">
+                <div class="header clearfix">
+                    <h1>
+                        <a href="../index.html">
+                            <em><img src="../img/logo.png" alt="megabox"></em>
+                            <strong><img src="../img/logo-sub.png" alt="LIFE THATER"></strong>
+                        </a>
+                    </h1>
+                    <nav class="nav">
+                        <ul class="clearfix">
+                            <li><a href="../movie/movie.html">영화</a></li>
+                            <li><a href="../curation/curation.html">큐레이션</a></li>
+                            <li><a href="../theater/theater.html">영화관</a></li>
+                            <li><a href="../speical/specical.html">특별관</a></li>
+                            <li><a href="../store/store.html">스토어</a></li>
+                            <li><a href="../event/event.html">이벤트</a></li>
+                            <li><a href="../login/login.html">로그인</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <section id="banner" class="sub">
+        <div class="banner_menu sub clearfix">
+            <h2 class="ir_so">배너 영역</h2>
+            <div class="sub_container">
+                <div class="row">
+                    <div class="bm_left">
+                        <ul>
+                            <li class="total"><a href="#a">전체메뉴</a></li>
+                            <li class="line"><a href="../curation/curation.html">필름 소사이어티</a></li>
+                            <li><a href="../curation/curation.html">클래식 소사이어티</a></li>
+                        </ul>
+                    </div>
+                    <div class="bm_right">
+                        <ul>
+                            <li class="line"><a href="#a">고객센터</a></li>
+                            <li class="line"><a href="#a">멤버쉽</a></li>
+                            <li><a href="#">VIP</a></li>
+                        </ul>
+                        <ul class="btn_box">
+                            <li class="white"><a href="#a">상영시간표</a></li>
+                            <li class="purple"><a href="#a">빠른예매</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //베너 메뉴 -->
+
+    <section id="sub_nav">
+        <div class="container">
+            <h2 class="ir_so">서브 메뉴</h2>
+            <div class="row">
+                <div class="sub_nav">
+                    <ul>
+                        <li><a href="#a">박스오피스</a></li>
+                        <li><a href="#a">최신개봉작</a></li>
+                        <li><a href="#a">상영예정작</a></li>
+                        <li><a href="#a">영화제</a></li>
+                        <li><a href="#a">보고싶어</a></li>
+                        <li><a href="#a">무비포스트</a></li>
+                        <li class="last"><a href="#a">나의 무비스토리 ></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//sub_nav -->
+
+    <secition id="movie">
+        <div class="container">
+            <h2 class="ir_so">영화 리스트</h2>
+            <div class="movie">
+                <div class="row">
+                    <div class="movie_list">
+                        <ul class="clearfix">
+                            <li class="list">
+                                <div class="poster">
+                                    <figure>
+                                        <img src="../img/movie01.jpg" alt="말레피센트2">
+                                    </figure>
+                                    <div class="rank"><strong>1</strong></div>
+                                    <div class="mx">
+                                        <span class="icon m ir_pm">MX</span>
+                                        <span class="icon b ir_pm">Boutique</span>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <h3><span class="icon a12 ir_pm">전체관람가</span> <strong>말레피센트2</strong></h3>
+                                    <div class="infor_btn">
+                                        <a href="#a">상세보기</a>
+                                        <a href="#a">예매하기</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list">
+                                <div class="poster">
+                                    <figure>
+                                        <img src="../img/movie02.jpg" alt="터미네이터">
+                                    </figure>
+                                    <div class="rank"><strong>2</strong></div>
+                                    <div class="mx">
+                                        <span class="icon m ir_pm">MX</span>
+                                        <span class="icon b ir_pm">Boutique</span>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <h3><span class="icon a15 ir_pm">전체관람가</span> <strong>터미네이터</strong></h3>
+                                    <div class="infor_btn">
+                                        <a href="#a">상세보기</a>
+                                        <a href="#a">예매하기</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list">
+                                <div class="poster">
+                                    <figure>
+                                        <img src="../img/movie03.jpg" alt="아내를 죽였다">
+                                    </figure>
+                                    <div class="rank"><strong>3</strong></div>
+                                    <div class="mx">
+                                        <span class="icon m ir_pm">MX</span>
+                                        <span class="icon b ir_pm">Boutique</span>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <h3><span class="icon a15 ir_pm">전체관람가</span> <strong>아내를 죽였다</strong></h3>
+                                    <div class="infor_btn">
+                                        <a href="#a">상세보기</a>
+                                        <a href="#a">예매하기</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list">
+                                <div class="poster">
+                                    <figure>
+                                        <img src="../img/movie04.jpg" alt="신의한수">
+                                    </figure>
+                                    <div class="rank"><strong>4</strong></div>
+                                    <div class="mx">
+                                        <span class="icon m ir_pm">MX</span>
+                                        <span class="icon b ir_pm">Boutique</span>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <h3><span class="icon a15 ir_pm">전체관람가</span> <strong>신의한수</strong></h3>
+                                    <div class="infor_btn">
+                                        <a href="#a">상세보기</a>
+                                        <a href="#a">예매하기</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list">
+                                <div class="poster">
+                                    <figure>
+                                        <img src="../img/movie05.jpg" alt="더킹:헨리5세">
+                                    </figure>
+                                    <div class="rank"><strong>5</strong></div>
+                                    <div class="mx">
+                                        <span class="icon m ir_pm">MX</span>
+                                        <span class="icon b ir_pm">Boutique</span>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <h3><span class="icon a19 ir_pm">전체관람가</span> <strong>더킹:헨리5세</strong></h3>
+                                    <div class="infor_btn">
+                                        <a href="#a">상세보기</a>
+                                        <a href="#a">예매하기</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list">
+                                <div class="poster">
+                                    <figure>
+                                        <img src="../img/movie06.jpg" alt="82년생 김지영">
+                                    </figure>
+                                    <div class="rank"><strong>6</strong></div>
+                                    <div class="mx">
+                                        <span class="icon m ir_pm">MX</span>
+                                        <span class="icon b ir_pm">Boutique</span>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <h3><span class="icon a12 ir_pm">전체관람가</span> <strong>82년생 김지영</strong></h3>
+                                    <div class="infor_btn">
+                                        <a href="#a">상세보기</a>
+                                        <a href="#a">예매하기</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list">
+                                <div class="poster">
+                                    <figure>
+                                        <img src="../img/movie07.jpg" alt="겨울왕국2">
+                                    </figure>
+                                    <div class="rank"><strong>7</strong></div>
+                                    <div class="mx">
+                                        <span class="icon m ir_pm">MX</span>
+                                        <span class="icon b ir_pm">Boutique</span>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <h3><span class="icon all ir_pm">전체관람가</span> <strong>겨울왕국2</strong></h3>
+                                    <div class="infor_btn">
+                                        <a href="#a">상세보기</a>
+                                        <a href="#a">예매하기</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list">
+                                <div class="poster">
+                                    <figure>
+                                        <img src="../img/movie08.jpg" alt="조커">
+                                    </figure>
+                                    <div class="rank"><strong>8</strong></div>
+                                    <div class="mx">
+                                        <span class="icon m ir_pm">MX</span>
+                                        <span class="icon b ir_pm">Boutique</span>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <h3><span class="icon a15 ir_pm">전체관람가</span> <strong>조커</strong></h3>
+                                    <div class="infor_btn">
+                                        <a href="#a">상세보기</a>
+                                        <a href="#a">예매하기</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="btn">
+                            <a href="#a">더보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </secition>
+    <!--//movie -->
+
+    <footer id="footer">
+        <div id="footer_sns">
+            <div class="sub_container">
+                <div class="footer_sns">
+                    <ul>
+                        <li class="icon s1"><a href="#"><span class="ir_pm">트위터</span></a></li>
+                        <li class="icon s2"><a href="#"><span class="ir_pm">페이스북</span></a></li>
+                        <li class="icon s3"><a href="#"><span class="ir_pm">인스타그램</span></a></li>
+                        <li class="icon s4"><a href="#"><span class="ir_pm">구글플레이</span></a></li>
+                        <li class="icon s5"><a href="#"><span class="ir_pm">아이폰 앱스토어</span></a></li>
+                    </ul>
+                    <div class="tel">
+                        <a href="#">ARS <em>1544-0070</em></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer_info">
+            <div class="container">
+                <div class="row">
+                    <div class="footer_info">
+                        <h2><img src="../img/logo_footer.png" alt="megabox"></h2>
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">채용정보</a></li>
+                            <li><a href="#">제휴/광고/부대사업 문의</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">윤리경영</a></li>
+                        </ul>
+                        <address>
+                            <p>경기도 이천시 홍동호의 연습사이트 메가박스중앙(주)<br><span class="bar2">대표자명 김진선</span> 개인정보보호 책임자 경영지원실 실장 박영진<br><span class="bar2">사업자등록번호 211-86-59478</span> 통신판매업신고번호 제 833호</p>
+                            <p>Copyright 2014 by MegaboxJoongAng Inc. All right reserved</p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+</body></html>

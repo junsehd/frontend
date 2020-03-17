@@ -6,7 +6,7 @@ dl,ul,ol,menu,li{list-style:none}
 
 /* 링크 초기화 */
 a{color:#222;text-decoration:none}
-a:hover{color:#ea5d4b;text-decoration:underline;}
+a:hover{color:#ea5d4b;text-decoration:none;}
 a:active{background-color:transparent}
 
 /* 폰트 초기화 */
@@ -20,6 +20,8 @@ table {width:100%; border-spacing:0; border-collapse:collapse;}
 
 /* caption */
 caption {padding: 0; margin: 0; font-size: 0; line-height: 0; width: 0; height: 0; text-indent:-9999px;}
+
+.bold {font-weight: bold;}
 
 /* padding, margin setting */
 .pt00 {padding-top: 0px !important;}
@@ -133,15 +135,3 @@ caption {padding: 0; margin: 0; font-size: 0; line-height: 0; width: 0; height: 
 .mb50 {margin-bottom: 50px !important;}
 .mb55 {margin-bottom: 55px !important;}
 .mb60 {margin-bottom: 60px !important;}
-
-
-
-
-
-
-
-
-
-
-
-
