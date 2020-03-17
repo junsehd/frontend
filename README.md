@@ -2,7 +2,7 @@
 
 -기본 표준 사이트 예제 : https://junsehd.github.io/publisher/web/index.html
 
--웹표준 사이트 예제 : https://junsehd.github.io/publisher/highway/index.html
+-신대구부산 사이트 예제 : https://junsehd.github.io/publisher/highway/index.html
 
 -기업사이트 하이닉스 홈페이지 예제 : https://junsehd.github.io/publisher/skhynix/index.html
 
