@@ -2,7 +2,7 @@
 
 -기본 표준 사이트 예제 : https://junsehd.github.io/frontend/web/
 
--반응형 홈페이지 사이트 예제 : https://junsehd.github.io/frontend/html5/index.html
+-반응형 홈페이지 사이트 예제 : https://junsehd.github.io/frontend/responsive/index.html
 
 -메가박스 사이트 예제 : https://junsehd.github.io/frontend/megabox/
 
