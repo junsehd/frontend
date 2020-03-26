@@ -283,8 +283,8 @@ text-align: center; border: 1px solid #000;}
 .curation .curation_bottom .left_box .bottom ul li strong {font-size: 15px; color: #949596; margin-left: 5px;}
 .curation .curation_bottom .left_box .bottom ul li p {margin: 0 0 0 26px; font-size: 15px; font-weight: bold;}
 .curation .curation_bottom .left_box .bottom ul li i {float: right; font-weight: bold;}
-.curation .curation_bottom .left_box .bottom ul li i#center {position: absolute; right: 0; top: 9px;}
-.curation .curation_bottom .bottom ul li i#center2 {position: absolute; right: 0; top: 23px;}
+.curation .curation_bottom .left_box .bottom ul li i.center {position: absolute; right: 0; top: 9px;}
+.curation .curation_bottom .bottom ul li i.center2 {position: absolute; right: 0; top: 23px;}
 .curation .curation_bottom .bottom span {color: #a7a7a7; font-size: 13px;}
 .curation .curation_bottom .bottom .btn {
     color: #fff; 
