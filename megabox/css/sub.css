@@ -483,7 +483,8 @@ text-align: center; border: 1px solid #ccc;}
 .login .check ul li.ipin {margin-left: 0;}
 .login .check h3 {text-align: left; width: 500px; display: inline-block; font-weight: 600; font-size: 18px;}
 .login .check p {margin: 160px 0 15px 0;}
-.login .check .btn {border: 1px solid #666; font-size: 14px; width: 100px; height: 30px; background: #fff;}
+.login .check .btn {display: block; border: 1px solid #666; font-size: 14px; width: 100px; height: 30px; background: #fff; 
+color: #000; line-height: 30px; margin: 0 auto;}
 
 .login .ipin {border: 1px solid #e5e5e5; padding: 20px 0 0 0; box-sizing: border-box; border-top: none;
 background: url(../img/bg_member.png) -213px -335px no-repeat;}
