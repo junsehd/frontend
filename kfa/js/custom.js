@@ -108,6 +108,4 @@ $(document).ready(function () {
 		dot.removeClass("on");
         $(this).addClass("on");
     });
-
-
 });
