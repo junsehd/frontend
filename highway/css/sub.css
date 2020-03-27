@@ -113,18 +113,18 @@ text-indent: 25px; color: #303030; position: relative; font-weight: bold;}
 
 /* 여행정보 */
 .travel_info{padding: 50px 0 90px;}
-.travel_info em {display: inline-block; font-size: 30px; color: #333; margin-right: 30px;}
-
-.travel_btn {display: inline-block; position: relative;}
-.travel_btn > a {display: inline-block; padding: 15px 20px; font-size: 16px; color: #909090; font-weight: bold;
-border: 1px solid #909090; border-radius: 30px;}
-.travel_btn .btn_over:hover {padding: 14px 19px; border: 2px solid #0e50b8; color: #0e50b8;}
-.travel_btn .btn:hover {padding: 14px 19px; border: 2px solid #0e50b8; color: #0e50b8;}
-
+.travel_info em {display: inline-block; font-size: 30px; color: #333; margin-right: 30px; margin-top: 5px;}
 .travel_wrap {padding: 50px 0;}
-.travel_wrap li {float: right;}
-.travel_wrap li a {display: block; color: #333; font-size: 14px; height: 55px; padding: 15px 20px 10px 10px;}
-.travel_wrap li:hover a {background: url(../images/sub/mtravel_arr.gif) no-repeat left top; color: #fff;}
+
+.travel_wrap .nav_left li {float: left;}
+.travel_wrap .nav_left a {display: inline-block; padding: 15px 20px; font-size: 16px; color: #909090; font-weight: bold;
+border: 1px solid #909090; border-radius: 30px; margin: 0 5px;}
+.travel_wrap .nav_left .btn_over:hover {padding: 14px 19px; border: 2px solid #0e50b8; color: #0e50b8;}
+.travel_wrap .nav_left .btn:hover {padding: 14px 19px; border: 2px solid #0e50b8; color: #0e50b8;}
+
+.travel_wrap .nav_right li {float: right;}
+.travel_wrap .nav_right li a {display: block; color: #333; font-size: 14px; height: 55px; padding: 15px 20px 10px 10px;}
+.travel_wrap .nav_right li:hover a {background: url(../images/sub/mtravel_arr.gif) no-repeat left top; color: #fff;}
 
 .travel_list_wrap {text-align: left;}
 .travel_list_wrap li {float: left; width: 260px; margin-bottom: 50px; margin-left: 50px;}
