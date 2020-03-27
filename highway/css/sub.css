@@ -113,7 +113,7 @@ text-indent: 25px; color: #303030; position: relative; font-weight: bold;}
 
 /* 여행정보 */
 .travel_info{padding: 50px 0 90px;}
-.h4 {display: inline-block; font-size: 30px; color: #333; margin-right: 30px;}
+.travel_info em {display: inline-block; font-size: 30px; color: #333; margin-right: 30px;}
 
 .travel_btn {display: inline-block; position: relative;}
 .travel_btn > a {display: inline-block; padding: 15px 20px; font-size: 16px; color: #909090; font-weight: bold;
