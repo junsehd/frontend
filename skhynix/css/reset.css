@@ -23,6 +23,8 @@ caption {padding: 0; margin: 0; font-size: 0; line-height: 0; width: 0; height: 
 
 .bold {font-weight: bold;}
 
+.hide {text-indent: -9999em; overflow: hidden;}
+
 /* padding, margin setting */
 .pt00 {padding-top: 0px !important;}
 .pt05 {padding-top: 5px !important;}
