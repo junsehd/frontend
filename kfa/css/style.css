@@ -272,10 +272,10 @@ header .gnb_right > ul > li > a {color:#fff; font-size: 14px;}
 .article li a p { padding: 13px 0 0; font-size: 13px;  line-height: 18px;}
 .article li > a div div {position: absolute; left:12px; bottom: 0; width:250px; height: 50px; line-height: 50px; border-top: 1px solid #000; text-align: center; font-size: 14px;}
 
-#btn_more {display: none;}
-#btn_more + .btn_hidden {display: none;}
-#btn_more:checked + .btn_hidden {display: block;}
-#btn_more + .btn_hidden + #btn_more {
+.btn_more {display: none;}
+.btn_more + .btn_hidden {display: none;}
+.btn_more:checked + .btn_hidden {display: block;}
+.btn_more + .btn_hidden + .btn_more {
         display: block;
         width: 88px;
         height: 140px;
@@ -287,7 +287,7 @@ header .gnb_right > ul > li > a {color:#fff; font-size: 14px;}
         overflow: hidden;
         margin: 0 auto;
     }
-#btn_more + .btn_hidden + #btn_more:hover {background-image: url(../img/btn_c_more_blue.png);}
+.btn_more + .btn_hidden + .btn_more:hover {background-image: url(../img/btn_c_more_blue.png);}
 
 /* 서브 배너 부분 */
 .sub_slide {background: #f2f2f2; width: 100%;}
