@@ -2,1639 +2,1466 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="dongho">
-    <title>대한축구협회</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="dongho">
+	<title>대한축구협회</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/jquery.modal.css">
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/jquery.modal.css">
 
-    <!-- xeicon CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-   
-    <!-- 웹 폰트 -->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+	<!-- xeicon CDN -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+	<!-- 웹 폰트 -->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <div id="side_fix">
-        <h1 class="side_logo">
-            국가대표
-        </h1>
-        <ul>
-            <li class="menu_01">
-                <a href="#a"><span></span></a>
-                <div class="sub_menu">
-                    <ul>
-                        <li class="pop1">
-                            <a href="#modal_1" rel="modal:open">
-                                <div class="popup" id="modal_1">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img01.jpg" alt="손흥민">
-                                        <span>손흥민<strong class="mf">MF</strong></span>
-                                        <p>1992.07.08/183Cm/78Kg/토트넘 홋스퍼(잉글랜드)</p>
-                                        <p>2015~ <em>토트넘 홋스퍼</em></p>
-                                        <p>2013~ 2015<em>바이엘04레버쿠젠</em></p>
-                                        <p>2010~ 2013<em>함부르크 SV</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop2">
-                            <a href="#modal_2" rel="modal:open">
-                                <div class="popup" id="modal_2">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img02.jpg" alt="황의조">
-                                        <span>황의조<strong class="fw">FW</strong></span>
-                                        <p>1992.08.28/185Cm/79Kg/지롱댕 보르도(프랑스)</p>
-                                        <p>2019~ <em>FC 지롱댕 보르도</em></p>
-                                        <p>2017~ 2019<em>감바 오사카</em></p>
-                                        <p>2013~ 2017<em>성남 FC</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop3">
-                            <a href="#modal_3" rel="modal:open">
-                                <div class="popup" id="modal_3">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img03.jpg" alt="이강인">
-                                        <span>이강인<strong class="mf">MF</strong></span>
-                                        <p>2001.02.19/173Cm/63Kg/발렌시아(스페인)</p>
-                                        <p>2019~ <em>발렌시아</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop4">
-                            <a href="#modal_4" rel="modal:open">
-                                <div class="popup" id="modal_4">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img04.jpg" alt="김민재">
-                                        <span>김민재<strong class="df">DF</strong></span>
-                                        <p>1996.11.15/190Cm/89Kg/베이징 시노보 궈안(중국)</p>
-                                        <p>2019~ <em>베이징 시노보 궈안</em></p>
-                                        <p>2017~ 2019<em>전북 현대 모터스</em></p>
-                                        <p>2016~ 2016<em>경주 한국수력원자력</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop5">
-                            <a href="#modal_5" rel="modal:open">
-                                <div class="popup" id="modal_5">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img05.jpg" alt="황희찬">
-                                        <span>황희찬<strong class="fw">FW</strong></span>
-                                        <p>1996.01.26/177Cm/70Kg/레드불 찰츠부르크(오스트리아)</p>
-                                        <p>2016~ <em>레드불 찰츠부르크</em></p>
-                                        <p>2018~ 2019<em>함부르크 SV(임대)</em></p>
-                                        <p>2015~ 2016<em>FC 리퍼링</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop6">
-                            <a href="#modal_6" rel="modal:open">
-                                <div class="popup" id="modal_6">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img07.jpg" alt="이용">
-                                        <span>이용<strong class="df">DF</strong></span>
-                                        <p>1986.12.24/180Cm/74Kg/전북 현대 모터스(대한민국)</p>
-                                        <p>2017~ <em>전북 현대 모터스</em></p>
-                                        <p>2010~ 2016<em>울산 현대 FC</em></p>
-                                        <p>2014~ 2016<em>상주 상무(임대)</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop7">
-                            <a href="#modal_7" rel="modal:open">
-                                <div class="popup" id="modal_7">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img06.jpg" alt="조현우">
-                                        <span>조현우<strong class="gk">GK</strong></span>
-                                        <p>1991.09.25/189Cm/75Kg/대구 FC(대한민국)</p>
-                                        <p>2013~ <em>대구 FC</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop8">
-                            <a href="#modal_8" rel="modal:open">
-                                <div class="popup" id="modal_8">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/no_data.png" alt="더보기">
-                                        <span>국가대표 명단 보기</span>
-                                        <p></p>
-                                        <p>자세한 선수명단은 KFA 공식사이트에서 제공됩니다.</p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="menu_02">
-                <a href="#a"><span></span></a>
-                <div class="sub_menu">
-                    <ul>
-                        <li class="pop1">
-                            <a href="#modal_1" rel="modal:open">
-                                <div class="popup" id="modal_1">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img01.jpg" alt="손흥민">
-                                        <span>손흥민<strong class="mf">MF</strong></span>
-                                        <p>1992.07.08/183Cm/78Kg/토트넘 홋스퍼(잉글랜드)</p>
-                                        <p>2015~ <em>토트넘 홋스퍼</em></p>
-                                        <p>2013~ 2015<em>바이엘04레버쿠젠</em></p>
-                                        <p>2010~ 2013<em>함부르크 SV</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop2">
-                            <a href="#modal_2" rel="modal:open">
-                                <div class="popup" id="modal_2">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img02.jpg" alt="황의조">
-                                        <span>황의조<strong class="fw">FW</strong></span>
-                                        <p>1992.08.28/185Cm/79Kg/지롱댕 보르도(프랑스)</p>
-                                        <p>2019~ <em>FC 지롱댕 보르도</em></p>
-                                        <p>2017~ 2019<em>감바 오사카</em></p>
-                                        <p>2013~ 2017<em>성남 FC</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop3">
-                            <a href="#modal_3" rel="modal:open">
-                                <div class="popup" id="modal_3">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img03.jpg" alt="이강인">
-                                        <span>이강인<strong class="mf">MF</strong></span>
-                                        <p>2001.02.19/173Cm/63Kg/발렌시아(스페인)</p>
-                                        <p>2019~ <em>발렌시아</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop4">
-                            <a href="#modal_4" rel="modal:open">
-                                <div class="popup" id="modal_4">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img04.jpg" alt="김민재">
-                                        <span>김민재<strong class="df">DF</strong></span>
-                                        <p>1996.11.15/190Cm/89Kg/베이징 시노보 궈안(중국)</p>
-                                        <p>2019~ <em>베이징 시노보 궈안</em></p>
-                                        <p>2017~ 2019<em>전북 현대 모터스</em></p>
-                                        <p>2016~ 2016<em>경주 한국수력원자력</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop5">
-                            <a href="#modal_5" rel="modal:open">
-                                <div class="popup" id="modal_5">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img05.jpg" alt="황희찬">
-                                        <span>황희찬<strong class="fw">FW</strong></span>
-                                        <p>1996.01.26/177Cm/70Kg/레드불 찰츠부르크(오스트리아)</p>
-                                        <p>2016~ <em>레드불 찰츠부르크</em></p>
-                                        <p>2018~ 2019<em>함부르크 SV(임대)</em></p>
-                                        <p>2015~ 2016<em>FC 리퍼링</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop6">
-                            <a href="#modal_6" rel="modal:open">
-                                <div class="popup" id="modal_6">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img07.jpg" alt="이용">
-                                        <span>이용<strong class="df">DF</strong></span>
-                                        <p>1986.12.24/180Cm/74Kg/전북 현대 모터스(대한민국)</p>
-                                        <p>2017~ <em>전북 현대 모터스</em></p>
-                                        <p>2010~ 2016<em>울산 현대 FC</em></p>
-                                        <p>2014~ 2016<em>상주 상무(임대)</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop7">
-                            <a href="#modal_7" rel="modal:open">
-                                <div class="popup" id="modal_7">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img06.jpg" alt="조현우">
-                                        <span>조현우<strong class="gk">GK</strong></span>
-                                        <p>1991.09.25/189Cm/75Kg/대구 FC(대한민국)</p>
-                                        <p>2013~ <em>대구 FC</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop8">
-                            <a href="#modal_8" rel="modal:open">
-                                <div class="popup" id="modal_8">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/no_data.png" alt="더보기">
-                                        <span>국가대표 명단 보기</span>
-                                        <p></p>
-                                        <p>자세한 선수명단은 KFA 공식사이트에서 제공됩니다.</p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="menu_03">
-                <a href="#a"><span></span></a>
-                <div class="sub_menu">
-                    <ul>
-                        <li class="pop1">
-                            <a href="#modal_1" rel="modal:open">
-                                <div class="popup" id="modal_1">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img01.jpg" alt="손흥민">
-                                        <span>손흥민<strong class="mf">MF</strong></span>
-                                        <p>1992.07.08/183Cm/78Kg/토트넘 홋스퍼(잉글랜드)</p>
-                                        <p>2015~ <em>토트넘 홋스퍼</em></p>
-                                        <p>2013~ 2015<em>바이엘04레버쿠젠</em></p>
-                                        <p>2010~ 2013<em>함부르크 SV</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop2">
-                            <a href="#modal_2" rel="modal:open">
-                                <div class="popup" id="modal_2">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img02.jpg" alt="황의조">
-                                        <span>황의조<strong class="fw">FW</strong></span>
-                                        <p>1992.08.28/185Cm/79Kg/지롱댕 보르도(프랑스)</p>
-                                        <p>2019~ <em>FC 지롱댕 보르도</em></p>
-                                        <p>2017~ 2019<em>감바 오사카</em></p>
-                                        <p>2013~ 2017<em>성남 FC</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop3">
-                            <a href="#modal_3" rel="modal:open">
-                                <div class="popup" id="modal_3">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img03.jpg" alt="이강인">
-                                        <span>이강인<strong class="mf">MF</strong></span>
-                                        <p>2001.02.19/173Cm/63Kg/발렌시아(스페인)</p>
-                                        <p>2019~ <em>발렌시아</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop4">
-                            <a href="#modal_4" rel="modal:open">
-                                <div class="popup" id="modal_4">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img04.jpg" alt="김민재">
-                                        <span>김민재<strong class="df">DF</strong></span>
-                                        <p>1996.11.15/190Cm/89Kg/베이징 시노보 궈안(중국)</p>
-                                        <p>2019~ <em>베이징 시노보 궈안</em></p>
-                                        <p>2017~ 2019<em>전북 현대 모터스</em></p>
-                                        <p>2016~ 2016<em>경주 한국수력원자력</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop5">
-                            <a href="#modal_5" rel="modal:open">
-                                <div class="popup" id="modal_5">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img05.jpg" alt="황희찬">
-                                        <span>황희찬<strong class="fw">FW</strong></span>
-                                        <p>1996.01.26/177Cm/70Kg/레드불 찰츠부르크(오스트리아)</p>
-                                        <p>2016~ <em>레드불 찰츠부르크</em></p>
-                                        <p>2018~ 2019<em>함부르크 SV(임대)</em></p>
-                                        <p>2015~ 2016<em>FC 리퍼링</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop6">
-                            <a href="#modal_6" rel="modal:open">
-                                <div class="popup" id="modal_6">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img07.jpg" alt="이용">
-                                        <span>이용<strong class="df">DF</strong></span>
-                                        <p>1986.12.24/180Cm/74Kg/전북 현대 모터스(대한민국)</p>
-                                        <p>2017~ <em>전북 현대 모터스</em></p>
-                                        <p>2010~ 2016<em>울산 현대 FC</em></p>
-                                        <p>2014~ 2016<em>상주 상무(임대)</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop7">
-                            <a href="#modal_7" rel="modal:open">
-                                <div class="popup" id="modal_7">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img06.jpg" alt="조현우">
-                                        <span>조현우<strong class="gk">GK</strong></span>
-                                        <p>1991.09.25/189Cm/75Kg/대구 FC(대한민국)</p>
-                                        <p>2013~ <em>대구 FC</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop8">
-                            <a href="#modal_8" rel="modal:open">
-                                <div class="popup" id="modal_8">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/no_data.png" alt="더보기">
-                                        <span>국가대표 명단 보기</span>
-                                        <p></p>
-                                        <p>자세한 선수명단은 KFA 공식사이트에서 제공됩니다.</p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="menu_04">
-                <a href="#a"><span></span></a>
-                <div class="sub_menu">
-                    <ul>
-                        <li class="pop1">
-                            <a href="#modal_1" rel="modal:open">
-                                <div class="popup" id="modal_1">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img01.jpg" alt="손흥민">
-                                        <span>손흥민<strong class="mf">MF</strong></span>
-                                        <p>1992.07.08/183Cm/78Kg/토트넘 홋스퍼(잉글랜드)</p>
-                                        <p>2015~ <em>토트넘 홋스퍼</em></p>
-                                        <p>2013~ 2015<em>바이엘04레버쿠젠</em></p>
-                                        <p>2010~ 2013<em>함부르크 SV</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop2">
-                            <a href="#modal_2" rel="modal:open">
-                                <div class="popup" id="modal_2">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img02.jpg" alt="황의조">
-                                        <span>황의조<strong class="fw">FW</strong></span>
-                                        <p>1992.08.28/185Cm/79Kg/지롱댕 보르도(프랑스)</p>
-                                        <p>2019~ <em>FC 지롱댕 보르도</em></p>
-                                        <p>2017~ 2019<em>감바 오사카</em></p>
-                                        <p>2013~ 2017<em>성남 FC</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop3">
-                            <a href="#modal_3" rel="modal:open">
-                                <div class="popup" id="modal_3">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img03.jpg" alt="이강인">
-                                        <span>이강인<strong class="mf">MF</strong></span>
-                                        <p>2001.02.19/173Cm/63Kg/발렌시아(스페인)</p>
-                                        <p>2019~ <em>발렌시아</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop4">
-                            <a href="#modal_4" rel="modal:open">
-                                <div class="popup" id="modal_4">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img04.jpg" alt="김민재">
-                                        <span>김민재<strong class="df">DF</strong></span>
-                                        <p>1996.11.15/190Cm/89Kg/베이징 시노보 궈안(중국)</p>
-                                        <p>2019~ <em>베이징 시노보 궈안</em></p>
-                                        <p>2017~ 2019<em>전북 현대 모터스</em></p>
-                                        <p>2016~ 2016<em>경주 한국수력원자력</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop5">
-                            <a href="#modal_5" rel="modal:open">
-                                <div class="popup" id="modal_5">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img05.jpg" alt="황희찬">
-                                        <span>황희찬<strong class="fw">FW</strong></span>
-                                        <p>1996.01.26/177Cm/70Kg/레드불 찰츠부르크(오스트리아)</p>
-                                        <p>2016~ <em>레드불 찰츠부르크</em></p>
-                                        <p>2018~ 2019<em>함부르크 SV(임대)</em></p>
-                                        <p>2015~ 2016<em>FC 리퍼링</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop6">
-                            <a href="#modal_6" rel="modal:open">
-                                <div class="popup" id="modal_6">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img07.jpg" alt="이용">
-                                        <span>이용<strong class="df">DF</strong></span>
-                                        <p>1986.12.24/180Cm/74Kg/전북 현대 모터스(대한민국)</p>
-                                        <p>2017~ <em>전북 현대 모터스</em></p>
-                                        <p>2010~ 2016<em>울산 현대 FC</em></p>
-                                        <p>2014~ 2016<em>상주 상무(임대)</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop7">
-                            <a href="#modal_7" rel="modal:open">
-                                <div class="popup" id="modal_7">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img06.jpg" alt="조현우">
-                                        <span>조현우<strong class="gk">GK</strong></span>
-                                        <p>1991.09.25/189Cm/75Kg/대구 FC(대한민국)</p>
-                                        <p>2013~ <em>대구 FC</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop8">
-                            <a href="#modal_8" rel="modal:open">
-                                <div class="popup" id="modal_8">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/no_data.png" alt="더보기">
-                                        <span>국가대표 명단 보기</span>
-                                        <p></p>
-                                        <p>자세한 선수명단은 KFA 공식사이트에서 제공됩니다.</p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="menu_05">
-                <a href="#a"><span></span></a>
-                <div class="sub_menu">
-                    <ul>
-                        <li class="pop1">
-                            <a href="#modal_1" rel="modal:open">
-                                <div class="popup" id="modal_1">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img01.jpg" alt="손흥민">
-                                        <span>손흥민<strong class="mf">MF</strong></span>
-                                        <p>1992.07.08/183Cm/78Kg/토트넘 홋스퍼(잉글랜드)</p>
-                                        <p>2015~ <em>토트넘 홋스퍼</em></p>
-                                        <p>2013~ 2015<em>바이엘04레버쿠젠</em></p>
-                                        <p>2010~ 2013<em>함부르크 SV</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop2">
-                            <a href="#modal_2" rel="modal:open">
-                                <div class="popup" id="modal_2">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img02.jpg" alt="황의조">
-                                        <span>황의조<strong class="fw">FW</strong></span>
-                                        <p>1992.08.28/185Cm/79Kg/지롱댕 보르도(프랑스)</p>
-                                        <p>2019~ <em>FC 지롱댕 보르도</em></p>
-                                        <p>2017~ 2019<em>감바 오사카</em></p>
-                                        <p>2013~ 2017<em>성남 FC</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop3">
-                            <a href="#modal_3" rel="modal:open">
-                                <div class="popup" id="modal_3">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img03.jpg" alt="이강인">
-                                        <span>이강인<strong class="mf">MF</strong></span>
-                                        <p>2001.02.19/173Cm/63Kg/발렌시아(스페인)</p>
-                                        <p>2019~ <em>발렌시아</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop4">
-                            <a href="#modal_4" rel="modal:open">
-                                <div class="popup" id="modal_4">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img04.jpg" alt="김민재">
-                                        <span>김민재<strong class="df">DF</strong></span>
-                                        <p>1996.11.15/190Cm/89Kg/베이징 시노보 궈안(중국)</p>
-                                        <p>2019~ <em>베이징 시노보 궈안</em></p>
-                                        <p>2017~ 2019<em>전북 현대 모터스</em></p>
-                                        <p>2016~ 2016<em>경주 한국수력원자력</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop5">
-                            <a href="#modal_5" rel="modal:open">
-                                <div class="popup" id="modal_5">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img05.jpg" alt="황희찬">
-                                        <span>황희찬<strong class="fw">FW</strong></span>
-                                        <p>1996.01.26/177Cm/70Kg/레드불 찰츠부르크(오스트리아)</p>
-                                        <p>2016~ <em>레드불 찰츠부르크</em></p>
-                                        <p>2018~ 2019<em>함부르크 SV(임대)</em></p>
-                                        <p>2015~ 2016<em>FC 리퍼링</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop6">
-                            <a href="#modal_6" rel="modal:open">
-                                <div class="popup" id="modal_6">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img07.jpg" alt="이용">
-                                        <span>이용<strong class="df">DF</strong></span>
-                                        <p>1986.12.24/180Cm/74Kg/전북 현대 모터스(대한민국)</p>
-                                        <p>2017~ <em>전북 현대 모터스</em></p>
-                                        <p>2010~ 2016<em>울산 현대 FC</em></p>
-                                        <p>2014~ 2016<em>상주 상무(임대)</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop7">
-                            <a href="#modal_7" rel="modal:open">
-                                <div class="popup" id="modal_7">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img06.jpg" alt="조현우">
-                                        <span>조현우<strong class="gk">GK</strong></span>
-                                        <p>1991.09.25/189Cm/75Kg/대구 FC(대한민국)</p>
-                                        <p>2013~ <em>대구 FC</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop8">
-                            <a href="#modal_8" rel="modal:open">
-                                <div class="popup" id="modal_8">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/no_data.png" alt="더보기">
-                                        <span>국가대표 명단 보기</span>
-                                        <p></p>
-                                        <p>자세한 선수명단은 KFA 공식사이트에서 제공됩니다.</p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="menu_06">
-                <a href="#a"><span></span></a>
-                <div class="sub_menu">
-                    <ul>
-                        <li class="pop1">
-                            <a href="#modal_1" rel="modal:open">
-                                <div class="popup" id="modal_1">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img01.jpg" alt="손흥민">
-                                        <span>손흥민<strong class="mf">MF</strong></span>
-                                        <p>1992.07.08/183Cm/78Kg/토트넘 홋스퍼(잉글랜드)</p>
-                                        <p>2015~ <em>토트넘 홋스퍼</em></p>
-                                        <p>2013~ 2015<em>바이엘04레버쿠젠</em></p>
-                                        <p>2010~ 2013<em>함부르크 SV</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop2">
-                            <a href="#modal_2" rel="modal:open">
-                                <div class="popup" id="modal_2">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img02.jpg" alt="황의조">
-                                        <span>황의조<strong class="fw">FW</strong></span>
-                                        <p>1992.08.28/185Cm/79Kg/지롱댕 보르도(프랑스)</p>
-                                        <p>2019~ <em>FC 지롱댕 보르도</em></p>
-                                        <p>2017~ 2019<em>감바 오사카</em></p>
-                                        <p>2013~ 2017<em>성남 FC</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop3">
-                            <a href="#modal_3" rel="modal:open">
-                                <div class="popup" id="modal_3">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img03.jpg" alt="이강인">
-                                        <span>이강인<strong class="mf">MF</strong></span>
-                                        <p>2001.02.19/173Cm/63Kg/발렌시아(스페인)</p>
-                                        <p>2019~ <em>발렌시아</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop4">
-                            <a href="#modal_4" rel="modal:open">
-                                <div class="popup" id="modal_4">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img04.jpg" alt="김민재">
-                                        <span>김민재<strong class="df">DF</strong></span>
-                                        <p>1996.11.15/190Cm/89Kg/베이징 시노보 궈안(중국)</p>
-                                        <p>2019~ <em>베이징 시노보 궈안</em></p>
-                                        <p>2017~ 2019<em>전북 현대 모터스</em></p>
-                                        <p>2016~ 2016<em>경주 한국수력원자력</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop5">
-                            <a href="#modal_5" rel="modal:open">
-                                <div class="popup" id="modal_5">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img05.jpg" alt="황희찬">
-                                        <span>황희찬<strong class="fw">FW</strong></span>
-                                        <p>1996.01.26/177Cm/70Kg/레드불 찰츠부르크(오스트리아)</p>
-                                        <p>2016~ <em>레드불 찰츠부르크</em></p>
-                                        <p>2018~ 2019<em>함부르크 SV(임대)</em></p>
-                                        <p>2015~ 2016<em>FC 리퍼링</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop6">
-                            <a href="#modal_6" rel="modal:open">
-                                <div class="popup" id="modal_6">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img07.jpg" alt="이용">
-                                        <span>이용<strong class="df">DF</strong></span>
-                                        <p>1986.12.24/180Cm/74Kg/전북 현대 모터스(대한민국)</p>
-                                        <p>2017~ <em>전북 현대 모터스</em></p>
-                                        <p>2010~ 2016<em>울산 현대 FC</em></p>
-                                        <p>2014~ 2016<em>상주 상무(임대)</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop7">
-                            <a href="#modal_7" rel="modal:open">
-                                <div class="popup" id="modal_7">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/popup_img06.jpg" alt="조현우">
-                                        <span>조현우<strong class="gk">GK</strong></span>
-                                        <p>1991.09.25/189Cm/75Kg/대구 FC(대한민국)</p>
-                                        <p>2013~ <em>대구 FC</em></p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                        <li class="pop8">
-                            <a href="#modal_8" rel="modal:open">
-                                <div class="popup" id="modal_8">
-                                    <h2>남자 국가 대표</h2>
-                                    <div class="container">
-                                        <img src="img/no_data.png" alt="더보기">
-                                        <span>국가대표 명단 보기</span>
-                                        <p></p>
-                                        <p>자세한 선수명단은 KFA 공식사이트에서 제공됩니다.</p>
-                                    </div>
-                                    <div class="btn_close">
-                                        <a href="#a" rel="modal:close">닫기</a>
-                                    </div>
-                                </div>
-                                <div class="dim"></div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <!-- //side_fix -->
-    <div id="wrap">
-        <header>
-            <div class="header_top">
-                <a href="./index.html">
-                    <img src="img/top_logo.png" alt="축구협회" />
-                </a>
-            </div>
+	<div id="side_fix">
+		<h1 class="side_logo">
+			국가대표
+		</h1>
+		<ul>
+			<li class="menu_01">
+				<a href="#a"><span></span></a>
+				<div class="sub_menu">
+					<ul>
+						<li class="pop1">
+							<a href="#modal_1" rel="modal:open">
+								<div class="popup" id="modal_1">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img01.jpg" alt="손흥민">
+										<span>손흥민<strong class="mf">MF</strong></span>
+										<p>1992.07.08/183Cm/78Kg/토트넘 홋스퍼(잉글랜드)</p>
+										<p>2015~ <em>토트넘 홋스퍼</em></p>
+										<p>2013~ 2015<em>바이엘04레버쿠젠</em></p>
+										<p>2010~ 2013<em>함부르크 SV</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop2">
+							<a href="#modal_2" rel="modal:open">
+								<div class="popup" id="modal_2">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img02.jpg" alt="황의조">
+										<span>황의조<strong class="fw">FW</strong></span>
+										<p>1992.08.28/185Cm/79Kg/지롱댕 보르도(프랑스)</p>
+										<p>2019~ <em>FC 지롱댕 보르도</em></p>
+										<p>2017~ 2019<em>감바 오사카</em></p>
+										<p>2013~ 2017<em>성남 FC</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop3">
+							<a href="#modal_3" rel="modal:open">
+								<div class="popup" id="modal_3">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img03.jpg" alt="이강인">
+										<span>이강인<strong class="mf">MF</strong></span>
+										<p>2001.02.19/173Cm/63Kg/발렌시아(스페인)</p>
+										<p>2019~ <em>발렌시아</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop4">
+							<a href="#modal_4" rel="modal:open">
+								<div class="popup" id="modal_4">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img04.jpg" alt="김민재">
+										<span>김민재<strong class="df">DF</strong></span>
+										<p>1996.11.15/190Cm/89Kg/베이징 시노보 궈안(중국)</p>
+										<p>2019~ <em>베이징 시노보 궈안</em></p>
+										<p>2017~ 2019<em>전북 현대 모터스</em></p>
+										<p>2016~ 2016<em>경주 한국수력원자력</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop5">
+							<a href="#modal_5" rel="modal:open">
+								<div class="popup" id="modal_5">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img05.jpg" alt="황희찬">
+										<span>황희찬<strong class="fw">FW</strong></span>
+										<p>1996.01.26/177Cm/70Kg/레드불 찰츠부르크(오스트리아)</p>
+										<p>2016~ <em>레드불 찰츠부르크</em></p>
+										<p>2018~ 2019<em>함부르크 SV(임대)</em></p>
+										<p>2015~ 2016<em>FC 리퍼링</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop6">
+							<a href="#modal_6" rel="modal:open">
+								<div class="popup" id="modal_6">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img07.jpg" alt="이용">
+										<span>이용<strong class="df">DF</strong></span>
+										<p>1986.12.24/180Cm/74Kg/전북 현대 모터스(대한민국)</p>
+										<p>2017~ <em>전북 현대 모터스</em></p>
+										<p>2010~ 2016<em>울산 현대 FC</em></p>
+										<p>2014~ 2016<em>상주 상무(임대)</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop7">
+							<a href="#modal_7" rel="modal:open">
+								<div class="popup" id="modal_7">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img06.jpg" alt="조현우">
+										<span>조현우<strong class="gk">GK</strong></span>
+										<p>1991.09.25/189Cm/75Kg/대구 FC(대한민국)</p>
+										<p>2013~ <em>대구 FC</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop8">
+							<a href="#modal_8" rel="modal:open">
+								<div class="popup" id="modal_8">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/no_data.png" alt="더보기">
+										<span>국가대표 명단 보기</span>
+										<p></p>
+										<p>자세한 선수명단은 KFA 공식사이트에서 제공됩니다.</p>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="menu_02">
+				<a href="#a"><span></span></a>
+				<div class="sub_menu">
+					<ul>
+						<li class="pop1">
+							<a href="#modal_1" rel="modal:open">
+								<div class="popup" id="modal_1">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img01.jpg" alt="손흥민">
+										<span>손흥민<strong class="mf">MF</strong></span>
+										<p>1992.07.08/183Cm/78Kg/토트넘 홋스퍼(잉글랜드)</p>
+										<p>2015~ <em>토트넘 홋스퍼</em></p>
+										<p>2013~ 2015<em>바이엘04레버쿠젠</em></p>
+										<p>2010~ 2013<em>함부르크 SV</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop2">
+							<a href="#modal_2" rel="modal:open">
+								<div class="popup" id="modal_2">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img02.jpg" alt="황의조">
+										<span>황의조<strong class="fw">FW</strong></span>
+										<p>1992.08.28/185Cm/79Kg/지롱댕 보르도(프랑스)</p>
+										<p>2019~ <em>FC 지롱댕 보르도</em></p>
+										<p>2017~ 2019<em>감바 오사카</em></p>
+										<p>2013~ 2017<em>성남 FC</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop3">
+							<a href="#modal_3" rel="modal:open">
+								<div class="popup" id="modal_3">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img03.jpg" alt="이강인">
+										<span>이강인<strong class="mf">MF</strong></span>
+										<p>2001.02.19/173Cm/63Kg/발렌시아(스페인)</p>
+										<p>2019~ <em>발렌시아</em></p>
+									</div>
 
-            <div class="nav">
-                <div class="nav_cover clear">
-                    <div class="gnb">
-                        <ul class="clear">
-                            <li><a href="#a">KFA Live</a></li><!-- //KFA Live -->
-                            <li><a href="#a">국가대표</a>
-                                <div class="nav_down f2">
-                                    <div class="nav_cover">
-                                        <div class="nav_menu">
-                                            <div class="nav_box">
-                                                <h3><a href="#a">남자 국가대표명단</a></h3>
-                                                <ul>
-                                                    <li><a href="#a">남자 A</a></li>
-                                                    <li><a href="#a">남자 U-23</a></li>
-                                                    <li><a href="#a">남자 U-20</a></li>
-                                                    <li><a href="#a">남자 U-17</a></li>
-                                                    <li><a href="#a">남자 U-14</a></li>
-                                                    <li><a href="#a">남자 유니버시아드</a></li>
-                                                    <li><a href="#a">남자 풋살</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="nav_menu">
-                                            <div class="nav_box">
-                                                <h3><a href="#a">여자 국가대표명단</a></h3>
-                                                <ul>
-                                                    <li><a href="#a">여자 A</a></li>
-                                                    <li><a href="#a">여자 U-20</a></li>
-                                                    <li><a href="#a">여자 U-17</a></li>
-                                                    <li><a href="#a">여자 U-14</a></li>
-                                                    <li><a href="#a">여자 유니버시아드</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- //국가대표 -->
-                            <li><a href="#a">대회</a>
-                                <div class="nav_down f2">
-                                    <div class="nav_cover">
-                                        <div class="nav_menu">
-                                            <div class="nav_box">
-                                                <h3><a href="#a">대회</a></h3>
-                                                <ul>
-                                                    <li><a href="#a">FA컵</a></li>
-                                                    <li><a href="#a">K3리그</a></li>
-                                                    <li><a href="#a">U리그</a></li>
-                                                    <li><a href="#a">초중고리그</a></li>
-                                                    <li><a href="#a">K5 K6 K7</a></li>
-                                                    <li><a href="#a">i리그</a></li>
-                                                    <li><a href="#a">국내대회일정</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="nav_menu">
-                                            <div class="nav_box">
-                                                <h3><a href="#a">기록실</a></h3>
-                                                <ul>
-                                                    <li><a href="#a">한국 축구 연혁</a></li>
-                                                    <li><a href="#a">국가별 역대 전적</a></li>
-                                                    <li><a href="#a">선수별 A매치 기록</a></li>
-                                                    <li><a href="#a">역대 대표팀 감독</a></li>
-                                                    <li><a href="#a">각종 기록</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- //대회 -->
-                            <li><a href="#a">아카이브</a>
-                                <div class="nav_down f3">
-                                    <div class="nav_cover">
-                                        <div class="nav_menu">
-                                            <div class="nav_box">
-                                                <h3><a href="#a">국제대회</a></h3>
-                                                <ul>
-                                                    <li><a href="#a">FIFA 월드컵</a></li>
-                                                    <li><a href="#a">아시안컵</a></li>
-                                                    <li><a href="#a">올림픽</a></li>
-                                                    <li><a href="#a">아시안게임</a></li>
-                                                    <li><a href="#a">AFC U-23 챔피언십</a></li>
-                                                    <li><a href="#a">FIFA U-20 월드컵</a></li>
-                                                    <li><a href="#a">AFC U-19 챔피언십</a></li>
-                                                    <li><a href="#a">FIFA U-17 월드컵</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="nav_menu">
-                                            <div class="nav_box">
-                                                <h3><a href="#a">국내대회</a></h3>
-                                                <ul>
-                                                    <li><a href="#a">FA컵</a></li>
-                                                    <li><a href="#a">K리그</a></li>
-                                                    <li><a href="#a">내셔널리그</a></li>
-                                                    <li><a href="#a">K3리그</a></li>
-                                                    <li><a href="#a">WK리그</a></li>
-                                                    <li><a href="#a">초중고리그</a></li>
-                                                    <li><a href="#a">U리그</a></li>
-                                                    <li><a href="#a">FK리그</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="nav_menu">
-                                            <div class="nav_box">
-                                                <h3><a href="#a">자료실</a></h3>
-                                                <ul>
-                                                    <li><a href="#a">정관/축구인헌장</a></li>
-                                                    <li><a href="#a">규정/규칙</a></li>
-                                                    <li><a href="#a">ONSIDE</a></li>
-                                                    <li><a href="#a">사업계획/결산</a></li>
-                                                    <li><a href="#a">등록현황</a></li>
-                                                    <li><a href="#a">경기규칙</a></li>
-                                                    <li><a href="#a">재활/트레이닝</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- //아카이브 -->
-                            <li><a href="#a">KFA</a>
-                                <div class="nav_down f4">
-                                    <div class="nav_cover">
-                                        <div class="nav_menu">
-                                            <div class="nav_box">
-                                                <h3><a href="#a">KFA 소개</a></h3>
-                                                <ul>
-                                                    <li><a href="#a">개요</a></li>
-                                                    <li><a href="#a">연혁</a></li>
-                                                    <li><a href="#a">FAQs</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="nav_menu">
-                                            <div class="nav_box">
-                                                <h3><a href="#a">조직</a></h3>
-                                                <ul>
-                                                    <li><a href="#a">조직도</a></li>
-                                                    <li><a href="#a">산하단체</a></li>
-                                                    <li><a href="#a">임원명단</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="nav_menu">
-                                            <div class="nav_box">
-                                                <h3><a href="#a">비전/사회공헌</a></h3>
-                                                <ul>
-                                                    <li><a href="#a">비전해트트릭</a></li>
-                                                    <li><a href="#a">골든에이지</a></li>
-                                                    <li> <a href="#a">사회공헌</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="nav_menu">
-                                            <div class="nav_box">
-                                                <h3><a href="#a">NFC/풋볼 팬타지움</a></h3>
-                                                <ul>
-                                                    <li><a href="#a">파주NFC</a></li>
-                                                    <li><a href="#a">풋볼 팬타지움</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- //kfa -->
-                        </ul>
-                    </div>
-                    <!-- //gnb -->
-                    <div class="gnb_right">
-                        <ul>
-                            <li><a href="#a">로그인</a></li>
-                            <li><a href="#a">회원가입</a></li>
-                            <li><a href="#a">KFAN</a></li>
-                        </ul>
-                    </div>
-                    <!-- //gnb_right -->
-                </div>
-            </div>
-        </header>
-        <!-- //header -->
+								</div>
 
-        <div id="dot">
-            <ul>
-                <li><a href="#"><i class="xi-radiobox-checked" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="xi-radiobox-checked" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="xi-radiobox-checked" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="xi-radiobox-checked" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="xi-radiobox-checked" aria-hidden="true"></i></a></li>
-            </ul>
-        </div>
+							</a>
+						</li>
+						<li class="pop4">
+							<a href="#modal_4" rel="modal:open">
+								<div class="popup" id="modal_4">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img04.jpg" alt="김민재">
+										<span>김민재<strong class="df">DF</strong></span>
+										<p>1996.11.15/190Cm/89Kg/베이징 시노보 궈안(중국)</p>
+										<p>2019~ <em>베이징 시노보 궈안</em></p>
+										<p>2017~ 2019<em>전북 현대 모터스</em></p>
+										<p>2016~ 2016<em>경주 한국수력원자력</em></p>
+									</div>
 
-        <div id="contents">
-            <section>
-                <div class="img_header"></div>
-                <div class="img_slide">
-                    <div><a href="#a"><img src="img/slide01.jpg" alt="슬라이드이미지1" /></a></div>
-                    <div><a href="#a"><img src="img/slide02.jpg" alt="슬라이드이미지2" /></a></div>
-                    <div><a href="#a"><img src="img/slide03.jpg" alt="슬라이드이미지3" /></a></div>
-                    <div><a href="#a"><img src="img/slide04.jpg" alt="슬라이드이미지4" /></a></div>
-                    <div><a href="#a"><img src="img/slide05.jpg" alt="슬라이드이미지5" /></a></div>
-                </div>
-            </section>
-            <!-- //이미지 슬라이드 -->
-            <!-- 본문 영역 -->
-            <section id="section">
-                <div class="section_cover">
-                    <h2>KFA Live</h2>
-                    <div class="article_cover clear">
-                        <div class="article">
-                            <ul class="clear">
-                                <li>
-                                    <a href="#a">
-                                        <em><img src="img/img.png" alt="남자U-22"></em>
-                                        <div>
-                                            <h3>남자 U-23</h3>
-                                            <p>남자 U-22 대표팀, 국내 소집훈련 28인 명단발표!</p>
-                                            <span>New</span>
-                                            <div>더보기</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#a">
-                                        <em><img src="img/img01.png" alt="남자A"></em>
-                                        <div>
-                                            <h3>남자 A</h3>
-                                            <p>EAFF E-1 챔피언십 명단 발표!</p>
-                                            <span>New</span>
-                                            <div>더보기</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#a">
-                                        <em><img src="img/img02.jpeg" alt="협회일반"></em>
-                                        <div>
-                                            <h3>협회일반</h3>
-                                            <p>손흥민-이강인-정정용 감독, 2019 AFC 어워즈서 수상 영예</p>
-                                            <span class="today">TODAY</span>
-                                            <div>더보기</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#a">
-                                        <em><img src="img/img03.jpg" alt="K리그"></em>
-                                        <div>
-                                            <h3>K리그</h3>
-                                            <p>2019 K리그 대상 .. MVP 김보경, 영플레이어 김지현</p>
-                                            <span class="today">TODAY</span>
-                                            <div>더보기</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#a">
-                                        <em><img src="img/img04.jpg" alt="여자 A"></em>
-                                        <div>
-                                            <h3>여자 A</h3>
-                                            <p>'스페인 진출' 장슬기 "큰 책임감 느낀다"</p>
-                                            <span>New</span>
-                                            <div>더보기</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#a">
-                                        <em><img src="img/img05.jpg" alt="남자 A"></em>
-                                        <div>
-                                            <h3>남자 A</h3>
-                                            <p>리그 우승 경험한 김진수, 이제는 대표팀 우승 노린다</p>
-                                            <span class="today">New</span>
-                                            <div>더보기</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#a">
-                                        <em><img src="img/img08.png" alt="협회일반"></em>
-                                        <div>
-                                            <h3>협회일반</h3>
-                                            <p>핌 베어벡 전 축구국가대표팀 감독 별세.. 향년63세</p>
-                                            <span>New</span>
-                                            <div>더보기</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#a">
-                                        <em><img src="img/img07.jpg" alt="협회일반"></em>
-                                        <div>
-                                            <h3>협회일반</h3>
-                                            <p>"재활은 시기가 가장 중요" KFA 축구공감 토크콘서트 '부상 및 재활 편'</p>
-                                            <span>New</span>
-                                            <div>더보기</div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                            <input id="btn_more" type="checkbox">
-                            <ul class="btn_hidden clear">
-                                <li>
-                                    <a href="#a">
-                                        <em><img src="img/img09.jpg" alt="남자A"></em>
-                                        <div>
-                                            <h3>남자A</h3>
-                                            <p>벤투 감독 "최대한 좋은 경기력으로 E-1 챔피언십 나선다!"</p>
-                                            <span>New</span>
-                                            <div>더보기</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#a">
-                                        <em><img src="img/img10.jpg" alt="협회일반"></em>
-                                        <div>
-                                            <h3>협회일반</h3>
-                                            <p>정정용 감독, 서울이랜드FC에서 새로운 도전 시작</p>
-                                            <span>New</span>
-                                            <div>더보기</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#a">
-                                        <em><img src="img/img11.jpg" alt="남자A"></em>
-                                        <div>
-                                            <h3>남자A</h3>
-                                            <p>벤투호, 브라질에 0-3 패배</p>
-                                            <span class="today">TODAY</span>
-                                            <div>더보기</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#a">
-                                        <em><img src="img/img12.jpg" alt="남자U-23"></em>
-                                        <div>
-                                            <h3>남자U-23</h3>
-                                            <p>김학범 감독-홍명보 전무, 올림픽대표팀 차출 협의</p>
-                                            <span class="today">TODAY</span>
-                                            <div>더보기</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#a">
-                                        <em><img src="img/img04.jpg" alt="여자 A"></em>
-                                        <div>
-                                            <h3>여자 A</h3>
-                                            <p>'스페인 진출' 장슬기 "큰 책임감 느낀다"</p>
-                                            <span>New</span>
-                                            <div>더보기</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#a">
-                                        <em><img src="img/img05.jpg" alt="남자 A"></em>
-                                        <div>
-                                            <h3>남자 A</h3>
-                                            <p>리그 우승 경험한 김진수, 이제는 대표팀 우승 노린다</p>
-                                            <span class="today">New</span>
-                                            <div>더보기</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#a">
-                                        <em><img src="img/img08.png" alt="협회일반"></em>
-                                        <div>
-                                            <h3>협회일반</h3>
-                                            <p>핌 베어벡 전 축구국가대표팀 감독 별세.. 향년63세</p>
-                                            <span>New</span>
-                                            <div>더보기</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#a">
-                                        <em><img src="img/img07.jpg" alt="협회일반"></em>
-                                        <div>
-                                            <h3>협회일반</h3>
-                                            <p>"재활은 시기가 가장 중요" KFA 축구공감 토크콘서트 '부상 및 재활 편'</p>
-                                            <span>New</span>
-                                            <div>더보기</div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                            <label id="btn_more" for="btn_more">더보기</label>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- //본문 영역 -->
-            <!-- 서브배너 슬라이드 -->
-            <section>
-                <div class="sub_slide">
-                    <div class="bannner">
-                        <a href="#a">
-                            <img src="img/bottom_img01.jpg" alt="" class="web">
-                            <img src="img/bottom_img01_m.jpg" alt="" class="mob">
-                        </a>
-                    </div>
-                    <div class="bannner">
-                        <a href="#a">
-                            <img src="img/bottom_img02.jpg" alt="" class="web">
-                            <img src="img/bottom_img02_m.jpg" alt="" class="mob">
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <!-- //서브 배너 슬라이드 -->
+								</div>
 
-            <!-- video -->
-            <section>
-                <div class="video">
-                    <h2>하이라이트 영상</h2>
-                    <iframe src="https://www.youtube.com/embed/_CUOephKfXM" title="피르미누 김진수" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/lBk840yyiNI" title="대한민국 브라질 친선경기" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/_0CbkpsvbiM" title="김영권 라때는 말이야" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </section>
-            <!-- //video -->
+							</a>
+						</li>
+						<li class="pop5">
+							<a href="#modal_5" rel="modal:open">
+								<div class="popup" id="modal_5">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img05.jpg" alt="황희찬">
+										<span>황희찬<strong class="fw">FW</strong></span>
+										<p>1996.01.26/177Cm/70Kg/레드불 찰츠부르크(오스트리아)</p>
+										<p>2016~ <em>레드불 찰츠부르크</em></p>
+										<p>2018~ 2019<em>함부르크 SV(임대)</em></p>
+										<p>2015~ 2016<em>FC 리퍼링</em></p>
+									</div>
 
-            <section>
-                <div id="sns">
-                    <div class="sns_cover">
-                        <h2>축구협회 SNS</h2>
-                        <ul class="clear">
-                            <li class="clear">
-                                <div class="slide">
-                                    <a href="#a">
-                                        <span class="slide_left">
-                                            <img src="./img/sns01.jpg" alt="sns01" />
-                                        </span>
-                                        <span class="slide_right">
-                                            <em>AFC 올해의 국제선수상</em>
-                                            <em>
-                                                올해의 국제선수상 주인공은 바로 손흥민!!
-                                            </em>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="slide">
-                                    <a href="#a">
-                                        <span class="slide_left">
-                                            <img src="./img/sns02.jpg" alt="sns02" />
-                                        </span>
-                                        <span class="slide_right">
-                                            <em>AFC 올해의 유망주상</em>
-                                            <em>
-                                                올해의 유망주상 주인공은 바로 이강인!!
-                                            </em>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="slide">
-                                    <a href="#a">
-                                        <span class="slide_left">
-                                            <img src="./img/sns03.jpg" alt="sns03" />
-                                        </span>
-                                        <span class="slide_right">
-                                            <em>장슬기 입단!!</em>
-                                            <em>
-                                                스페인 마드리드 CF 페메니노 입단!!
-                                            </em>
-                                        </span>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="clear">
-                                <div class="slide">
-                                    <a href="#a">
-                                        <span class="slide_left">
-                                            <img src="./img/sns03.jpg" alt="sns03" />
-                                        </span>
-                                        <span class="slide_right">
-                                            <em>장슬기 입단!!</em>
-                                            <em>
-                                                스페인 마드리드 CF 페메니노 입단!!
-                                            </em>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="slide">
-                                    <a href="#a">
-                                        <span class="slide_left">
-                                            <img src="./img/sns02.jpg" alt="sns02" />
-                                        </span>
-                                        <span class="slide_right">
-                                            <em>AFC 올해의 유망주상</em>
-                                            <em>
-                                                올해의 유망주상 주인공은 바로 이강인!!
-                                            </em>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="slide">
-                                    <a href="#a">
-                                        <span class="slide_left">
-                                            <img src="./img/sns01.jpg" alt="sns01" />
-                                        </span>
-                                        <span class="slide_right">
-                                            <em>AFC 올해의 국제선수상</em>
-                                            <em>
-                                                올해의 국제선수상 주인공은 바로 손흥민!!
-                                            </em>
-                                        </span>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="clear">
-                                <div class="slide">
-                                    <a href="#a">
-                                        <span class="slide_left">
-                                            <img src="./img/sns03.jpg" alt="sns03" />
-                                        </span>
-                                        <span class="slide_right">
-                                            <em>장슬기 입단!!</em>
-                                            <em>
-                                                스페인 마드리드 CF 페메니노 입단!!
-                                            </em>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="slide">
-                                    <a href="#a">
-                                        <span class="slide_left">
-                                            <img src="./img/sns01.jpg" alt="sns01" />
-                                        </span>
-                                        <span class="slide_right">
-                                            <em>AFC 올해의 국제선수상</em>
-                                            <em>
-                                                올해의 국제선수상 주인공은 바로 손흥민!!
-                                            </em>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="slide">
-                                    <a href="#a">
-                                        <span class="slide_left">
-                                            <img src="./img/sns02.jpg" alt="sns02" />
-                                        </span>
-                                        <span class="slide_right">
-                                            <em>AFC 올해의 유망주상</em>
-                                            <em>
-                                                올해의 유망주상 주인공은 바로 이강인!!
-                                            </em>
-                                        </span>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="pager">
-                            <ol class="clear">
-                                <li class="on"><a href="#a"><i class="xi-radiobox-checked" aria-hidden="true"></i></a></li>
-                                <li><a href="#a"><i class="xi-radiobox-checked" aria-hidden="true"></i></a></li>
-                                <li><a href="#a"><i class="xi-radiobox-checked" aria-hidden="true"></i></a></li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- //SNS -->
-        </div>
-        <!-- //contents -->
-        <!-- 푸터영역 -->
-        <div id="footer">
-            <div class="footer_partners">
-                <h5>OFFICIAL PARTNERS</h5>
-                <ul>
-                    <li><a href="#a"><img src="img/Sponsor_01_Nike_@2X.png" alt="스폰서"></a></li>
-                    <li><a href="#a"><img src="img/Sponsor_02_KEB_@2X.png" alt="스폰서"></a></li>
-                    <li><a href="#a"><img src="img/Sponsor_03_KT_@2X.png" alt="스폰서"></a></li>
-                    <li><a href="#a"><img src="img/Sponsor_05_emart_@2X.png" alt="스폰서"></a></li>
-                    <li><a href="#a"><img src="img/Sponsor_06_Kyobo_@2X.png" alt="스폰서"></a></li>
-                    <li><a href="#a"><img src="img/Sponsor_07_Hyundai_@2X.png" alt="스폰서"></a></li>
-                    <li><a href="#a"><img src="img/Sponsor_08_Asiana_@2X.png" alt="스폰서"></a></li>
-                    <li><a href="#a"><img src="img/Sponsor_09_Coke_@2X.png" alt="스폰서"></a></li>
-                    <li><a href="#a"><img src="img/Sponsor_10_Lotte_@2X.png" alt="스폰서"></a></li>
-                    <li><a href="#a"><img src="img/Sponsor_11_Nexon_@2X.png" alt="스폰서"></a></li>
-                </ul>
-            </div>
-            <div class="footer_top">
-                <div class="footer_cover">
-                    <ul class="clear">
-                        <li><a href="./index.html"><img src="img/logo.png" alt="로고"></a></li>
-                        <li><a href="#a">KFA edu</a></li>
-                        <li><a href="#a">KFA Photo</a></li>
-                        <li><a href="#a">JoinKFA</a></li>
-                        <li><a href="#a">Media</a></li>
-                        <li><a href="#a">KFA Ticket</a></li>
-                        <li><a href="#a">KFA Store</a></li>
-                    </ul>
-                    <div class="family_site">
-                        <select name="list" title="패밀리 사이트">
-                            <option>Family site</option>
-                            <option>국제축구연맹(FIFA)</option>
-                            <option>아시아축구연맹(AFC)</option>
-                            <option>동아시아축구연맹(EAFF)</option>
-                            <option>서울특별시축구협회</option>
-                            <option>부산광역시축구협회</option>
-                            <option>대구광역시축구협회</option>
-                            <option>인천광역시축구협회</option>
-                            <option>대전광역시축구협회</option>
-                            <option>광주광역시축구협회</option>
-                            <option>울산광역시축구협회</option>
-                            <option>경기도축구협회</option>
-                            <option>강원도축구협회</option>
-                            <option>제주특별자치도축구협회</option>
-                            <option>충청북도축구협회</option>
-                            <option>충청남도축구협회</option>
-                            <option>전라북도축구협회</option>
-                            <option>전라남도축구협회</option>
-                            <option>경상북도축구협회</option>
-                            <option>경상남도축구협회</option>
-                            <option>세종특별자치시축구협회</option>
-                            <option>한국프로축구연맹(K리그)</option>
-                            <option>한국실업축구연맹(내셔널리그)</option>
-                            <option>한국대학축구연맹</option>
-                            <option>한국고등축구연맹</option>
-                            <option>한국중등축구연맹(U-15)</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="footer_bottom">
-                <div class="footer_cover">
-                    <div class="left_menu">
-                        <ul class="clear">
-                            <li><a href="#a">개인정보처리방침</a></li>
-                            <li><a href="#a">회원이용약관</a></li>
-                            <li><a href="#a">이메일무단수집거부</a></li>
-                        </ul>
-                    </div>
-                    <div class="center_menu">
-                        <ul>
-                            <li>
-                                <a href="https://www.instagram.com/thekfa/" target="_blank">
-                                    <img src="img/btn_insta_w.png" alt="인스타">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/KFA/" target="_blank">
-                                    <img src="img/btn_facebook_w.png" alt="페이스북">
-                                </a>
-                            </li>
-                            <li><a href="https://twitter.com/thekfa" target="_blank">
-                                    <img src="img/btn_tweet_w.png" alt="트위터">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://www.youtube.com/Kfatvcom" target="_blank">
-                                    <img src="img/btn_navertv_w.png" alt="네이버">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="right_menu">
-                        <p>Copyright ⓒ KFA. All Rights Reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- //푸터 영역 -->
-    </div>
-    
-    <!-- JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+								</div>
 
-    <!-- 자바스크립트 라이브러리 -->
-    <script src="js/modernizr-custom.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/jquery.modal.js"></script>
-</body></html>
+							</a>
+						</li>
+						<li class="pop6">
+							<a href="#modal_6" rel="modal:open">
+								<div class="popup" id="modal_6">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img07.jpg" alt="이용">
+										<span>이용<strong class="df">DF</strong></span>
+										<p>1986.12.24/180Cm/74Kg/전북 현대 모터스(대한민국)</p>
+										<p>2017~ <em>전북 현대 모터스</em></p>
+										<p>2010~ 2016<em>울산 현대 FC</em></p>
+										<p>2014~ 2016<em>상주 상무(임대)</em></p>
+									</div>
+
+								</div>
+
+							</a>
+						</li>
+						<li class="pop7">
+							<a href="#modal_7" rel="modal:open">
+								<div class="popup" id="modal_7">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img06.jpg" alt="조현우">
+										<span>조현우<strong class="gk">GK</strong></span>
+										<p>1991.09.25/189Cm/75Kg/대구 FC(대한민국)</p>
+										<p>2013~ <em>대구 FC</em></p>
+									</div>
+
+								</div>
+
+							</a>
+						</li>
+						<li class="pop8">
+							<a href="#modal_8" rel="modal:open">
+								<div class="popup" id="modal_8">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/no_data.png" alt="더보기">
+										<span>국가대표 명단 보기</span>
+										<p></p>
+										<p>자세한 선수명단은 KFA 공식사이트에서 제공됩니다.</p>
+									</div>
+
+								</div>
+
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="menu_03">
+				<a href="#a"><span></span></a>
+				<div class="sub_menu">
+					<ul>
+						<li class="pop1">
+							<a href="#modal_1" rel="modal:open">
+								<div class="popup" id="modal_1">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img01.jpg" alt="손흥민">
+										<span>손흥민<strong class="mf">MF</strong></span>
+										<p>1992.07.08/183Cm/78Kg/토트넘 홋스퍼(잉글랜드)</p>
+										<p>2015~ <em>토트넘 홋스퍼</em></p>
+										<p>2013~ 2015<em>바이엘04레버쿠젠</em></p>
+										<p>2010~ 2013<em>함부르크 SV</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop2">
+							<a href="#modal_2" rel="modal:open">
+								<div class="popup" id="modal_2">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img02.jpg" alt="황의조">
+										<span>황의조<strong class="fw">FW</strong></span>
+										<p>1992.08.28/185Cm/79Kg/지롱댕 보르도(프랑스)</p>
+										<p>2019~ <em>FC 지롱댕 보르도</em></p>
+										<p>2017~ 2019<em>감바 오사카</em></p>
+										<p>2013~ 2017<em>성남 FC</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop3">
+							<a href="#modal_3" rel="modal:open">
+								<div class="popup" id="modal_3">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img03.jpg" alt="이강인">
+										<span>이강인<strong class="mf">MF</strong></span>
+										<p>2001.02.19/173Cm/63Kg/발렌시아(스페인)</p>
+										<p>2019~ <em>발렌시아</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop4">
+							<a href="#modal_4" rel="modal:open">
+								<div class="popup" id="modal_4">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img04.jpg" alt="김민재">
+										<span>김민재<strong class="df">DF</strong></span>
+										<p>1996.11.15/190Cm/89Kg/베이징 시노보 궈안(중국)</p>
+										<p>2019~ <em>베이징 시노보 궈안</em></p>
+										<p>2017~ 2019<em>전북 현대 모터스</em></p>
+										<p>2016~ 2016<em>경주 한국수력원자력</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop5">
+							<a href="#modal_5" rel="modal:open">
+								<div class="popup" id="modal_5">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img05.jpg" alt="황희찬">
+										<span>황희찬<strong class="fw">FW</strong></span>
+										<p>1996.01.26/177Cm/70Kg/레드불 찰츠부르크(오스트리아)</p>
+										<p>2016~ <em>레드불 찰츠부르크</em></p>
+										<p>2018~ 2019<em>함부르크 SV(임대)</em></p>
+										<p>2015~ 2016<em>FC 리퍼링</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop6">
+							<a href="#modal_6" rel="modal:open">
+								<div class="popup" id="modal_6">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img07.jpg" alt="이용">
+										<span>이용<strong class="df">DF</strong></span>
+										<p>1986.12.24/180Cm/74Kg/전북 현대 모터스(대한민국)</p>
+										<p>2017~ <em>전북 현대 모터스</em></p>
+										<p>2010~ 2016<em>울산 현대 FC</em></p>
+										<p>2014~ 2016<em>상주 상무(임대)</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop7">
+							<a href="#modal_7" rel="modal:open">
+								<div class="popup" id="modal_7">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img06.jpg" alt="조현우">
+										<span>조현우<strong class="gk">GK</strong></span>
+										<p>1991.09.25/189Cm/75Kg/대구 FC(대한민국)</p>
+										<p>2013~ <em>대구 FC</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop8">
+							<a href="#modal_8" rel="modal:open">
+								<div class="popup" id="modal_8">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/no_data.png" alt="더보기">
+										<span>국가대표 명단 보기</span>
+										<p></p>
+										<p>자세한 선수명단은 KFA 공식사이트에서 제공됩니다.</p>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="menu_04">
+				<a href="#a"><span></span></a>
+				<div class="sub_menu">
+					<ul>
+						<li class="pop1">
+							<a href="#modal_1" rel="modal:open">
+								<div class="popup" id="modal_1">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img01.jpg" alt="손흥민">
+										<span>손흥민<strong class="mf">MF</strong></span>
+										<p>1992.07.08/183Cm/78Kg/토트넘 홋스퍼(잉글랜드)</p>
+										<p>2015~ <em>토트넘 홋스퍼</em></p>
+										<p>2013~ 2015<em>바이엘04레버쿠젠</em></p>
+										<p>2010~ 2013<em>함부르크 SV</em></p>
+									</div>
+
+								</div>
+
+							</a>
+						</li>
+						<li class="pop2">
+							<a href="#modal_2" rel="modal:open">
+								<div class="popup" id="modal_2">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img02.jpg" alt="황의조">
+										<span>황의조<strong class="fw">FW</strong></span>
+										<p>1992.08.28/185Cm/79Kg/지롱댕 보르도(프랑스)</p>
+										<p>2019~ <em>FC 지롱댕 보르도</em></p>
+										<p>2017~ 2019<em>감바 오사카</em></p>
+										<p>2013~ 2017<em>성남 FC</em></p>
+									</div>
+
+								</div>
+
+							</a>
+						</li>
+						<li class="pop3">
+							<a href="#modal_3" rel="modal:open">
+								<div class="popup" id="modal_3">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img03.jpg" alt="이강인">
+										<span>이강인<strong class="mf">MF</strong></span>
+										<p>2001.02.19/173Cm/63Kg/발렌시아(스페인)</p>
+										<p>2019~ <em>발렌시아</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop4">
+							<a href="#modal_4" rel="modal:open">
+								<div class="popup" id="modal_4">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img04.jpg" alt="김민재">
+										<span>김민재<strong class="df">DF</strong></span>
+										<p>1996.11.15/190Cm/89Kg/베이징 시노보 궈안(중국)</p>
+										<p>2019~ <em>베이징 시노보 궈안</em></p>
+										<p>2017~ 2019<em>전북 현대 모터스</em></p>
+										<p>2016~ 2016<em>경주 한국수력원자력</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop5">
+							<a href="#modal_5" rel="modal:open">
+								<div class="popup" id="modal_5">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img05.jpg" alt="황희찬">
+										<span>황희찬<strong class="fw">FW</strong></span>
+										<p>1996.01.26/177Cm/70Kg/레드불 찰츠부르크(오스트리아)</p>
+										<p>2016~ <em>레드불 찰츠부르크</em></p>
+										<p>2018~ 2019<em>함부르크 SV(임대)</em></p>
+										<p>2015~ 2016<em>FC 리퍼링</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop6">
+							<a href="#modal_6" rel="modal:open">
+								<div class="popup" id="modal_6">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img07.jpg" alt="이용">
+										<span>이용<strong class="df">DF</strong></span>
+										<p>1986.12.24/180Cm/74Kg/전북 현대 모터스(대한민국)</p>
+										<p>2017~ <em>전북 현대 모터스</em></p>
+										<p>2010~ 2016<em>울산 현대 FC</em></p>
+										<p>2014~ 2016<em>상주 상무(임대)</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop7">
+							<a href="#modal_7" rel="modal:open">
+								<div class="popup" id="modal_7">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img06.jpg" alt="조현우">
+										<span>조현우<strong class="gk">GK</strong></span>
+										<p>1991.09.25/189Cm/75Kg/대구 FC(대한민국)</p>
+										<p>2013~ <em>대구 FC</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop8">
+							<a href="#modal_8" rel="modal:open">
+								<div class="popup" id="modal_8">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/no_data.png" alt="더보기">
+										<span>국가대표 명단 보기</span>
+										<p></p>
+										<p>자세한 선수명단은 KFA 공식사이트에서 제공됩니다.</p>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="menu_05">
+				<a href="#a"><span></span></a>
+				<div class="sub_menu">
+					<ul>
+						<li class="pop1">
+							<a href="#modal_1" rel="modal:open">
+								<div class="popup" id="modal_1">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img01.jpg" alt="손흥민">
+										<span>손흥민<strong class="mf">MF</strong></span>
+										<p>1992.07.08/183Cm/78Kg/토트넘 홋스퍼(잉글랜드)</p>
+										<p>2015~ <em>토트넘 홋스퍼</em></p>
+										<p>2013~ 2015<em>바이엘04레버쿠젠</em></p>
+										<p>2010~ 2013<em>함부르크 SV</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop2">
+							<a href="#modal_2" rel="modal:open">
+								<div class="popup" id="modal_2">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img02.jpg" alt="황의조">
+										<span>황의조<strong class="fw">FW</strong></span>
+										<p>1992.08.28/185Cm/79Kg/지롱댕 보르도(프랑스)</p>
+										<p>2019~ <em>FC 지롱댕 보르도</em></p>
+										<p>2017~ 2019<em>감바 오사카</em></p>
+										<p>2013~ 2017<em>성남 FC</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop3">
+							<a href="#modal_3" rel="modal:open">
+								<div class="popup" id="modal_3">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img03.jpg" alt="이강인">
+										<span>이강인<strong class="mf">MF</strong></span>
+										<p>2001.02.19/173Cm/63Kg/발렌시아(스페인)</p>
+										<p>2019~ <em>발렌시아</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop4">
+							<a href="#modal_4" rel="modal:open">
+								<div class="popup" id="modal_4">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img04.jpg" alt="김민재">
+										<span>김민재<strong class="df">DF</strong></span>
+										<p>1996.11.15/190Cm/89Kg/베이징 시노보 궈안(중국)</p>
+										<p>2019~ <em>베이징 시노보 궈안</em></p>
+										<p>2017~ 2019<em>전북 현대 모터스</em></p>
+										<p>2016~ 2016<em>경주 한국수력원자력</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop5">
+							<a href="#modal_5" rel="modal:open">
+								<div class="popup" id="modal_5">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img05.jpg" alt="황희찬">
+										<span>황희찬<strong class="fw">FW</strong></span>
+										<p>1996.01.26/177Cm/70Kg/레드불 찰츠부르크(오스트리아)</p>
+										<p>2016~ <em>레드불 찰츠부르크</em></p>
+										<p>2018~ 2019<em>함부르크 SV(임대)</em></p>
+										<p>2015~ 2016<em>FC 리퍼링</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop6">
+							<a href="#modal_6" rel="modal:open">
+								<div class="popup" id="modal_6">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img07.jpg" alt="이용">
+										<span>이용<strong class="df">DF</strong></span>
+										<p>1986.12.24/180Cm/74Kg/전북 현대 모터스(대한민국)</p>
+										<p>2017~ <em>전북 현대 모터스</em></p>
+										<p>2010~ 2016<em>울산 현대 FC</em></p>
+										<p>2014~ 2016<em>상주 상무(임대)</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop7">
+							<a href="#modal_7" rel="modal:open">
+								<div class="popup" id="modal_7">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img06.jpg" alt="조현우">
+										<span>조현우<strong class="gk">GK</strong></span>
+										<p>1991.09.25/189Cm/75Kg/대구 FC(대한민국)</p>
+										<p>2013~ <em>대구 FC</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop8">
+							<a href="#modal_8" rel="modal:open">
+								<div class="popup" id="modal_8">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/no_data.png" alt="더보기">
+										<span>국가대표 명단 보기</span>
+										<p></p>
+										<p>자세한 선수명단은 KFA 공식사이트에서 제공됩니다.</p>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="menu_06">
+				<a href="#a"><span></span></a>
+				<div class="sub_menu">
+					<ul>
+						<li class="pop1">
+							<a href="#modal_1" rel="modal:open">
+								<div class="popup" id="modal_1">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img01.jpg" alt="손흥민">
+										<span>손흥민<strong class="mf">MF</strong></span>
+										<p>1992.07.08/183Cm/78Kg/토트넘 홋스퍼(잉글랜드)</p>
+										<p>2015~ <em>토트넘 홋스퍼</em></p>
+										<p>2013~ 2015<em>바이엘04레버쿠젠</em></p>
+										<p>2010~ 2013<em>함부르크 SV</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop2">
+							<a href="#modal_2" rel="modal:open">
+								<div class="popup" id="modal_2">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img02.jpg" alt="황의조">
+										<span>황의조<strong class="fw">FW</strong></span>
+										<p>1992.08.28/185Cm/79Kg/지롱댕 보르도(프랑스)</p>
+										<p>2019~ <em>FC 지롱댕 보르도</em></p>
+										<p>2017~ 2019<em>감바 오사카</em></p>
+										<p>2013~ 2017<em>성남 FC</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop3">
+							<a href="#modal_3" rel="modal:open">
+								<div class="popup" id="modal_3">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img03.jpg" alt="이강인">
+										<span>이강인<strong class="mf">MF</strong></span>
+										<p>2001.02.19/173Cm/63Kg/발렌시아(스페인)</p>
+										<p>2019~ <em>발렌시아</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop4">
+							<a href="#modal_4" rel="modal:open">
+								<div class="popup" id="modal_4">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img04.jpg" alt="김민재">
+										<span>김민재<strong class="df">DF</strong></span>
+										<p>1996.11.15/190Cm/89Kg/베이징 시노보 궈안(중국)</p>
+										<p>2019~ <em>베이징 시노보 궈안</em></p>
+										<p>2017~ 2019<em>전북 현대 모터스</em></p>
+										<p>2016~ 2016<em>경주 한국수력원자력</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop5">
+							<a href="#modal_5" rel="modal:open">
+								<div class="popup" id="modal_5">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img05.jpg" alt="황희찬">
+										<span>황희찬<strong class="fw">FW</strong></span>
+										<p>1996.01.26/177Cm/70Kg/레드불 찰츠부르크(오스트리아)</p>
+										<p>2016~ <em>레드불 찰츠부르크</em></p>
+										<p>2018~ 2019<em>함부르크 SV(임대)</em></p>
+										<p>2015~ 2016<em>FC 리퍼링</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop6">
+							<a href="#modal_6" rel="modal:open">
+								<div class="popup" id="modal_6">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img07.jpg" alt="이용">
+										<span>이용<strong class="df">DF</strong></span>
+										<p>1986.12.24/180Cm/74Kg/전북 현대 모터스(대한민국)</p>
+										<p>2017~ <em>전북 현대 모터스</em></p>
+										<p>2010~ 2016<em>울산 현대 FC</em></p>
+										<p>2014~ 2016<em>상주 상무(임대)</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop7">
+							<a href="#modal_7" rel="modal:open">
+								<div class="popup" id="modal_7">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/popup_img06.jpg" alt="조현우">
+										<span>조현우<strong class="gk">GK</strong></span>
+										<p>1991.09.25/189Cm/75Kg/대구 FC(대한민국)</p>
+										<p>2013~ <em>대구 FC</em></p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="pop8">
+							<a href="#modal_8" rel="modal:open">
+								<div class="popup" id="modal_8">
+									<h2>남자 국가 대표</h2>
+									<div class="container">
+										<img src="img/no_data.png" alt="더보기">
+										<span>국가대표 명단 보기</span>
+										<p></p>
+										<p>자세한 선수명단은 KFA 공식사이트에서 제공됩니다.</p>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- //side_fix -->
+	<div id="wrap">
+		<header>
+			<div class="header_top">
+				<a href="./index.html">
+					<img src="img/top_logo.png" alt="축구협회" />
+				</a>
+			</div>
+
+			<div class="nav">
+				<div class="nav_cover clear">
+					<div class="gnb">
+						<ul class="clear">
+							<li><a href="#a">KFA Live</a></li><!-- //KFA Live -->
+							<li><a href="#a">국가대표</a>
+								<div class="nav_down f2">
+									<div class="nav_cover">
+										<div class="nav_menu">
+											<div class="nav_box">
+												<h3><a href="#a">남자 국가대표명단</a></h3>
+												<ul>
+													<li><a href="#a">남자 A</a></li>
+													<li><a href="#a">남자 U-23</a></li>
+													<li><a href="#a">남자 U-20</a></li>
+													<li><a href="#a">남자 U-17</a></li>
+													<li><a href="#a">남자 U-14</a></li>
+													<li><a href="#a">남자 유니버시아드</a></li>
+													<li><a href="#a">남자 풋살</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="nav_menu">
+											<div class="nav_box">
+												<h3><a href="#a">여자 국가대표명단</a></h3>
+												<ul>
+													<li><a href="#a">여자 A</a></li>
+													<li><a href="#a">여자 U-20</a></li>
+													<li><a href="#a">여자 U-17</a></li>
+													<li><a href="#a">여자 U-14</a></li>
+													<li><a href="#a">여자 유니버시아드</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<!-- //국가대표 -->
+							<li><a href="#a">대회</a>
+								<div class="nav_down f2">
+									<div class="nav_cover">
+										<div class="nav_menu">
+											<div class="nav_box">
+												<h3><a href="#a">대회</a></h3>
+												<ul>
+													<li><a href="#a">FA컵</a></li>
+													<li><a href="#a">K3리그</a></li>
+													<li><a href="#a">U리그</a></li>
+													<li><a href="#a">초중고리그</a></li>
+													<li><a href="#a">K5 K6 K7</a></li>
+													<li><a href="#a">i리그</a></li>
+													<li><a href="#a">국내대회일정</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="nav_menu">
+											<div class="nav_box">
+												<h3><a href="#a">기록실</a></h3>
+												<ul>
+													<li><a href="#a">한국 축구 연혁</a></li>
+													<li><a href="#a">국가별 역대 전적</a></li>
+													<li><a href="#a">선수별 A매치 기록</a></li>
+													<li><a href="#a">역대 대표팀 감독</a></li>
+													<li><a href="#a">각종 기록</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<!-- //대회 -->
+							<li><a href="#a">아카이브</a>
+								<div class="nav_down f3">
+									<div class="nav_cover">
+										<div class="nav_menu">
+											<div class="nav_box">
+												<h3><a href="#a">국제대회</a></h3>
+												<ul>
+													<li><a href="#a">FIFA 월드컵</a></li>
+													<li><a href="#a">아시안컵</a></li>
+													<li><a href="#a">올림픽</a></li>
+													<li><a href="#a">아시안게임</a></li>
+													<li><a href="#a">AFC U-23 챔피언십</a></li>
+													<li><a href="#a">FIFA U-20 월드컵</a></li>
+													<li><a href="#a">AFC U-19 챔피언십</a></li>
+													<li><a href="#a">FIFA U-17 월드컵</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="nav_menu">
+											<div class="nav_box">
+												<h3><a href="#a">국내대회</a></h3>
+												<ul>
+													<li><a href="#a">FA컵</a></li>
+													<li><a href="#a">K리그</a></li>
+													<li><a href="#a">내셔널리그</a></li>
+													<li><a href="#a">K3리그</a></li>
+													<li><a href="#a">WK리그</a></li>
+													<li><a href="#a">초중고리그</a></li>
+													<li><a href="#a">U리그</a></li>
+													<li><a href="#a">FK리그</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="nav_menu">
+											<div class="nav_box">
+												<h3><a href="#a">자료실</a></h3>
+												<ul>
+													<li><a href="#a">정관/축구인헌장</a></li>
+													<li><a href="#a">규정/규칙</a></li>
+													<li><a href="#a">ONSIDE</a></li>
+													<li><a href="#a">사업계획/결산</a></li>
+													<li><a href="#a">등록현황</a></li>
+													<li><a href="#a">경기규칙</a></li>
+													<li><a href="#a">재활/트레이닝</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<!-- //아카이브 -->
+							<li><a href="#a">KFA</a>
+								<div class="nav_down f4">
+									<div class="nav_cover">
+										<div class="nav_menu">
+											<div class="nav_box">
+												<h3><a href="#a">KFA 소개</a></h3>
+												<ul>
+													<li><a href="#a">개요</a></li>
+													<li><a href="#a">연혁</a></li>
+													<li><a href="#a">FAQs</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="nav_menu">
+											<div class="nav_box">
+												<h3><a href="#a">조직</a></h3>
+												<ul>
+													<li><a href="#a">조직도</a></li>
+													<li><a href="#a">산하단체</a></li>
+													<li><a href="#a">임원명단</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="nav_menu">
+											<div class="nav_box">
+												<h3><a href="#a">비전/사회공헌</a></h3>
+												<ul>
+													<li><a href="#a">비전해트트릭</a></li>
+													<li><a href="#a">골든에이지</a></li>
+													<li> <a href="#a">사회공헌</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="nav_menu">
+											<div class="nav_box">
+												<h3><a href="#a">NFC/풋볼 팬타지움</a></h3>
+												<ul>
+													<li><a href="#a">파주NFC</a></li>
+													<li><a href="#a">풋볼 팬타지움</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<!-- //kfa -->
+						</ul>
+					</div>
+					<!-- //gnb -->
+					<div class="gnb_right">
+						<ul>
+							<li><a href="#a">로그인</a></li>
+							<li><a href="#a">회원가입</a></li>
+							<li><a href="#a">KFAN</a></li>
+						</ul>
+					</div>
+					<!-- //gnb_right -->
+				</div>
+			</div>
+		</header>
+		<!-- //header -->
+
+		<div id="dot">
+			<ul>
+				<li><a href="#"><i class="xi-radiobox-checked" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="xi-radiobox-checked" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="xi-radiobox-checked" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="xi-radiobox-checked" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="xi-radiobox-checked" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+
+		<div id="contents">
+			<section>
+				<div class="img_header"></div>
+				<div class="img_slide">
+					<div><a href="#a"><img src="img/slide01.jpg" alt="슬라이드이미지1" /></a></div>
+					<div><a href="#a"><img src="img/slide02.jpg" alt="슬라이드이미지2" /></a></div>
+					<div><a href="#a"><img src="img/slide03.jpg" alt="슬라이드이미지3" /></a></div>
+					<div><a href="#a"><img src="img/slide04.jpg" alt="슬라이드이미지4" /></a></div>
+					<div><a href="#a"><img src="img/slide05.jpg" alt="슬라이드이미지5" /></a></div>
+				</div>
+			</section>
+			<!-- //이미지 슬라이드 -->
+			<!-- 본문 영역 -->
+			<section id="section">
+				<div class="section_cover">
+					<h2>KFA Live</h2>
+					<div class="article_cover clear">
+						<div class="article">
+							<ul class="clear">
+								<li>
+									<a href="#a">
+										<em><img src="img/img.png" alt="남자U-22"></em>
+										<div>
+											<h3>남자 U-23</h3>
+											<p>남자 U-22 대표팀, 국내 소집훈련 28인 명단발표!</p>
+											<span>New</span>
+											<div>더보기</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#a">
+										<em><img src="img/img01.png" alt="남자A"></em>
+										<div>
+											<h3>남자 A</h3>
+											<p>EAFF E-1 챔피언십 명단 발표!</p>
+											<span>New</span>
+											<div>더보기</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#a">
+										<em><img src="img/img02.jpeg" alt="협회일반"></em>
+										<div>
+											<h3>협회일반</h3>
+											<p>손흥민-이강인-정정용 감독, 2019 AFC 어워즈서 수상 영예</p>
+											<span class="today">TODAY</span>
+											<div>더보기</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#a">
+										<em><img src="img/img03.jpg" alt="K리그"></em>
+										<div>
+											<h3>K리그</h3>
+											<p>2019 K리그 대상 .. MVP 김보경, 영플레이어 김지현</p>
+											<span class="today">TODAY</span>
+											<div>더보기</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#a">
+										<em><img src="img/img04.jpg" alt="여자 A"></em>
+										<div>
+											<h3>여자 A</h3>
+											<p>'스페인 진출' 장슬기 "큰 책임감 느낀다"</p>
+											<span>New</span>
+											<div>더보기</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#a">
+										<em><img src="img/img05.jpg" alt="남자 A"></em>
+										<div>
+											<h3>남자 A</h3>
+											<p>리그 우승 경험한 김진수, 이제는 대표팀 우승 노린다</p>
+											<span class="today">New</span>
+											<div>더보기</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#a">
+										<em><img src="img/img08.png" alt="협회일반"></em>
+										<div>
+											<h3>협회일반</h3>
+											<p>핌 베어벡 전 축구국가대표팀 감독 별세.. 향년63세</p>
+											<span>New</span>
+											<div>더보기</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#a">
+										<em><img src="img/img07.jpg" alt="협회일반"></em>
+										<div>
+											<h3>협회일반</h3>
+											<p>"재활은 시기가 가장 중요" KFA 축구공감 토크콘서트 '부상 및 재활 편'</p>
+											<span>New</span>
+											<div>더보기</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<input id="btn_more" type="checkbox">
+							<ul class="btn_hidden clear">
+								<li>
+									<a href="#a">
+										<em><img src="img/img09.jpg" alt="남자A"></em>
+										<div>
+											<h3>남자A</h3>
+											<p>벤투 감독 "최대한 좋은 경기력으로 E-1 챔피언십 나선다!"</p>
+											<span>New</span>
+											<div>더보기</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#a">
+										<em><img src="img/img10.jpg" alt="협회일반"></em>
+										<div>
+											<h3>협회일반</h3>
+											<p>정정용 감독, 서울이랜드FC에서 새로운 도전 시작</p>
+											<span>New</span>
+											<div>더보기</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#a">
+										<em><img src="img/img11.jpg" alt="남자A"></em>
+										<div>
+											<h3>남자A</h3>
+											<p>벤투호, 브라질에 0-3 패배</p>
+											<span class="today">TODAY</span>
+											<div>더보기</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#a">
+										<em><img src="img/img12.jpg" alt="남자U-23"></em>
+										<div>
+											<h3>남자U-23</h3>
+											<p>김학범 감독-홍명보 전무, 올림픽대표팀 차출 협의</p>
+											<span class="today">TODAY</span>
+											<div>더보기</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#a">
+										<em><img src="img/img04.jpg" alt="여자 A"></em>
+										<div>
+											<h3>여자 A</h3>
+											<p>'스페인 진출' 장슬기 "큰 책임감 느낀다"</p>
+											<span>New</span>
+											<div>더보기</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#a">
+										<em><img src="img/img05.jpg" alt="남자 A"></em>
+										<div>
+											<h3>남자 A</h3>
+											<p>리그 우승 경험한 김진수, 이제는 대표팀 우승 노린다</p>
+											<span class="today">New</span>
+											<div>더보기</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#a">
+										<em><img src="img/img08.png" alt="협회일반"></em>
+										<div>
+											<h3>협회일반</h3>
+											<p>핌 베어벡 전 축구국가대표팀 감독 별세.. 향년63세</p>
+											<span>New</span>
+											<div>더보기</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#a">
+										<em><img src="img/img07.jpg" alt="협회일반"></em>
+										<div>
+											<h3>협회일반</h3>
+											<p>"재활은 시기가 가장 중요" KFA 축구공감 토크콘서트 '부상 및 재활 편'</p>
+											<span>New</span>
+											<div>더보기</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<label id="btn_more" for="btn_more">더보기</label>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- //본문 영역 -->
+			<!-- 서브배너 슬라이드 -->
+			<section>
+				<div class="sub_slide">
+					<div class="bannner">
+						<a href="#a">
+							<img src="img/bottom_img01.jpg" alt="" class="web">
+							<img src="img/bottom_img01_m.jpg" alt="" class="mob">
+						</a>
+					</div>
+					<div class="bannner">
+						<a href="#a">
+							<img src="img/bottom_img02.jpg" alt="" class="web">
+							<img src="img/bottom_img02_m.jpg" alt="" class="mob">
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- //서브 배너 슬라이드 -->
+
+			<!-- video -->
+			<section>
+				<div class="video">
+					<h2>하이라이트 영상</h2>
+					<iframe src="https://www.youtube.com/embed/_CUOephKfXM" title="피르미누 김진수" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/lBk840yyiNI" title="대한민국 브라질 친선경기" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/_0CbkpsvbiM" title="김영권 라때는 말이야" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</section>
+			<!-- //video -->
+
+			<section>
+				<div id="sns">
+					<div class="sns_cover">
+						<h2>축구협회 SNS</h2>
+						<ul class="clear">
+							<li class="clear">
+								<div class="slide">
+									<a href="#a">
+										<span class="slide_left">
+											<img src="./img/sns01.jpg" alt="sns01" />
+										</span>
+										<span class="slide_right">
+											<em>AFC 올해의 국제선수상</em>
+											<em>
+												올해의 국제선수상 주인공은 바로 손흥민!!
+											</em>
+										</span>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#a">
+										<span class="slide_left">
+											<img src="./img/sns02.jpg" alt="sns02" />
+										</span>
+										<span class="slide_right">
+											<em>AFC 올해의 유망주상</em>
+											<em>
+												올해의 유망주상 주인공은 바로 이강인!!
+											</em>
+										</span>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#a">
+										<span class="slide_left">
+											<img src="./img/sns03.jpg" alt="sns03" />
+										</span>
+										<span class="slide_right">
+											<em>장슬기 입단!!</em>
+											<em>
+												스페인 마드리드 CF 페메니노 입단!!
+											</em>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class="clear">
+								<div class="slide">
+									<a href="#a">
+										<span class="slide_left">
+											<img src="./img/sns03.jpg" alt="sns03" />
+										</span>
+										<span class="slide_right">
+											<em>장슬기 입단!!</em>
+											<em>
+												스페인 마드리드 CF 페메니노 입단!!
+											</em>
+										</span>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#a">
+										<span class="slide_left">
+											<img src="./img/sns02.jpg" alt="sns02" />
+										</span>
+										<span class="slide_right">
+											<em>AFC 올해의 유망주상</em>
+											<em>
+												올해의 유망주상 주인공은 바로 이강인!!
+											</em>
+										</span>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#a">
+										<span class="slide_left">
+											<img src="./img/sns01.jpg" alt="sns01" />
+										</span>
+										<span class="slide_right">
+											<em>AFC 올해의 국제선수상</em>
+											<em>
+												올해의 국제선수상 주인공은 바로 손흥민!!
+											</em>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class="clear">
+								<div class="slide">
+									<a href="#a">
+										<span class="slide_left">
+											<img src="./img/sns03.jpg" alt="sns03" />
+										</span>
+										<span class="slide_right">
+											<em>장슬기 입단!!</em>
+											<em>
+												스페인 마드리드 CF 페메니노 입단!!
+											</em>
+										</span>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#a">
+										<span class="slide_left">
+											<img src="./img/sns01.jpg" alt="sns01" />
+										</span>
+										<span class="slide_right">
+											<em>AFC 올해의 국제선수상</em>
+											<em>
+												올해의 국제선수상 주인공은 바로 손흥민!!
+											</em>
+										</span>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#a">
+										<span class="slide_left">
+											<img src="./img/sns02.jpg" alt="sns02" />
+										</span>
+										<span class="slide_right">
+											<em>AFC 올해의 유망주상</em>
+											<em>
+												올해의 유망주상 주인공은 바로 이강인!!
+											</em>
+										</span>
+									</a>
+								</div>
+							</li>
+						</ul>
+						<div class="pager">
+							<ol class="clear">
+								<li class="on"><a href="#a"><i class="xi-radiobox-checked" aria-hidden="true"></i></a>
+								</li>
+								<li><a href="#a"><i class="xi-radiobox-checked" aria-hidden="true"></i></a></li>
+								<li><a href="#a"><i class="xi-radiobox-checked" aria-hidden="true"></i></a></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- //SNS -->
+		</div>
+		<!-- //contents -->
+		<!-- 푸터영역 -->
+		<div id="footer">
+			<div class="footer_partners">
+				<h5>OFFICIAL PARTNERS</h5>
+				<ul>
+					<li><a href="#a"><img src="img/Sponsor_01_Nike_@2X.png" alt="스폰서"></a></li>
+					<li><a href="#a"><img src="img/Sponsor_02_KEB_@2X.png" alt="스폰서"></a></li>
+					<li><a href="#a"><img src="img/Sponsor_03_KT_@2X.png" alt="스폰서"></a></li>
+					<li><a href="#a"><img src="img/Sponsor_05_emart_@2X.png" alt="스폰서"></a></li>
+					<li><a href="#a"><img src="img/Sponsor_06_Kyobo_@2X.png" alt="스폰서"></a></li>
+					<li><a href="#a"><img src="img/Sponsor_07_Hyundai_@2X.png" alt="스폰서"></a></li>
+					<li><a href="#a"><img src="img/Sponsor_08_Asiana_@2X.png" alt="스폰서"></a></li>
+					<li><a href="#a"><img src="img/Sponsor_09_Coke_@2X.png" alt="스폰서"></a></li>
+					<li><a href="#a"><img src="img/Sponsor_10_Lotte_@2X.png" alt="스폰서"></a></li>
+					<li><a href="#a"><img src="img/Sponsor_11_Nexon_@2X.png" alt="스폰서"></a></li>
+				</ul>
+			</div>
+			<div class="footer_top">
+				<div class="footer_cover">
+					<ul class="clear">
+						<li><a href="./index.html"><img src="img/logo.png" alt="로고"></a></li>
+						<li><a href="#a">KFA edu</a></li>
+						<li><a href="#a">KFA Photo</a></li>
+						<li><a href="#a">JoinKFA</a></li>
+						<li><a href="#a">Media</a></li>
+						<li><a href="#a">KFA Ticket</a></li>
+						<li><a href="#a">KFA Store</a></li>
+					</ul>
+					<div class="family_site">
+						<select name="list" title="패밀리 사이트">
+							<option>Family site</option>
+							<option>국제축구연맹(FIFA)</option>
+							<option>아시아축구연맹(AFC)</option>
+							<option>동아시아축구연맹(EAFF)</option>
+							<option>서울특별시축구협회</option>
+							<option>부산광역시축구협회</option>
+							<option>대구광역시축구협회</option>
+							<option>인천광역시축구협회</option>
+							<option>대전광역시축구협회</option>
+							<option>광주광역시축구협회</option>
+							<option>울산광역시축구협회</option>
+							<option>경기도축구협회</option>
+							<option>강원도축구협회</option>
+							<option>제주특별자치도축구협회</option>
+							<option>충청북도축구협회</option>
+							<option>충청남도축구협회</option>
+							<option>전라북도축구협회</option>
+							<option>전라남도축구협회</option>
+							<option>경상북도축구협회</option>
+							<option>경상남도축구협회</option>
+							<option>세종특별자치시축구협회</option>
+							<option>한국프로축구연맹(K리그)</option>
+							<option>한국실업축구연맹(내셔널리그)</option>
+							<option>한국대학축구연맹</option>
+							<option>한국고등축구연맹</option>
+							<option>한국중등축구연맹(U-15)</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="footer_bottom">
+				<div class="footer_cover">
+					<div class="left_menu">
+						<ul class="clear">
+							<li><a href="#a">개인정보처리방침</a></li>
+							<li><a href="#a">회원이용약관</a></li>
+							<li><a href="#a">이메일무단수집거부</a></li>
+						</ul>
+					</div>
+					<div class="center_menu">
+						<ul>
+							<li>
+								<a href="https://www.instagram.com/thekfa/" target="_blank">
+									<img src="img/btn_insta_w.png" alt="인스타">
+								</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/KFA/" target="_blank">
+									<img src="img/btn_facebook_w.png" alt="페이스북">
+								</a>
+							</li>
+							<li><a href="https://twitter.com/thekfa" target="_blank">
+									<img src="img/btn_tweet_w.png" alt="트위터">
+								</a>
+							</li>
+							<li>
+								<a href="http://www.youtube.com/Kfatvcom" target="_blank">
+									<img src="img/btn_navertv_w.png" alt="네이버">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="right_menu">
+						<p>Copyright ⓒ KFA. All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //푸터 영역 -->
+	</div>
+
+	<!-- JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+	<!-- 자바스크립트 라이브러리 -->
+	<script src="js/modernizr-custom.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/jquery.modal.js"></script>
+</body>
+
+</html>
