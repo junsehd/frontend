@@ -33,6 +33,17 @@ header nav ul li a:hover span:before { width: 100%; }
 header nav ul li a span { display: block; position: relative; padding: 0 .2rem; height: 2.05rem; line-height: 2.05rem; }
 header nav ul li a span:before { content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 3px; background: #fdfa70; -webkit-transition: all .5s; transition: all .5s; }
 
+.search10 { position: relative; }
+.search10 .more { position: absolute; right: 0; top: 0; width: 1.73rem; height: 1.73rem; background: url(../image/btn-down.png) no-repeat center/0.81rem auto; z-index: 10; }
+.search10.on .more { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.search10.on .slide1 { height: calc(1.73rem * 5); }
+
+.slide1 { height: 1.73rem; overflow: hidden; }
+.slide1 .swiper-slide { height: 1.73rem; }
+.slide1 .swiper-slide a { display: block; padding: 0 0 0 3.33rem; position: relative; font-size: .6rem; color: #373737; }
+.slide1 .swiper-slide a span { position: absolute; left: .43rem; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 2.31rem; height: 0.91rem; line-height: 0.91rem; background: #bcc1c9; color: #fff; font-size: .4rem; text-align: center; }
+.slide1 .swiper-slide a div { line-height: 1.73rem; }
+
 .border { border-bottom: 5px solid #e9ecee; }
 
 /*# sourceMappingURL=index.css.map */

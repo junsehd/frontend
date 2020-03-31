@@ -23,7 +23,6 @@ $yellow : #fdfa70;
 @mixin hig($h) {height: $h; line-height: $h;}
 
 
-
 header {background: $blue; padding: 0 .6333rem;
     h1 {float: left; padding: .8333rem 0 0;
         a {display: block; width: 4.9666rem; height: .8333rem; background: url(../image/logo.png) no-repeat 0 0 / 100% auto;}
@@ -49,5 +48,27 @@ header {background: $blue; padding: 0 .6333rem;
         }
     }
 }
+
+.search10 {position: relative;
+    .more {position: absolute; right: 0; top: 0; width: 1.73rem; height: 1.73rem; 
+        background: url(../image/btn-down.png) no-repeat center / .81rem auto; z-index: 10;}
+    &.on{
+        .more {transform: rotate(180deg);}
+        .slide1 {height: calc(1.73rem * 5);}
+    }    
+}
+
+.slide1 {
+    height: 1.73rem; overflow: hidden;
+    .swiper-slide {height: 1.73rem;
+        a {display: block; padding: 0 0 0 3.33rem; position: relative; font-size: .6rem; color: #373737;
+            span {position: absolute; left: .43rem; top: 50%; transform: translateY(-50%); width: 2.31rem; @include hig(.91rem);
+            background: #bcc1c9; color: $white; font-size: .4rem; text-align: center;}
+            div {line-height: 1.73rem;}
+        }
+    }
+}
+
+
 
 .border {border-bottom: 5px solid #e9ecee;}
