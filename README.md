@@ -1,22 +1,22 @@
 <h1>홈페이지 만들기 연습</h1>
 
 
--기본 표준 사이트 예제 : https://junsehd.github.io/publisher/web/index.html
+-웹표준 연습 홈페이지 : https://junsehd.github.io/publisher/web/index.html
 
--신대구부산 사이트 예제 : https://junsehd.github.io/publisher/highway/index.html
+-신대구부산 클론코딩 : https://junsehd.github.io/publisher/highway/index.html
 
--하이닉스 홈페이지 예제 : https://junsehd.github.io/publisher/skhynix/index.html
+-하이닉스 클론코딩 : https://junsehd.github.io/publisher/skhynix/index.html
 
 -축구협회 리뉴얼 : https://junsehd.github.io/publisher/kfa/index.html
 
--깃허브 홈페이지 : https://junsehd.github.io/publisher/GitHub-Responsive/index.html
+-깃허브 클론코딩 : https://junsehd.github.io/publisher/GitHub-Responsive/index.html
 
 
 <h2>반응형 홈페이지</h2>
 
--반응형 홈페이지 사이트 예제 : https://junsehd.github.io/publisher/responsive/index.html
+-반응형 홈페이지 : https://junsehd.github.io/publisher/responsive/index.html
 
--메가박스 사이트 예제 : https://junsehd.github.io/publisher/megabox/index.html
+-메가박스 클론코딩 : https://junsehd.github.io/publisher/megabox/index.html
 
 -동부센트레빌 리뉴얼 예제 : https://junsehd.github.io/publisher/centreville/index.html
 
