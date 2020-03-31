@@ -24,6 +24,8 @@
 <h2>모바일 홈페이지</h2>
 
 -KFA STORE 리뉴얼 : https://junsehd.github.io/publisher/kfa_mobile/index.html
+-잡코리아 클론코딩 : https://junsehd.github.io/publisher/jobkorea/index.html
+-apple music : https://junsehd.github.io/publisher/music/index.html
 
 <h2>포트폴리오 연습 홈페이지</h2>
 
