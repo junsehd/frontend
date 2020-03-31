@@ -33,8 +33,9 @@
 
 -미니멀 포트폴리오 :  https://junsehd.github.io/publisher/Minimal_HTML/index.html
 
+-메인 포트폴리오 : https://junsehd.github.io/portfolio/index.html
 
 
 
-<strong>본 홈페이지 신입 웹퍼블리셔 공부를 위해서 유튜브 온라인강의 수강후 기능을 추가한 작업물이며 어떠한 상업적인 목적은 없음을 알려드립니다.
-</strong>
+
+<h3>본 홈페이지 신입 웹퍼블리셔 공부를 위해서 유튜브 온라인강의 수강후 기능을 추가한 작업물이며 어떠한 상업적인 목적은 없음을 알려드립니다.</h3>
