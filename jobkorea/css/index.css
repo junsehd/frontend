@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*
+모바일
+> 디자인받은게 몇배의 해상도인지 
+- PSD를 받을경우
+- 결과가 psd 가로사이즈 / n = 360 or 320
+> 만약 피그마, xd, 스케치면 해상도 상관없음
+-제플린 or 피그마, xd, 스케치에서 바로 2배이상의 이미지를 Export 가능
+*/
+html { font-size: 20px; }
+
+body { font-size: 1rem; }
+
+/*
+rem 계산기 기본 폰트가 20픽셀이므로 나는 3배의 이미지를 작성하기위해서
+60을 나누어 주어야한다. 2배일 경우는 40이 된다.
+계산식 헤더가 38px일경우 38/60을해서 0.6333이 나오게된다.
+*/
+header { background: #5f98fc; padding: 0 .6333rem; }
+header h1 { float: left; padding: .8333rem 0 0; }
+header h1 a { display: block; width: 4.9666rem; height: .8333rem; background: url(../image/logo.png) no-repeat 0 0/100% auto; }
+header .info { float: right; font-size: 0; padding: .6666rem 0 0; }
+header .info .mypage, header .info .menu { display: inline-block; width: 1.6rem; height: 1.6rem; background: no-repeat center / .8333rem auto; margin: 0 0 0 .7666rem; }
+header .info .mypage { background-image: url(../image/mypage.png); }
+header .info .menu { background-image: url(../image/menu.png); }
+header .search { padding: .6666rem 0 0; display: -webkit-box; display: -ms-flexbox; display: flex; }
+header .search input { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; border: none; }
+header .search button { -webkit-box-flex: 0; -ms-flex: none; flex: none; width: 2.033rem; background: #fff url(../image/search_on.png) no-repeat center/0.9166rem auto; }
+header nav ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+header nav ul li a { display: block; font-size: .7166rem; padding: 0 .3333rem; color: #fff; -webkit-transition: all .5s; transition: all .5s; }
+header nav ul li a:hover { color: #fdfa70; }
+header nav ul li a:hover span:before { width: 100%; }
+header nav ul li a span { display: block; position: relative; padding: 0 .2rem; height: 2.05rem; line-height: 2.05rem; }
+header nav ul li a span:before { content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 3px; background: #fdfa70; -webkit-transition: all .5s; transition: all .5s; }
+
+.border { border-bottom: 5px solid #e9ecee; }
+
+/*# sourceMappingURL=index.css.map */
