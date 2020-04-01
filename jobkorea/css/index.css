@@ -17,7 +17,7 @@ rem 계산기 기본 폰트가 20픽셀이므로 나는 3배의 이미지를 작
 계산식 헤더가 38px일경우 38/60을해서 0.6333이 나오게된다.
 */
 header { background: #5f98fc; padding: 0 .6333rem; }
-header h1 { float: left; padding: .8333rem 0 0; }
+header h1 { float: left; padding: 1.1rem 0 0; }
 header h1 a { display: block; width: 4.9666rem; height: .8333rem; background: url(../image/logo.png) no-repeat 0 0/100% auto; }
 header .info { float: right; font-size: 0; padding: .6666rem 0 0; }
 header .info .mypage, header .info .menu { display: inline-block; width: 1.6rem; height: 1.6rem; background: no-repeat center / .8333rem auto; margin: 0 0 0 .7666rem; }
