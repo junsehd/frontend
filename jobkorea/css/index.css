@@ -26,12 +26,20 @@ header .info .menu { background-image: url(../image/menu.png); }
 header .search { padding: .6666rem 0 0; display: -webkit-box; display: -ms-flexbox; display: flex; }
 header .search input { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; border: none; }
 header .search button { -webkit-box-flex: 0; -ms-flex: none; flex: none; width: 2.033rem; background: #fff url(../image/search_on.png) no-repeat center/0.9166rem auto; }
-header nav ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+header nav ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; overflow: hidden; }
 header nav ul li a { display: block; font-size: .7166rem; padding: 0 .3333rem; color: #fff; -webkit-transition: all .5s; transition: all .5s; }
 header nav ul li a:hover { color: #fdfa70; }
 header nav ul li a:hover span:before { width: 100%; }
-header nav ul li a span { display: block; position: relative; padding: 0 .2rem; height: 2.05rem; line-height: 2.05rem; }
+header nav ul li a span { display: block; position: relative; padding: 0 .1rem; height: 2.05rem; line-height: 2.05rem; }
 header nav ul li a span:before { content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 3px; background: #fdfa70; -webkit-transition: all .5s; transition: all .5s; }
+
+.ad_top { height: 180px; background: url(../image/bg1.png) no-repeat center/100% auto; }
+.ad_top .info { color: #fff; text-align: center; padding: 1.2rem 0; display: block; }
+.ad_top .info em { font-size: .7rem; }
+.ad_top .info p { font-size: 0.9rem; padding: 0.8rem 0; }
+.ad_top .info span { font-size: 0.6666rem; margin-left: 0.5rem; position: relative; }
+.ad_top .info span:after { content: '|'; position: absolute; right: -5px; top: 0; width: 0; height: 0; opacity: 0.3; }
+.ad_top .info span:last-child { text-indent: -9999rem; overflow: hidden; }
 
 .search10 { position: relative; }
 .search10 .more { position: absolute; right: 0; top: 0; width: 1.73rem; height: 1.73rem; background: url(../image/btn-down.png) no-repeat center/0.81rem auto; z-index: 10; }
@@ -40,7 +48,7 @@ header nav ul li a span:before { content: ''; position: absolute; left: 0; botto
 
 .slide1 { height: 1.73rem; overflow: hidden; }
 .slide1 .swiper-slide { height: 1.73rem; }
-.slide1 .swiper-slide a { display: block; padding: 0 0 0 3.33rem; position: relative; font-size: .6rem; color: #373737; }
+.slide1 .swiper-slide a { display: block; padding: 0 0 0 3.33rem; position: relative; font-size: .7rem; color: #373737; }
 .slide1 .swiper-slide a span { position: absolute; left: .43rem; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 2.31rem; height: 0.91rem; line-height: 0.91rem; background: #bcc1c9; color: #fff; font-size: .4rem; text-align: center; }
 .slide1 .swiper-slide a div { line-height: 1.73rem; }
 

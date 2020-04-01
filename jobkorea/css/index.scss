@@ -36,15 +36,28 @@ header {background: $blue; padding: 0 .6333rem;
         input {flex: 1; border: none;}
         button {flex: none; width: 2.033rem; background: $white url(../image/search_on.png) no-repeat center / .9166rem auto;}
     }
-    nav ul {display: flex; justify-content: space-between;
+    nav ul {display: flex; justify-content: space-between; overflow: hidden;
        li {
            a {display: block; font-size: .7166rem; padding: 0 .3333rem; color: $white; transition: all .5s;
             &:hover {color: $yellow;}
             &:hover span:before {width: 100%;}
-                span {display: block; position: relative; padding: 0 .2rem;  @include hig(2.05rem);
+                span {display: block; position: relative; padding: 0 .1rem;  @include hig(2.05rem);
                 &:before {content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 3px; background: $yellow; transition: all .5s;}
                 }
             }
+        }
+    }
+}
+
+.ad_top {
+    height: 180px; background: url(../image/bg1.png) no-repeat center / 100% auto;
+    .info{
+        color: $white; text-align: center; padding: 1.2rem 0; display: block;
+        em {font-size: .7rem;}
+        p {font-size: 0.9rem; padding: 0.8rem 0;}
+        span {font-size: 0.6666rem; margin-left: 0.5rem; position: relative;
+            &:after {content: '|'; position: absolute; right: -5px; top: 0; width: 0; height: 0; opacity: 0.3;}
+            &:last-child {text-indent: -9999rem; overflow: hidden;}
         }
     }
 }
@@ -61,7 +74,7 @@ header {background: $blue; padding: 0 .6333rem;
 .slide1 {
     height: 1.73rem; overflow: hidden;
     .swiper-slide {height: 1.73rem;
-        a {display: block; padding: 0 0 0 3.33rem; position: relative; font-size: .6rem; color: #373737;
+        a {display: block; padding: 0 0 0 3.33rem; position: relative; font-size: .7rem; color: #373737;
             span {position: absolute; left: .43rem; top: 50%; transform: translateY(-50%); width: 2.31rem; @include hig(.91rem);
             background: #bcc1c9; color: $white; font-size: .4rem; text-align: center;}
             div {line-height: 1.73rem;}
