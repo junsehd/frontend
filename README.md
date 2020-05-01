@@ -35,7 +35,7 @@
 
 -미니멀 포트폴리오 :  https://junsehd.github.io/publisher/Minimal_HTML/index.html
 
--워드프레스 연습용 포트폴리오 : http://dongho5.dothome.co.kr/wp/
+-워드프레스 연습용 포트폴리오 : http://dongho3.dothome.co.kr/wp/
 
 -메인 포트폴리오 : https://junsehd.github.io/portfolio/index.html
 
